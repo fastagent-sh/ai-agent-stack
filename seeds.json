@@ -1,0 +1,85 @@
+{
+  "_comment": "Seed repositories, grouped by the layer they sit in. Membership is curated; everything else on the page is measured. Open source only: release cadence, real user issues and activity cannot be read for a closed product.",
+  "categories": [
+    {
+      "id": "coding-agents",
+      "title": "Coding agents and harnesses",
+      "blurb": "The agent you run in a terminal or editor to change a codebase.",
+      "repos": [
+        "anthropics/claude-code",
+        "openai/codex",
+        "anomalyco/opencode",
+        "cline/cline",
+        "google-gemini/gemini-cli",
+        "openclaw/openclaw",
+        "earendil-works/pi",
+        "Aider-AI/aider",
+        "All-Hands-AI/OpenHands",
+        "block/goose"
+      ]
+    },
+    {
+      "id": "frameworks",
+      "title": "Agent frameworks and SDKs",
+      "blurb": "Libraries for building an agent: loops, tools, handoffs, structured output.",
+      "repos": [
+        "langchain-ai/langgraph",
+        "pydantic/pydantic-ai",
+        "mastra-ai/mastra",
+        "openai/openai-agents-python",
+        "google/adk-python",
+        "crewAIInc/crewAI",
+        "microsoft/autogen",
+        "agno-agi/agno",
+        "vercel/ai",
+        "microsoft/agent-framework"
+      ]
+    },
+    {
+      "id": "orchestration",
+      "title": "Orchestration, serving and durability",
+      "blurb": "What keeps an agent alive between turns: queues, retries, state, deployment.",
+      "repos": [
+        "temporalio/temporal",
+        "dapr/dapr-agents",
+        "restatedev/restate",
+        "inngest/inngest",
+        "fastagent-sh/fastagent",
+        "langflow-ai/langflow",
+        "langgenius/dify"
+      ]
+    },
+    {
+      "id": "memory",
+      "title": "Memory and context",
+      "blurb": "What the agent remembers after the session ends.",
+      "repos": ["mem0ai/mem0", "letta-ai/letta", "getzep/zep", "topoteretes/cognee", "thedotmack/claude-mem"]
+    },
+    {
+      "id": "tools",
+      "title": "Tools, protocol and sandboxes",
+      "blurb": "How an agent reaches the outside world, and where its code is allowed to run.",
+      "repos": [
+        "modelcontextprotocol/servers",
+        "modelcontextprotocol/python-sdk",
+        "e2b-dev/E2B",
+        "browser-use/browser-use",
+        "ComposioHQ/composio",
+        "firecrawl/firecrawl"
+      ]
+    },
+    {
+      "id": "evaluation",
+      "title": "Evaluation and observability",
+      "blurb": "How you find out whether the agent is still doing its job.",
+      "repos": [
+        "langfuse/langfuse",
+        "Arize-ai/phoenix",
+        "comet-ml/opik",
+        "traceloop/openllmetry",
+        "confident-ai/deepeval",
+        "promptfoo/promptfoo"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+name: measure
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Monday 06:00 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/collect.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit the week's measurement
+        run: |
+          git config user.name "measure-bot"
+          git config user.email "actions@github.com"
+          git add data README.md
+          git diff --staged --quiet || git commit -m "measure: $(date -u +%Y-%m-%d)"
+          git push
