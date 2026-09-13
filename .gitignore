@@ -5,3 +5,6 @@ __pycache__/
 !data/
 !data/*.csv
 !data/*.json
+
+# A local read-through cache of the GitHub API, not a measurement.
+data/.repo-cache.json

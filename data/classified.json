@@ -1,0 +1,2848 @@
+{
+ "verdicts": {
+  "anomalyco/opencode": {
+   "repo": "anomalyco/opencode",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Open-source terminal coding agent"
+  },
+  "openai/codex": {
+   "repo": "openai/codex",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Terminal coding agent"
+  },
+  "openinterpreter/openinterpreter": {
+   "repo": "openinterpreter/openinterpreter",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Coding agent for open models"
+  },
+  "cline/cline": {
+   "repo": "cline/cline",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "IDE, CLI and desktop coding agent"
+  },
+  "stablyai/orca": {
+   "repo": "stablyai/orca",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Interface for running coding agents"
+  },
+  "shanraisshan/claude-code-best-practice": {
+   "repo": "shanraisshan/claude-code-best-practice",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Claude Code agents, commands and skills"
+  },
+  "calesthio/OpenMontage": {
+   "repo": "calesthio/OpenMontage",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical video production application"
+  },
+  "continuedev/continue": {
+   "repo": "continuedev/continue",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Open-source coding agent"
+  },
+  "can1357/oh-my-pi": {
+   "repo": "can1357/oh-my-pi",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "IDE-integrated coding agent"
+  },
+  "BloopAI/vibe-kanban": {
+   "repo": "BloopAI/vibe-kanban",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Workspace UI for coding agents"
+  },
+  "SWE-agent/SWE-agent": {
+   "repo": "SWE-agent/SWE-agent",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Agent fixes GitHub issues"
+  },
+  "rocketride-org/rocketride-server": {
+   "repo": "rocketride-org/rocketride-server",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "AI pipeline runtime and harness"
+  },
+  "agegr/pi-web": {
+   "repo": "agegr/pi-web",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Web UI for Pi agent"
+  },
+  "JetBrains/go-modern-guidelines": {
+   "repo": "JetBrains/go-modern-guidelines",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Guidelines loaded into coding agents"
+  },
+  "HolmesGPT/holmesgpt": {
+   "repo": "HolmesGPT/holmesgpt",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "SRE agent investigates incidents"
+  },
+  "nizos/tdd-guard": {
+   "repo": "nizos/tdd-guard",
+   "in_stack": true,
+   "layer": "security",
+   "why": "TDD guardrail for coding agents"
+  },
+  "GoogleChrome/modern-web-guidance": {
+   "repo": "GoogleChrome/modern-web-guidance",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Web best-practice skills for agents"
+  },
+  "0-AI-UG/cate": {
+   "repo": "0-AI-UG/cate",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "IDE shell for parallel coding agents"
+  },
+  "nimbalyst/nimbalyst": {
+   "repo": "nimbalyst/nimbalyst",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Visual workspace for coding agents"
+  },
+  "elirantutia/vibeyard": {
+   "repo": "elirantutia/vibeyard",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "IDE managing multiple coding agents"
+  },
+  "asheshgoplani/agent-deck": {
+   "repo": "asheshgoplani/agent-deck",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "TUI session manager for coding agents"
+  },
+  "es617/claude-replay": {
+   "repo": "es617/claude-replay",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Replay and inspect agent sessions"
+  },
+  "mkosir/typescript-style-guide": {
+   "repo": "mkosir/typescript-style-guide",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "TypeScript convention skills for agents"
+  },
+  "hex/claude-council": {
+   "repo": "hex/claude-council",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Claude Code multi-agent comparison plugin"
+  },
+  "echoVic/orca-agent": {
+   "repo": "echoVic/orca-agent",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Terminal coding agent"
+  },
+  "nousresearch/hermes-agent": {
+   "repo": "nousresearch/hermes-agent",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Self-improving personal assistant agent"
+  },
+  "NousResearch/hermes-agent": {
+   "repo": "NousResearch/hermes-agent",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Self-improving personal assistant agent"
+  },
+  "666ghj/BettaFish": {
+   "repo": "666ghj/BettaFish",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical public-opinion analysis application"
+  },
+  "AI4Finance-Foundation/FinGPT": {
+   "repo": "AI4Finance-Foundation/FinGPT",
+   "in_stack": false,
+   "layer": null,
+   "why": "Financial LLM project, not agent stack"
+  },
+  "xbtlin/ai-berkshire": {
+   "repo": "xbtlin/ai-berkshire",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Investment research skills for coding agents"
+  },
+  "wanshuiyin/Auto-claude-code-research-in-sleep": {
+   "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Markdown skills for coding agents"
+  },
+  "microsoft/RD-Agent": {
+   "repo": "microsoft/RD-Agent",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Autonomous R&D research agent"
+  },
+  "advaitpaliwal/feynman": {
+   "repo": "advaitpaliwal/feynman",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Open-source AI research agent"
+  },
+  "TraderAlice/OpenAlice": {
+   "repo": "TraderAlice/OpenAlice",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical trading application"
+  },
+  "ruc-datalab/DeepAnalyze": {
+   "repo": "ruc-datalab/DeepAnalyze",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Autonomous data science research agent"
+  },
+  "EvoMap/AutoResearch": {
+   "repo": "EvoMap/AutoResearch",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "AI research workflow agent"
+  },
+  "aipoch/open-science": {
+   "repo": "aipoch/open-science",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Scientific research agent workbench"
+  },
+  "PleasePrompto/notebooklm-mcp": {
+   "repo": "PleasePrompto/notebooklm-mcp",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "NotebookLM tool for agents"
+  },
+  "deepnote/deepnote": {
+   "repo": "deepnote/deepnote",
+   "in_stack": false,
+   "layer": null,
+   "why": "AI notebook, not agent stack"
+  },
+  "NVlabs/SoL-Pi": {
+   "repo": "NVlabs/SoL-Pi",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Agent harness efficiency extension"
+  },
+  "416rehman/DeepZero": {
+   "repo": "416rehman/DeepZero",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical vulnerability research pipeline"
+  },
+  "ImKKingshuk/LockKnife": {
+   "repo": "ImKKingshuk/LockKnife",
+   "in_stack": false,
+   "layer": null,
+   "why": "Android forensics toolkit"
+  },
+  "QuintinShaw/pi-dynamic-workflows": {
+   "repo": "QuintinShaw/pi-dynamic-workflows",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Dynamic multi-agent workflow runtime"
+  },
+  "browser-use/browser-use": {
+   "repo": "browser-use/browser-use",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "Browser-driving agent framework"
+  },
+  "vercel-labs/agent-browser": {
+   "repo": "vercel-labs/agent-browser",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Browser automation CLI for agents"
+  },
+  "feder-cr/AIHawk": {
+   "repo": "feder-cr/AIHawk",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "Stealth browser agent for web automation"
+  },
+  "alibaba/page-agent": {
+   "repo": "alibaba/page-agent",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "In-page GUI agent for websites"
+  },
+  "h4ckf0r0day/obscura": {
+   "repo": "h4ckf0r0day/obscura",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Headless browser engine for agents"
+  },
+  "browserbase/stagehand": {
+   "repo": "browserbase/stagehand",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "SDK for building browser agents"
+  },
+  "citrolabs/ego-lite": {
+   "repo": "citrolabs/ego-lite",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "Agent-friendly browser for shared sessions"
+  },
+  "web-infra-dev/midscene": {
+   "repo": "web-infra-dev/midscene",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "GUI agent for automated UI control"
+  },
+  "browseros-ai/BrowserOS": {
+   "repo": "browseros-ai/BrowserOS",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "Agentic browser for real web tasks"
+  },
+  "jo-inc/camofox-browser": {
+   "repo": "jo-inc/camofox-browser",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Stealth browser API for agents"
+  },
+  "microsoft/magentic-ui": {
+   "repo": "microsoft/magentic-ui",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Assistant for browser and local files"
+  },
+  "steel-dev/steel-browser": {
+   "repo": "steel-dev/steel-browser",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Browser API for web agents"
+  },
+  "lahfir/agent-desktop": {
+   "repo": "lahfir/agent-desktop",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "Computer-use control via accessibility trees"
+  },
+  "farion1231/cc-switch": {
+   "repo": "farion1231/cc-switch",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Account and provider switcher for agents"
+  },
+  "HKUDS/nanobot": {
+   "repo": "HKUDS/nanobot",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Self-hosted personal agent with tools"
+  },
+  "tinyhumansai/openhuman": {
+   "repo": "tinyhumansai/openhuman",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Personal assistant with memory and orchestration"
+  },
+  "agentscope-ai/QwenPaw": {
+   "repo": "agentscope-ai/QwenPaw",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Personal assistant with skills and memory"
+  },
+  "googleworkspace/cli": {
+   "repo": "googleworkspace/cli",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Google Workspace tool surface for agents"
+  },
+  "Zackriya-Solutions/meetily": {
+   "repo": "Zackriya-Solutions/meetily",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical meeting transcription application"
+  },
+  "Fosowl/agenticSeek": {
+   "repo": "Fosowl/agenticSeek",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Local autonomous personal agent product"
+  },
+  "leon-ai/leon": {
+   "repo": "leon-ai/leon",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Open-source personal assistant agent"
+  },
+  "NanmiCoder/cc-haha": {
+   "repo": "NanmiCoder/cc-haha",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Desktop workspace for coding agents"
+  },
+  "builderz-labs/mission-control": {
+   "repo": "builderz-labs/mission-control",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Control plane for agent runtimes"
+  },
+  "rullerzhou-afk/clawd-on-desk": {
+   "repo": "rullerzhou-afk/clawd-on-desk",
+   "in_stack": false,
+   "layer": null,
+   "why": "Decorative notifier, not stack component"
+  },
+  "netease-youdao/LobsterAI": {
+   "repo": "netease-youdao/LobsterAI",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Desktop office assistant agent"
+  },
+  "tutti-os/tutti": {
+   "repo": "tutti-os/tutti",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Collaborative workspace for multiple agents"
+  },
+  "xintaofei/codeg": {
+   "repo": "xintaofei/codeg",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Workspace aggregating coding agent sessions"
+  },
+  "vastsa/PI-Desktop": {
+   "repo": "vastsa/PI-Desktop",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Desktop workspace for coding agents"
+  },
+  "moltis-org/moltis": {
+   "repo": "moltis-org/moltis",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Persistent sandboxed personal agent server"
+  },
+  "org2AI/ORG2": {
+   "repo": "org2AI/ORG2",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Harness for running coding agents"
+  },
+  "Stack-Cairn/LiveAgent": {
+   "repo": "Stack-Cairn/LiveAgent",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Desktop client for local agents"
+  },
+  "Pinvou/pinvou-agent": {
+   "repo": "Pinvou/pinvou-agent",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Desktop agent for work tasks"
+  },
+  "ShenSeanChen/waku-agent": {
+   "repo": "ShenSeanChen/waku-agent",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Local agent harness with memory and eval"
+  },
+  "TencentCloud/Octop": {
+   "repo": "TencentCloud/Octop",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Self-hosted multi-user personal assistant"
+  },
+  "siddsachar/row-bot": {
+   "repo": "siddsachar/row-bot",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Local desktop assistant with tools and memory"
+  },
+  "DEEIX-AI/DEEIX-Chat": {
+   "repo": "DEEIX-AI/DEEIX-Chat",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Deployable model routing and chat platform"
+  },
+  "razzant/ouroboros": {
+   "repo": "razzant/ouroboros",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "General-purpose persistent desktop agent"
+  },
+  "matthiasn/lotti": {
+   "repo": "matthiasn/lotti",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Personal assistants over private work logbook"
+  },
+  "langchain-ai/agent-inbox": {
+   "repo": "langchain-ai/agent-inbox",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Inbox UI for human-in-loop agents"
+  },
+  "e2b-dev/surf": {
+   "repo": "e2b-dev/surf",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "Computer-use agent driving virtual desktop"
+  },
+  "qhkm/zeptoclaw": {
+   "repo": "qhkm/zeptoclaw",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Local agent runtime with tools memory sandbox"
+  },
+  "ningbainb/deepseek-harness-desktop": {
+   "repo": "ningbainb/deepseek-harness-desktop",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Desktop client for AI coding workflows"
+  },
+  "smixs/iva-agent": {
+   "repo": "smixs/iva-agent",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Self-hosted Telegram assistant with memory"
+  },
+  "fox-in-the-box-ai/fox-in-the-box": {
+   "repo": "fox-in-the-box-ai/fox-in-the-box",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "One-click private AI assistant platform"
+  },
+  "xa11y/xa11y": {
+   "repo": "xa11y/xa11y",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Desktop control library for computer agents"
+  },
+  "PersonalJarvis/PersonalJarvis": {
+   "repo": "PersonalJarvis/PersonalJarvis",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Voice assistant operating computer and MCP tools"
+  },
+  "nextlevelbuilder/ui-ux-pro-max-skill": {
+   "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Instruction asset loaded into agents"
+  },
+  "herdrdev/herdr": {
+   "repo": "herdrdev/herdr",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Durable runtime for coding agent sessions"
+  },
+  "CopilotKit/CopilotKit": {
+   "repo": "CopilotKit/CopilotKit",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Frontend layer for agent user interfaces"
+  },
+  "slopus/happy": {
+   "repo": "slopus/happy",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Mobile and web client for coding agents"
+  },
+  "ag-ui-protocol/ag-ui": {
+   "repo": "ag-ui-protocol/ag-ui",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "Protocol connecting agents to user interfaces"
+  },
+  "siteboon/claudecodeui": {
+   "repo": "siteboon/claudecodeui",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "UI for Claude Code and Codex"
+  },
+  "assistant-ui/assistant-ui": {
+   "repo": "assistant-ui/assistant-ui",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "React library for production AI chat"
+  },
+  "ThinkInAIXYZ/deepchat": {
+   "repo": "ThinkInAIXYZ/deepchat",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Local-first desktop AI assistant client"
+  },
+  "mock-server/mockserver-monorepo": {
+   "repo": "mock-server/mockserver-monorepo",
+   "in_stack": false,
+   "layer": null,
+   "why": "Generic API testing infrastructure"
+  },
+  "CopilotKit/OpenBot": {
+   "repo": "CopilotKit/OpenBot",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "AI coworker with browser and files"
+  },
+  "Chevey339/kelivo": {
+   "repo": "Chevey339/kelivo",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Multi-provider LLM chat client"
+  },
+  "karthink/gptel": {
+   "repo": "karthink/gptel",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Emacs client for LLM interaction"
+  },
+  "Jakubantalik/Libraries.dev": {
+   "repo": "Jakubantalik/Libraries.dev",
+   "in_stack": false,
+   "layer": null,
+   "why": "Cosmetic UI effects, not agent stack"
+  },
+  "agentclientprotocol/claude-agent-acp": {
+   "repo": "agentclientprotocol/claude-agent-acp",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "ACP adapter for Claude Agent SDK"
+  },
+  "ggozad/oterm": {
+   "repo": "ggozad/oterm",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Terminal client for LLM providers"
+  },
+  "elevenlabs/ui": {
+   "repo": "elevenlabs/ui",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Components for voice agent interfaces"
+  },
+  "flyerhq/flutter_chat_ui": {
+   "repo": "flyerhq/flutter_chat_ui",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Flutter chat UI for agents"
+  },
+  "Taewan-P/gpt_mobile": {
+   "repo": "Taewan-P/gpt_mobile",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Android multi-model agent chat client"
+  },
+  "bitjaru/styleseed": {
+   "repo": "bitjaru/styleseed",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Design skills for coding agents"
+  },
+  "V-know/ChatGPT-Telegram-Bot": {
+   "repo": "V-know/ChatGPT-Telegram-Bot",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Telegram UI for LLM assistants"
+  },
+  "ServiceStack/llms": {
+   "repo": "ServiceStack/llms",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Private multi-LLM chat and CLI"
+  },
+  "epam/ai-dial-chat": {
+   "repo": "epam/ai-dial-chat",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Chat UI for AI DIAL"
+  },
+  "deepseek-ai/deepseek-harness": {
+   "repo": "deepseek-ai/deepseek-harness",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Plugin-based agent harness"
+  },
+  "earendil-works/pi": {
+   "repo": "earendil-works/pi",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Agent runtime plus coding CLI"
+  },
+  "nexu-io/open-design": {
+   "repo": "nexu-io/open-design",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical design application"
+  },
+  "langchain-ai/deepagents": {
+   "repo": "langchain-ai/deepagents",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Batteries-included agent harness"
+  },
+  "xai-org/grok-build": {
+   "repo": "xai-org/grok-build",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Terminal coding agent"
+  },
+  "pydantic/pydantic-ai": {
+   "repo": "pydantic/pydantic-ai",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Typed Python agent SDK"
+  },
+  "HKUDS/DeepCode": {
+   "repo": "HKUDS/DeepCode",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Agentic coding product"
+  },
+  "yc-software/qm": {
+   "repo": "yc-software/qm",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Workplace agent assistant shell"
+  },
+  "mindfold-ai/Trellis": {
+   "repo": "mindfold-ai/Trellis",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Persistent specs for coding agents"
+  },
+  "aden-hive/hive": {
+   "repo": "aden-hive/hive",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Production multi-agent execution harness"
+  },
+  "astrid-runtime/astrid": {
+   "repo": "astrid-runtime/astrid",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "Capability-secure runtime for agent components"
+  },
+  "NVIDIA/OpenShell": {
+   "repo": "NVIDIA/OpenShell",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "Policy-governed sandbox for autonomous agents"
+  },
+  "agentscope-ai/AgentTeams": {
+   "repo": "agentscope-ai/AgentTeams",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Orchestrates auditable multi-agent collaboration"
+  },
+  "agentscope-ai/agentscope-java": {
+   "repo": "agentscope-ai/agentscope-java",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Java framework for long-running agents"
+  },
+  "truefoundry/trueforge": {
+   "repo": "truefoundry/trueforge",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Agent loop runtime with UI"
+  },
+  "lemony-ai/cascadeflow": {
+   "repo": "lemony-ai/cascadeflow",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "In-loop model routing and optimization"
+  },
+  "docker/docker-agent": {
+   "repo": "docker/docker-agent",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Declarative CLI agent runtime"
+  },
+  "Chachamaru127/claude-code-harness": {
+   "repo": "Chachamaru127/claude-code-harness",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Development harness for coding agents"
+  },
+  "langchain-ai/social-media-agent": {
+   "repo": "langchain-ai/social-media-agent",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical social scheduling application"
+  },
+  "QwenAudio/qwen-audio-agent": {
+   "repo": "QwenAudio/qwen-audio-agent",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Realtime voice interface for agents"
+  },
+  "shepherd-agents/shepherd": {
+   "repo": "shepherd-agents/shepherd",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Reversible supervised agent execution runtime"
+  },
+  "GCWing/OpenBitFun": {
+   "repo": "GCWing/OpenBitFun",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Desktop workspace agent product"
+  },
+  "GCWing/BitFun": {
+   "repo": "GCWing/BitFun",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Desktop workspace agent product"
+  },
+  "google/ax": {
+   "repo": "google/ax",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Distributed resumable agent execution runtime"
+  },
+  "Yuan-lab-LLM/ClawManager": {
+   "repo": "Yuan-lab-LLM/ClawManager",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Kubernetes control plane for agent runtimes"
+  },
+  "bubbuild/bub": {
+   "repo": "bubbuild/bub",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Hook-first runtime for shared agents"
+  },
+  "zhnt/loushang": {
+   "repo": "zhnt/loushang",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Terminal coding agent workbench"
+  },
+  "agentrq/agentrq": {
+   "repo": "agentrq/agentrq",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Human-in-loop task state for agents"
+  },
+  "plasma-ai/fractal": {
+   "repo": "plasma-ai/fractal",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Recursive agent loop runtime"
+  },
+  "sandbaseai/sandbase-harness": {
+   "repo": "sandbaseai/sandbase-harness",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Local agent runtime with MCP bridge"
+  },
+  "langchain-ai/langchain": {
+   "repo": "langchain-ai/langchain",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Framework for building agents"
+  },
+  "Graphify-Labs/graphify": {
+   "repo": "Graphify-Labs/graphify",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Queryable code knowledge graph for agents"
+  },
+  "bytedance/deer-flow": {
+   "repo": "bytedance/deer-flow",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Long-horizon superagent harness"
+  },
+  "microsoft/ai-agents-for-beginners": {
+   "repo": "microsoft/ai-agents-for-beginners",
+   "in_stack": false,
+   "layer": null,
+   "why": "Learning course, not stack component"
+  },
+  "colbymchenry/codegraph": {
+   "repo": "colbymchenry/codegraph",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Semantic code context for coding agents"
+  },
+  "crewAIInc/crewAI": {
+   "repo": "crewAIInc/crewAI",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Multi-agent workflow framework"
+  },
+  "run-llama/llama_index": {
+   "repo": "run-llama/llama_index",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Framework for RAG and agent apps"
+  },
+  "Hmbown/Codewhale": {
+   "repo": "Hmbown/Codewhale",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Terminal agent edits and runs code"
+  },
+  "conductor-oss/conductor": {
+   "repo": "conductor-oss/conductor",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Durable execution for agent workflows"
+  },
+  "microsoft/semantic-kernel": {
+   "repo": "microsoft/semantic-kernel",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "SDK for building multi-agent systems"
+  },
+  "SuperClaude-Org/SuperClaude_Framework": {
+   "repo": "SuperClaude-Org/SuperClaude_Framework",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Claude Code commands and instruction assets"
+  },
+  "google/adk-python": {
+   "repo": "google/adk-python",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Code-first framework for agent development"
+  },
+  "pipecat-ai/pipecat": {
+   "repo": "pipecat-ai/pipecat",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Framework for realtime voice agents"
+  },
+  "eigent-ai/eigent": {
+   "repo": "eigent-ai/eigent",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Desktop multi-agent productivity assistant"
+  },
+  "microsoft/agent-framework": {
+   "repo": "microsoft/agent-framework",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Production framework for agent workflows"
+  },
+  "Untrivial-ai/agent-orchestrator": {
+   "repo": "Untrivial-ai/agent-orchestrator",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Supervises coding agents through merge"
+  },
+  "VoltAgent/voltagent": {
+   "repo": "VoltAgent/voltagent",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "TypeScript framework for production agents"
+  },
+  "github/copilot-sdk": {
+   "repo": "github/copilot-sdk",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Embeds Copilot agent runtime"
+  },
+  "omnigent-ai/omnigent": {
+   "repo": "omnigent-ai/omnigent",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Meta-harness across coding agents"
+  },
+  "iflytek/astron-agent": {
+   "repo": "iflytek/astron-agent",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Enterprise agent workflow orchestration platform"
+  },
+  "google/adk-go": {
+   "repo": "google/adk-go",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Go framework for building agents"
+  },
+  "anthropics/claude-agent-sdk-python": {
+   "repo": "anthropics/claude-agent-sdk-python",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "SDK wrapper around Claude Code agent"
+  },
+  "ValueCell-ai/ClawX": {
+   "repo": "ValueCell-ai/ClawX",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Desktop interface for agent orchestration"
+  },
+  "strands-agents/harness-sdk": {
+   "repo": "strands-agents/harness-sdk",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Agent loop runtime with lifecycle controls"
+  },
+  "kyegomez/swarms": {
+   "repo": "kyegomez/swarms",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Multi-agent framework builders can use"
+  },
+  "chaitanyagiri/munder-difflin": {
+   "repo": "chaitanyagiri/munder-difflin",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Coordinates coding agents on local machine"
+  },
+  "open-multi-agent/open-multi-agent": {
+   "repo": "open-multi-agent/open-multi-agent",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Self-hosted agent runtime with approvals"
+  },
+  "unicity-sphere/sphere-sdk": {
+   "repo": "unicity-sphere/sphere-sdk",
+   "in_stack": false,
+   "layer": null,
+   "why": "Wallet SDK, not agent stack"
+  },
+  "vercel/eve": {
+   "repo": "vercel/eve",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Filesystem-first framework for durable agents"
+  },
+  "ag2ai/ag2": {
+   "repo": "ag2ai/ag2",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Framework for building cooperating agents"
+  },
+  "didilili/ai-agents-from-zero": {
+   "repo": "didilili/ai-agents-from-zero",
+   "in_stack": false,
+   "layer": null,
+   "why": "Learning material and interview guide"
+  },
+  "JetBrains/koog": {
+   "repo": "JetBrains/koog",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Kotlin framework for building agents"
+  },
+  "VRSEN/agency-swarm": {
+   "repo": "VRSEN/agency-swarm",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Framework for multi-agent applications"
+  },
+  "kungfu-systems/kungfu": {
+   "repo": "kungfu-systems/kungfu",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Moves coding work across agents"
+  },
+  "google-antigravity/antigravity-sdk-python": {
+   "repo": "google-antigravity/antigravity-sdk-python",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "SDK for building Antigravity agents"
+  },
+  "RunMaestro/Maestro": {
+   "repo": "RunMaestro/Maestro",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Desktop command center for coding agents"
+  },
+  "langchain-ai/agent-chat-ui": {
+   "repo": "langchain-ai/agent-chat-ui",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Chat UI for LangGraph agents"
+  },
+  "mikeyobrien/ralph-orchestrator": {
+   "repo": "mikeyobrien/ralph-orchestrator",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Autonomous coding workflow orchestration CLI"
+  },
+  "TanStack/ai": {
+   "repo": "TanStack/ai",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "TypeScript SDK for agent apps"
+  },
+  "Agent-Field/agentfield": {
+   "repo": "Agent-Field/agentfield",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Queues, retries, traces, scales agents"
+  },
+  "IBM/AssetOpsBench": {
+   "repo": "IBM/AssetOpsBench",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Benchmark for evaluating industrial agents"
+  },
+  "guy-hartstein/company-research-agent": {
+   "repo": "guy-hartstein/company-research-agent",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Company research report agent product"
+  },
+  "777genius/agent-teams-ai": {
+   "repo": "777genius/agent-teams-ai",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Desktop team for coding agents"
+  },
+  "Orkas-AI/Orkas": {
+   "repo": "Orkas-AI/Orkas",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Local desktop multi-agent assistant"
+  },
+  "the-open-engine/zeroshot": {
+   "repo": "the-open-engine/zeroshot",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Multi-agent software change executor"
+  },
+  "fetchai/uAgents": {
+   "repo": "fetchai/uAgents",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Python framework for autonomous agents"
+  },
+  "openonion/connectonion": {
+   "repo": "openonion/connectonion",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Opinionated runtime for production agents"
+  },
+  "awslabs/cli-agent-orchestrator": {
+   "repo": "awslabs/cli-agent-orchestrator",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Coordinates multiple coding CLI agents"
+  },
+  "sipyourdrink-ltd/bernstein": {
+   "repo": "sipyourdrink-ltd/bernstein",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Governance rules for agent behavior"
+  },
+  "agentlas-ai/Agentlas-OS": {
+   "repo": "agentlas-ai/Agentlas-OS",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Hub and router for specialist agents"
+  },
+  "adolfousier/opencrabs": {
+   "repo": "adolfousier/opencrabs",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Terminal-based autonomous AI agent"
+  },
+  "23blocks-OS/ai-maestro": {
+   "repo": "23blocks-OS/ai-maestro",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Dashboard, memory, agent messaging"
+  },
+  "desplega-ai/agent-swarm": {
+   "repo": "desplega-ai/agent-swarm",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Operating system for company agent work"
+  },
+  "aeonfun/aeon": {
+   "repo": "aeonfun/aeon",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Unattended GitHub Actions agent runtime"
+  },
+  "simple10/agents-observe": {
+   "repo": "simple10/agents-observe",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Observability dashboard for agent sessions"
+  },
+  "aannoo/claude-hook-comms": {
+   "repo": "aannoo/claude-hook-comms",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Coordinates agents across terminals"
+  },
+  "aannoo/hcom": {
+   "repo": "aannoo/hcom",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Coordinates agents across terminals"
+  },
+  "obra/superpowers": {
+   "repo": "obra/superpowers",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Composable skills for coding agents"
+  },
+  "affaan-m/ECC": {
+   "repo": "affaan-m/ECC",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Skills and memory for agents"
+  },
+  "Snailclimb/JavaGuide": {
+   "repo": "Snailclimb/JavaGuide",
+   "in_stack": false,
+   "layer": null,
+   "why": "Interview and learning guide"
+  },
+  "DietrichGebert/ponytail": {
+   "repo": "DietrichGebert/ponytail",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Behavior skill for coding agents"
+  },
+  "microsoft/generative-ai-for-beginners": {
+   "repo": "microsoft/generative-ai-for-beginners",
+   "in_stack": false,
+   "layer": null,
+   "why": "Lesson repo for beginners"
+  },
+  "addyosmani/agent-skills": {
+   "repo": "addyosmani/agent-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Engineering skills for coding agents"
+  },
+  "Egonex-AI/Understand-Anything": {
+   "repo": "Egonex-AI/Understand-Anything",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Codebase analysis knowledge agent"
+  },
+  "asgeirtj/system_prompts_leaks": {
+   "repo": "asgeirtj/system_prompts_leaks",
+   "in_stack": false,
+   "layer": null,
+   "why": "Reference archive, not stack component"
+  },
+  "mvanhorn/last30days-skill": {
+   "repo": "mvanhorn/last30days-skill",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Research skill loaded into agents"
+  },
+  "tt-a1i/archify": {
+   "repo": "tt-a1i/archify",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Agent tool for verified diagrams"
+  },
+  "zylon-ai/private-gpt": {
+   "repo": "zylon-ai/private-gpt",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Private API layer for agents"
+  },
+  "coreyhaines31/marketingskills": {
+   "repo": "coreyhaines31/marketingskills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Marketing skills for AI agents"
+  },
+  "elder-plinius/CL4R1T4S": {
+   "repo": "elder-plinius/CL4R1T4S",
+   "in_stack": false,
+   "layer": null,
+   "why": "leaked prompts, not build stack"
+  },
+  "kepano/obsidian-skills": {
+   "repo": "kepano/obsidian-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Obsidian skills for compatible agents"
+  },
+  "blader/humanizer": {
+   "repo": "blader/humanizer",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "agent skill for rewriting text"
+  },
+  "zhayujie/CowAgent": {
+   "repo": "zhayujie/CowAgent",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "personal assistant with tools and memory"
+  },
+  "K-Dense-AI/scientific-agent-skills": {
+   "repo": "K-Dense-AI/scientific-agent-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "scientific skills for agent workflows"
+  },
+  "K-Dense-AI/claude-scientific-skills": {
+   "repo": "K-Dense-AI/claude-scientific-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "scientific skills for agent workflows"
+  },
+  "ayghri/i-have-adhd": {
+   "repo": "ayghri/i-have-adhd",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "output behavior skill for coding agents"
+  },
+  "wshobson/agents": {
+   "repo": "wshobson/agents",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "multi-harness agent plugins and skills"
+  },
+  "cathrynlavery/diagram-design": {
+   "repo": "cathrynlavery/diagram-design",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "diagram-generation skill for agents"
+  },
+  "anthropics/claude-plugins-official": {
+   "repo": "anthropics/claude-plugins-official",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "official Claude Code plugin directory"
+  },
+  "esengine/DeepSeek-Reasonix": {
+   "repo": "esengine/DeepSeek-Reasonix",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "terminal coding agent product"
+  },
+  "iOfficeAI/AionUi": {
+   "repo": "iOfficeAI/AionUi",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "cowork UI for agent tools"
+  },
+  "vercel-labs/skills": {
+   "repo": "vercel-labs/skills",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "CLI for agent skills ecosystem"
+  },
+  "nanocoai/nanoclaw": {
+   "repo": "nanocoai/nanoclaw",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "containerized personal agent assistant"
+  },
+  "OthmanAdi/planning-with-files": {
+   "repo": "OthmanAdi/planning-with-files",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "persistent planning skill for agents"
+  },
+  "tashfeenahmed/freellmapi": {
+   "repo": "tashfeenahmed/freellmapi",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "OpenAI-compatible multi-provider routing gateway"
+  },
+  "promptfoo/promptfoo": {
+   "repo": "promptfoo/promptfoo",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "LLM app evaluation and red teaming"
+  },
+  "alibaba/open-code-review": {
+   "repo": "alibaba/open-code-review",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "AI code review agent CLI"
+  },
+  "jnMetaCode/agency-agents-zh": {
+   "repo": "jnMetaCode/agency-agents-zh",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Packaged agent roles for coding tools"
+  },
+  "teng-lin/notebooklm-py": {
+   "repo": "teng-lin/notebooklm-py",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Agent tool/API for NotebookLM"
+  },
+  "tradecatlabs/vibe-coding-cn": {
+   "repo": "tradecatlabs/vibe-coding-cn",
+   "in_stack": false,
+   "layer": null,
+   "why": "Learning material and workflow guide"
+  },
+  "botpress/botpress": {
+   "repo": "botpress/botpress",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Platform for building LLM agents"
+  },
+  "AgriciDaniel/claude-obsidian": {
+   "repo": "AgriciDaniel/claude-obsidian",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Knowledge agent over Obsidian vaults"
+  },
+  "Piebald-AI/claude-code-system-prompts": {
+   "repo": "Piebald-AI/claude-code-system-prompts",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Claude Code prompt assets collection"
+  },
+  "LouisShark/chatgpt_system_prompt": {
+   "repo": "LouisShark/chatgpt_system_prompt",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "System prompt and instruction collection"
+  },
+  "nicobailon/visual-explainer": {
+   "repo": "nicobailon/visual-explainer",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Agent skill for visual explanations"
+  },
+  "EvoMap/evolver": {
+   "repo": "EvoMap/evolver",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Agent memory and skill evolution engine"
+  },
+  "backnotprop/plannotator": {
+   "repo": "backnotprop/plannotator",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Review UI for coding agents"
+  },
+  "chuspeeism/dashi-ppt-skill": {
+   "repo": "chuspeeism/dashi-ppt-skill",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Agent skill for editable presentations"
+  },
+  "trailofbits/skills": {
+   "repo": "trailofbits/skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Security skills marketplace for agents"
+  },
+  "TokenRhythm/opensquilla": {
+   "repo": "TokenRhythm/opensquilla",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Microkernel agent runtime with routing"
+  },
+  "SawyerHood/dev-browser": {
+   "repo": "SawyerHood/dev-browser",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Browser control tool for agents"
+  },
+  "ZSeven-W/openpencil": {
+   "repo": "ZSeven-W/openpencil",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical AI design application"
+  },
+  "iflytek/skillhub": {
+   "repo": "iflytek/skillhub",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Self-hosted agent skill registry"
+  },
+  "xingkongliang/skills-manager": {
+   "repo": "xingkongliang/skills-manager",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Manages agent skills across tools"
+  },
+  "eugeniughelbur/obsidian-second-brain": {
+   "repo": "eugeniughelbur/obsidian-second-brain",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Persistent markdown memory for agents"
+  },
+  "conorbronsdon/avoid-ai-writing": {
+   "repo": "conorbronsdon/avoid-ai-writing",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Portable writing skill for agents"
+  },
+  "UditAkhourii/adhd": {
+   "repo": "UditAkhourii/adhd",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Reasoning skill for coding agents"
+  },
+  "google-gemini/gemini-skills": {
+   "repo": "google-gemini/gemini-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Gemini API skills for agents"
+  },
+  "pacifio/atlas": {
+   "repo": "pacifio/atlas",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Interface for managing coding agents"
+  },
+  "Leonxlnx/unlazy": {
+   "repo": "Leonxlnx/unlazy",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Completion discipline skill for agents"
+  },
+  "cloudflare/security-audit-skill": {
+   "repo": "cloudflare/security-audit-skill",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Security audit skill for coding agents"
+  },
+  "Forward-Future/loopy": {
+   "repo": "Forward-Future/loopy",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Agent loop prompt catalog and skill"
+  },
+  "rpamis/comet": {
+   "repo": "rpamis/comet",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Resumable workflow runtime for coding agents"
+  },
+  "microsoft/skills": {
+   "repo": "microsoft/skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Agent skills and AGENTS.md templates"
+  },
+  "Owl-Listener/designer-skills": {
+   "repo": "Owl-Listener/designer-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Agent-usable design skill pack"
+  },
+  "Piebald-AI/tweakcc": {
+   "repo": "Piebald-AI/tweakcc",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Customizes Claude Code interface and behavior"
+  },
+  "miqdadbadjuber/anti-slop": {
+   "repo": "miqdadbadjuber/anti-slop",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Rules loaded into coding agents"
+  },
+  "NeoLabHQ/context-engineering-kit": {
+   "repo": "NeoLabHQ/context-engineering-kit",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Context skills for coding agents"
+  },
+  "qufei1993/skills-hub": {
+   "repo": "qufei1993/skills-hub",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Manages and syncs agent skills"
+  },
+  "actionbook/actionbook": {
+   "repo": "actionbook/actionbook",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "Browser agent operating logged-in sites"
+  },
+  "dyoshikawa/rulesync": {
+   "repo": "dyoshikawa/rulesync",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Generates portable agent rule configs"
+  },
+  "microsoft/prompty": {
+   "repo": "microsoft/prompty",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Prompt format and SDK tooling"
+  },
+  "fcakyon/claude-codex-settings": {
+   "repo": "fcakyon/claude-codex-settings",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Coding-agent configs, skills, hooks"
+  },
+  "917Dhj/DeepPaperNote": {
+   "repo": "917Dhj/DeepPaperNote",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Paper-reading agent skill"
+  },
+  "avifenesh/agentsys": {
+   "repo": "avifenesh/agentsys",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Runtime for orchestrating coding agents"
+  },
+  "repoprompt/repoprompt-ce": {
+   "repo": "repoprompt/repoprompt-ce",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Context app and agent interface"
+  },
+  "zhinkgit/embeddedskills": {
+   "repo": "zhinkgit/embeddedskills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Embedded development agent skills"
+  },
+  "agent-sh/agnix": {
+   "repo": "agent-sh/agnix",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Lints agent configuration files"
+  },
+  "avifenesh/agnix": {
+   "repo": "avifenesh/agnix",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Lints agent configuration files"
+  },
+  "langflow-ai/langflow": {
+   "repo": "langflow-ai/langflow",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Visual agent workflow runtime and API"
+  },
+  "agno-agi/agno": {
+   "repo": "agno-agi/agno",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Framework plus runtime for agent platforms"
+  },
+  "ToolJet/ToolJet": {
+   "repo": "ToolJet/ToolJet",
+   "in_stack": false,
+   "layer": null,
+   "why": "Internal app builder, not agent stack"
+  },
+  "zeroclaw-labs/zeroclaw": {
+   "repo": "zeroclaw-labs/zeroclaw",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Local personal assistant across channels"
+  },
+  "nrwl/nx": {
+   "repo": "nrwl/nx",
+   "in_stack": false,
+   "layer": null,
+   "why": "Monorepo tooling with AI positioning"
+  },
+  "Kilo-Org/kilocode": {
+   "repo": "Kilo-Org/kilocode",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Open-source coding agent for IDE and CLI"
+  },
+  "hatchet-dev/hatchet": {
+   "repo": "hatchet-dev/hatchet",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Durable workflows, queues, retries for agents"
+  },
+  "rivet-dev/actors": {
+   "repo": "rivet-dev/actors",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Stateful actors for persistent agent sessions"
+  },
+  "google/agents-cli": {
+   "repo": "google/agents-cli",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Skills and commands for agent builders"
+  },
+  "cloudflare/vibesdk": {
+   "repo": "cloudflare/vibesdk",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Vibe coding platform with agent loop"
+  },
+  "chaitin/MonkeyCode": {
+   "repo": "chaitin/MonkeyCode",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Enterprise AI coding agent platform"
+  },
+  "OpenCSGs/csghub": {
+   "repo": "OpenCSGs/csghub",
+   "in_stack": false,
+   "layer": null,
+   "why": "LLM asset hub, not agent stack"
+  },
+  "durable-streams/durable-streams": {
+   "repo": "durable-streams/durable-streams",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Durable streams for resilient agent sessions"
+  },
+  "dust-tt/dust": {
+   "repo": "dust-tt/dust",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Custom workplace AI agent platform"
+  },
+  "durable-workflow/workflow": {
+   "repo": "durable-workflow/workflow",
+   "in_stack": false,
+   "layer": null,
+   "why": "Generic Laravel durable workflow runtime"
+  },
+  "OpenCSGs/csglite": {
+   "repo": "OpenCSGs/csglite",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Local inference with compatible agent API"
+  },
+  "thedotmack/claude-mem": {
+   "repo": "thedotmack/claude-mem",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Persistent memory across agent sessions"
+  },
+  "infiniflow/ragflow": {
+   "repo": "infiniflow/ragflow",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "RAG context engine for agents"
+  },
+  "headroomlabs-ai/headroom": {
+   "repo": "headroomlabs-ai/headroom",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Compresses and retrieves agent context"
+  },
+  "Mintplex-Labs/anything-llm": {
+   "repo": "Mintplex-Labs/anything-llm",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "All-in-one chat and agent app"
+  },
+  "mem0ai/mem0": {
+   "repo": "mem0ai/mem0",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Drop-in memory layer for agents"
+  },
+  "MemPalace/mempalace": {
+   "repo": "MemPalace/mempalace",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Local-first persistent agent memory"
+  },
+  "bojieli/ai-agent-book": {
+   "repo": "bojieli/ai-agent-book",
+   "in_stack": false,
+   "layer": null,
+   "why": "Book and learning materials"
+  },
+  "pingcap/tidb": {
+   "repo": "pingcap/tidb",
+   "in_stack": false,
+   "layer": null,
+   "why": "Generic database with AI positioning"
+  },
+  "volcengine/OpenViking": {
+   "repo": "volcengine/OpenViking",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Context database for agent memory"
+  },
+  "topoteretes/cognee": {
+   "repo": "topoteretes/cognee",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Knowledge-graph memory for agents"
+  },
+  "supermemoryai/supermemory": {
+   "repo": "supermemoryai/supermemory",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Memory and context engine"
+  },
+  "rohitg00/agentmemory": {
+   "repo": "rohitg00/agentmemory",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Persistent memory for coding agents"
+  },
+  "jarrodwatts/claude-hud": {
+   "repo": "jarrodwatts/claude-hud",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Claude Code interface status plugin"
+  },
+  "gastownhall/beads": {
+   "repo": "gastownhall/beads",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Structured task memory for coding agents"
+  },
+  "deepset-ai/haystack": {
+   "repo": "deepset-ai/haystack",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Composable framework for production agent workflows"
+  },
+  "muratcankoylan/Agent-Skills-for-Context-Engineering": {
+   "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Reusable agent skills and instruction assets"
+  },
+  "EverMind-AI/EverOS": {
+   "repo": "EverMind-AI/EverOS",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Portable local-first agent memory runtime"
+  },
+  "simular-ai/Agent-S": {
+   "repo": "simular-ai/Agent-S",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "Computer-use agent driving real GUIs"
+  },
+  "dataelement/bisheng": {
+   "repo": "dataelement/bisheng",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Enterprise LLM app and agent platform"
+  },
+  "MemTensor/MemOS": {
+   "repo": "MemTensor/MemOS",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Persistent memory OS for agents"
+  },
+  "StarTrail-org/PixelRAG": {
+   "repo": "StarTrail-org/PixelRAG",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Visual retrieval tool for agent RAG"
+  },
+  "plastic-labs/honcho": {
+   "repo": "plastic-labs/honcho",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Memory infrastructure for stateful agents"
+  },
+  "Osmantic/ODS": {
+   "repo": "Osmantic/ODS",
+   "in_stack": false,
+   "layer": null,
+   "why": "Local AI homelab bundle, not agent stack"
+  },
+  "ModelEngine-Group/nexent": {
+   "repo": "ModelEngine-Group/nexent",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Opinionated zero-code agent runtime platform"
+  },
+  "gptme/gptme": {
+   "repo": "gptme/gptme",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Terminal coding agent with local tools"
+  },
+  "compozy/compozy": {
+   "repo": "compozy/compozy",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Keeps agent CLI work running continuously"
+  },
+  "pchalasani/claude-code-tools": {
+   "repo": "pchalasani/claude-code-tools",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Skills and plugins for coding agents"
+  },
+  "iwe-org/iwe": {
+   "repo": "iwe-org/iwe",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Markdown knowledge graph for agent context"
+  },
+  "activeloopai/hivemind": {
+   "repo": "activeloopai/hivemind",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Turns traces into reusable agent skills"
+  },
+  "chunkhound/chunkhound": {
+   "repo": "chunkhound/chunkhound",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Codebase context retrieval for agents"
+  },
+  "tigicion/dao-code": {
+   "repo": "tigicion/dao-code",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Terminal coding agent"
+  },
+  "MaxFreedomPollard/Compartment": {
+   "repo": "MaxFreedomPollard/Compartment",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Offline encrypted agent memory"
+  },
+  "giselles-ai/giselle": {
+   "repo": "giselles-ai/giselle",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Visual builder for agent workflows"
+  },
+  "caura-ai/caura": {
+   "repo": "caura-ai/caura",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Governed shared memory for agent fleets"
+  },
+  "smaramwbc/statewave": {
+   "repo": "smaramwbc/statewave",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Provenance-tagged runtime memory"
+  },
+  "rtk-ai/rtk": {
+   "repo": "rtk-ai/rtk",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Compresses shell output for agents"
+  },
+  "diegosouzapw/OmniRoute": {
+   "repo": "diegosouzapw/OmniRoute",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Unified model gateway and routing"
+  },
+  "QuantumNous/new-api": {
+   "repo": "QuantumNous/new-api",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Multi-model API gateway"
+  },
+  "musistudio/claude-code-router": {
+   "repo": "musistudio/claude-code-router",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Routes agent requests across providers"
+  },
+  "lidge-jun/opencodex": {
+   "repo": "lidge-jun/opencodex",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Provider proxy for coding agents"
+  },
+  "mnfst/llm-gateway": {
+   "repo": "mnfst/llm-gateway",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "LLM gateway for agents"
+  },
+  "mnfst/manifest": {
+   "repo": "mnfst/manifest",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "LLM gateway for agents"
+  },
+  "BlockRunAI/ClawRouter": {
+   "repo": "BlockRunAI/ClawRouter",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Agent-native LLM router"
+  },
+  "vllm-project/semantic-router": {
+   "repo": "vllm-project/semantic-router",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Programmable model routing layer"
+  },
+  "duolahypercho/codex-router": {
+   "repo": "duolahypercho/codex-router",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Routes Codex to external model providers"
+  },
+  "NVIDIA-NeMo/Switchyard": {
+   "repo": "NVIDIA-NeMo/Switchyard",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Routes LLM calls by cost and capability"
+  },
+  "router-for-me/EasyCLIProxyAPI": {
+   "repo": "router-for-me/EasyCLIProxyAPI",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "GUI for provider aggregation and credentials"
+  },
+  "APIParkLab/APIPark": {
+   "repo": "APIParkLab/APIPark",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "AI gateway for model and API management"
+  },
+  "Xerxes-2/clewdr": {
+   "repo": "Xerxes-2/clewdr",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Claude reverse proxy with compatible endpoints"
+  },
+  "routatic/proxy": {
+   "repo": "routatic/proxy",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Routes Claude Code across upstream providers"
+  },
+  "hkqr/my-free-code": {
+   "repo": "hkqr/my-free-code",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Multi-provider gateway for coding agents"
+  },
+  "newo-ether/Agora": {
+   "repo": "newo-ether/Agora",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Android BYOK client with agentic tools"
+  },
+  "LeenHawk/gproxy": {
+   "repo": "LeenHawk/gproxy",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Self-hosted LLM gateway and account pool"
+  },
+  "inference-gateway/inference-gateway": {
+   "repo": "inference-gateway/inference-gateway",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Unified OpenAI-compatible inference gateway"
+  },
+  "azrtydxb/Fastllm-proxy": {
+   "repo": "azrtydxb/Fastllm-proxy",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Low-overhead router for inference backends"
+  },
+  "AK-Switch/ak-switch": {
+   "repo": "AK-Switch/ak-switch",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "API key rotation proxy for AI endpoints"
+  },
+  "google-gemini/gemini-cli": {
+   "repo": "google-gemini/gemini-cli",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Terminal agent for developer coding tasks"
+  },
+  "sansan0/TrendRadar": {
+   "repo": "sansan0/TrendRadar",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical news and trend monitoring app"
+  },
+  "upstash/context7": {
+   "repo": "upstash/context7",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Fetches current docs into agent context"
+  },
+  "aaif-goose/goose": {
+   "repo": "aaif-goose/goose",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "General local desktop and CLI agent"
+  },
+  "ChromeDevTools/chrome-devtools-mcp": {
+   "repo": "ChromeDevTools/chrome-devtools-mcp",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Chrome debugging tool for coding agents"
+  },
+  "danny-avila/LibreChat": {
+   "repo": "danny-avila/LibreChat",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Chat UI with agents and MCP"
+  },
+  "DeusData/codebase-memory-mcp": {
+   "repo": "DeusData/codebase-memory-mcp",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Persistent codebase context for coding agents"
+  },
+  "AstrBotDevs/AstrBot": {
+   "repo": "AstrBotDevs/AstrBot",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "IM chatbot platform for AI agents"
+  },
+  "bytedance/UI-TARS-desktop": {
+   "repo": "bytedance/UI-TARS-desktop",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "GUI agent for desktop and browser"
+  },
+  "agentscope-ai/agentscope": {
+   "repo": "agentscope-ai/agentscope",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Framework for building production agents"
+  },
+  "ComposioHQ/composio": {
+   "repo": "ComposioHQ/composio",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Authenticated app tools for agents"
+  },
+  "ahujasid/blender-mcp": {
+   "repo": "ahujasid/blender-mcp",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Blender control tool via MCP"
+  },
+  "QwenLM/qwen-code": {
+   "repo": "QwenLM/qwen-code",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Terminal coding agent"
+  },
+  "PrefectHQ/fastmcp": {
+   "repo": "PrefectHQ/fastmcp",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "Framework for MCP servers and clients"
+  },
+  "a2aproject/A2A": {
+   "repo": "a2aproject/A2A",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "Agent interoperability protocol"
+  },
+  "modelcontextprotocol/python-sdk": {
+   "repo": "modelcontextprotocol/python-sdk",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "Official MCP Python SDK"
+  },
+  "pascalorg/editor": {
+   "repo": "pascalorg/editor",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical architectural editor"
+  },
+  "micro/go-micro": {
+   "repo": "micro/go-micro",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Opinionated Go agent harness"
+  },
+  "1Panel-dev/MaxKB": {
+   "repo": "1Panel-dev/MaxKB",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Enterprise RAG and workflow agent platform"
+  },
+  "1jehuang/jcode": {
+   "repo": "1jehuang/jcode",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "TUI coding agent harness"
+  },
+  "microsoft/mcp-for-beginners": {
+   "repo": "microsoft/mcp-for-beginners",
+   "in_stack": false,
+   "layer": null,
+   "why": "Learning curriculum, not stack component"
+  },
+  "casdoor/casdoor": {
+   "repo": "casdoor/casdoor",
+   "in_stack": false,
+   "layer": null,
+   "why": "General IAM with agent marketing"
+  },
+  "CoplayDev/unity-mcp": {
+   "repo": "CoplayDev/unity-mcp",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "MCP bridge for Unity editor"
+  },
+  "mcp-use/mcp-use": {
+   "repo": "mcp-use/mcp-use",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "Framework for building MCP apps"
+  },
+  "osaurus-ai/osaurus": {
+   "repo": "osaurus-ai/osaurus",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Native personal AI agent harness"
+  },
+  "getsentry/XcodeBuildMCP": {
+   "repo": "getsentry/XcodeBuildMCP",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Xcode build tools for agents"
+  },
+  "MinishLab/semble": {
+   "repo": "MinishLab/semble",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Agent-oriented code search tool"
+  },
+  "21st-dev/magic-mcp": {
+   "repo": "21st-dev/magic-mcp",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "MCP UI component generation tools"
+  },
+  "oomol-lab/open-connector": {
+   "repo": "oomol-lab/open-connector",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "SaaS connector gateway for agents"
+  },
+  "clidey/whodb": {
+   "repo": "clidey/whodb",
+   "in_stack": false,
+   "layer": null,
+   "why": "Database client with optional AI"
+  },
+  "zebbern/claude-code-guide": {
+   "repo": "zebbern/claude-code-guide",
+   "in_stack": false,
+   "layer": null,
+   "why": "Guide and reference material"
+  },
+  "prest/prest": {
+   "repo": "prest/prest",
+   "in_stack": false,
+   "layer": null,
+   "why": "Generic Postgres REST API server"
+  },
+  "IBM/mcp-context-forge": {
+   "repo": "IBM/mcp-context-forge",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "MCP registry and proxy gateway"
+  },
+  "evalstate/fast-agent": {
+   "repo": "evalstate/fast-agent",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Opinionated agent runtime with MCP support"
+  },
+  "Atmosphere/atmosphere": {
+   "repo": "Atmosphere/atmosphere",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Production JVM runtime for agent services"
+  },
+  "davepoon/buildwithclaude": {
+   "repo": "davepoon/buildwithclaude",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Claude Code skills and plugin marketplace"
+  },
+  "skyhook-io/radar": {
+   "repo": "skyhook-io/radar",
+   "in_stack": false,
+   "layer": null,
+   "why": "Kubernetes UI with agent feature"
+  },
+  "ascending-llc/jarvis-registry": {
+   "repo": "ascending-llc/jarvis-registry",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "Enterprise MCP gateway and registry"
+  },
+  "AtomicBot-ai/atomic-agent": {
+   "repo": "AtomicBot-ai/atomic-agent",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Local desktop assistant agent product"
+  },
+  "Observal/Observal": {
+   "repo": "Observal/Observal",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "Registry for agent components and MCP"
+  },
+  "trpc-group/trpc-agent-go": {
+   "repo": "trpc-group/trpc-agent-go",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Go SDK for production agent systems"
+  },
+  "thClaws/thClaws": {
+   "repo": "thClaws/thClaws",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Native agent harness and workspace"
+  },
+  "modu-ai/moai-adk": {
+   "repo": "modu-ai/moai-adk",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Claude Code orchestration harness"
+  },
+  "2akouwu/reverify": {
+   "repo": "2akouwu/reverify",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Deterministic verification for agent claims"
+  },
+  "mateaix/mateclaw": {
+   "repo": "mateaix/mateclaw",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Enterprise second-brain agent product"
+  },
+  "CopilotKit/aimock": {
+   "repo": "CopilotKit/aimock",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Mock infrastructure for AI app testing"
+  },
+  "agentic-community/mcp-gateway-registry": {
+   "repo": "agentic-community/mcp-gateway-registry",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "Governed MCP gateway and registry"
+  },
+  "jonigl/mcp-client-for-ollama": {
+   "repo": "jonigl/mcp-client-for-ollama",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "TUI client for local MCP agents"
+  },
+  "hoophq/hoop": {
+   "repo": "hoophq/hoop",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Agent runtime policy and data guardrails"
+  },
+  "gmickel/flow-next": {
+   "repo": "gmickel/flow-next",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Workflow plugin for coding agent changes"
+  },
+  "Tura-AI/tura": {
+   "repo": "Tura-AI/tura",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Runtime harness managing agent command graphs"
+  },
+  "StuMason/coolify-mcp": {
+   "repo": "StuMason/coolify-mcp",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "MCP tools for operating Coolify"
+  },
+  "joinly-ai/joinly": {
+   "repo": "joinly-ai/joinly",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Meeting access tools for agents"
+  },
+  "docker/mcp-registry": {
+   "repo": "docker/mcp-registry",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "Curated registry for MCP servers"
+  },
+  "smg-project/smg": {
+   "repo": "smg-project/smg",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Unified model routing gateway"
+  },
+  "razzant/claudexor": {
+   "repo": "razzant/claudexor",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Control plane for coding agents"
+  },
+  "firecrawl/firecrawl": {
+   "repo": "firecrawl/firecrawl",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Web search and scraping for agents"
+  },
+  "D4Vinci/Scrapling": {
+   "repo": "D4Vinci/Scrapling",
+   "in_stack": false,
+   "layer": null,
+   "why": "Generic web scraping framework"
+  },
+  "career-ops-hq/career-ops": {
+   "repo": "career-ops-hq/career-ops",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical job search application"
+  },
+  "gitroomhq/postiz-app": {
+   "repo": "gitroomhq/postiz-app",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical social media scheduling app"
+  },
+  "assafelovic/gpt-researcher": {
+   "repo": "assafelovic/gpt-researcher",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Autonomous deep research agent"
+  },
+  "apify/crawlee": {
+   "repo": "apify/crawlee",
+   "in_stack": false,
+   "layer": null,
+   "why": "Generic scraping and automation library"
+  },
+  "PromtEngineer/localGPT": {
+   "repo": "PromtEngineer/localGPT",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Local document analysis agent"
+  },
+  "Evil0ctal/Douyin_TikTok_Download_API": {
+   "repo": "Evil0ctal/Douyin_TikTok_Download_API",
+   "in_stack": false,
+   "layer": null,
+   "why": "vertical TikTok scraper, not agent stack"
+  },
+  "arc53/DocsGPT": {
+   "repo": "arc53/DocsGPT",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "document analysis and deep research agent"
+  },
+  "getmaxun/maxun": {
+   "repo": "getmaxun/maxun",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "turns websites into agent-usable APIs"
+  },
+  "dmtrKovalenko/fff": {
+   "repo": "dmtrKovalenko/fff",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "fast file search for coding agents"
+  },
+  "apify/crawlee-python": {
+   "repo": "apify/crawlee-python",
+   "in_stack": false,
+   "layer": null,
+   "why": "generic scraping library, not agent-specific"
+  },
+  "firecrawl/firecrawl-mcp-server": {
+   "repo": "firecrawl/firecrawl-mcp-server",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "web search and scraping tool for agents"
+  },
+  "geek-fun/dockit": {
+   "repo": "geek-fun/dockit",
+   "in_stack": false,
+   "layer": null,
+   "why": "vertical database GUI with agent feature"
+  },
+  "us/crw": {
+   "repo": "us/crw",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "agent-ready search, scrape, crawl engine"
+  },
+  "1broseidon/ketch": {
+   "repo": "1broseidon/ketch",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "stateless search and scrape CLI for agents"
+  },
+  "opensandbox-group/OpenSandbox": {
+   "repo": "opensandbox-group/OpenSandbox",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "sandbox runtime for agent execution"
+  },
+  "pydantic/monty": {
+   "repo": "pydantic/monty",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "sandboxed Python interpreter for model code"
+  },
+  "withastro/flue": {
+   "repo": "withastro/flue",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "programmable harness for autonomous agents"
+  },
+  "agent-infra/sandbox": {
+   "repo": "agent-infra/sandbox",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "all-in-one browser shell file sandbox"
+  },
+  "arcboxlabs/arcbox": {
+   "repo": "arcboxlabs/arcbox",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "isolated local machines for agent runs"
+  },
+  "rivet-dev/agentos": {
+   "repo": "rivet-dev/agentos",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "isolated agent operating system runtime"
+  },
+  "Player-YN/PawWork_ZhuaZhua": {
+   "repo": "Player-YN/PawWork_ZhuaZhua",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "Chrome side-panel web agent"
+  },
+  "OpenCoworkAI/open-cowork": {
+   "repo": "OpenCoworkAI/open-cowork",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Desktop app for AI agents"
+  },
+  "eugene1g/agent-safehouse": {
+   "repo": "eugene1g/agent-safehouse",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Least-privilege sandbox for agents"
+  },
+  "Simpleyyt/ai-manus": {
+   "repo": "Simpleyyt/ai-manus",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "General-purpose agent product"
+  },
+  "Augani/dory": {
+   "repo": "Augani/dory",
+   "in_stack": false,
+   "layer": null,
+   "why": "General local development runtime"
+  },
+  "vndee/llm-sandbox": {
+   "repo": "vndee/llm-sandbox",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "Sandboxed LLM code execution"
+  },
+  "mensfeld/code-on-incus": {
+   "repo": "mensfeld/code-on-incus",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "Isolated machines for coding agents"
+  },
+  "cofy-x/axern": {
+   "repo": "cofy-x/axern",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "Sandbox platform for agent code"
+  },
+  "koala73/worldmonitor": {
+   "repo": "koala73/worldmonitor",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical news dashboard application"
+  },
+  "netdata/netdata": {
+   "repo": "netdata/netdata",
+   "in_stack": false,
+   "layer": null,
+   "why": "Generic infrastructure monitoring"
+  },
+  "mlflow/mlflow": {
+   "repo": "mlflow/mlflow",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Evaluate and monitor agents"
+  },
+  "comet-ml/opik": {
+   "repo": "comet-ml/opik",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Agent tracing and LLM evaluation"
+  },
+  "openobserve/openobserve": {
+   "repo": "openobserve/openobserve",
+   "in_stack": false,
+   "layer": null,
+   "why": "Generic observability platform"
+  },
+  "confident-ai/deepeval": {
+   "repo": "confident-ai/deepeval",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "LLM and agent eval framework"
+  },
+  "evidentlyai/evidently": {
+   "repo": "evidentlyai/evidently",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "LLM evaluation and monitoring"
+  },
+  "Helicone/helicone": {
+   "repo": "Helicone/helicone",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "LLM observability and agent tracing"
+  },
+  "Giskard-AI/giskard-oss": {
+   "repo": "Giskard-AI/giskard-oss",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Agent evaluation and red-team testing"
+  },
+  "coze-dev/coze-loop": {
+   "repo": "coze-dev/coze-loop",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Agent debugging, evaluation and monitoring"
+  },
+  "latitude-dev/latitude-llm": {
+   "repo": "latitude-dev/latitude-llm",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Observes failures and dispatches fixes"
+  },
+  "pydantic/logfire": {
+   "repo": "pydantic/logfire",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Production LLM and agent observability"
+  },
+  "truera/trulens": {
+   "repo": "truera/trulens",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Agent tracing, scoring and version comparison"
+  },
+  "langwatch/langwatch": {
+   "repo": "langwatch/langwatch",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "LLM tracing, testing and governance"
+  },
+  "lmnr-ai/lmnr": {
+   "repo": "lmnr-ai/lmnr",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Agent observability, signals and evals"
+  },
+  "openlit/openlit": {
+   "repo": "openlit/openlit",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "OpenTelemetry tracing and agent evaluation"
+  },
+  "future-agi/future-agi": {
+   "repo": "future-agi/future-agi",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Agent evaluation, tracing and optimization"
+  },
+  "hoangsonww/Claude-Code-Agent-Monitor": {
+   "repo": "hoangsonww/Claude-Code-Agent-Monitor",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Monitors Claude Code and Codex sessions"
+  },
+  "eosphoros-ai/DB-GPT": {
+   "repo": "eosphoros-ai/DB-GPT",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Data analysis and report-writing agent"
+  },
+  "NVIDIA/SkillSpector": {
+   "repo": "NVIDIA/SkillSpector",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Scans agent skills for security risks"
+  },
+  "ifixai-ai/iFixAi": {
+   "repo": "ifixai-ai/iFixAi",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Audits agent outcomes against job requirements"
+  },
+  "nearai/ironclaw": {
+   "repo": "nearai/ironclaw",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Secure personal AI assistant"
+  },
+  "NVIDIA/garak": {
+   "repo": "NVIDIA/garak",
+   "in_stack": true,
+   "layer": "security",
+   "why": "LLM red-teaming and vulnerability scanner"
+  },
+  "superagent-ai/superagent": {
+   "repo": "superagent-ai/superagent",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Runtime prompt-injection and data-leak guardrails"
+  },
+  "Tencent/AI-Infra-Guard": {
+   "repo": "Tencent/AI-Infra-Guard",
+   "in_stack": true,
+   "layer": "security",
+   "why": "AI agent and MCP security scanning"
+  },
+  "microsoft/agent-governance-toolkit": {
+   "repo": "microsoft/agent-governance-toolkit",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Policy, identity, sandboxing for agents"
+  },
+  "elder-plinius/T3MP3ST": {
+   "repo": "elder-plinius/T3MP3ST",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical offensive-security agent product"
+  },
+  "TracecatHQ/tracecat": {
+   "repo": "TracecatHQ/tracecat",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical security automation platform"
+  },
+  "onecli/onecli": {
+   "repo": "onecli/onecli",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Sandboxed team agent harness"
+  },
+  "awslabs/agentcore-samples": {
+   "repo": "awslabs/agentcore-samples",
+   "in_stack": false,
+   "layer": null,
+   "why": "Samples and tutorials repository"
+  },
+  "GH05TCREW/pentestagent": {
+   "repo": "GH05TCREW/pentestagent",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical penetration-testing agent"
+  },
+  "snyk/agent-scan": {
+   "repo": "snyk/agent-scan",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Scans agents, MCP servers, skills"
+  },
+  "sheeki03/tirith": {
+   "repo": "sheeki03/tirith",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Terminal guardrails for agent commands"
+  },
+  "Armur-Ai/Pentest-Swarm-AI": {
+   "repo": "Armur-Ai/Pentest-Swarm-AI",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical penetration-testing swarm"
+  },
+  "samugit83/redamon": {
+   "repo": "samugit83/redamon",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical red-team automation product"
+  },
+  "beenuar/AiSOC": {
+   "repo": "beenuar/AiSOC",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical AI SOC application"
+  },
+  "Kritt-ai/open-kritt": {
+   "repo": "Kritt-ai/open-kritt",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical vulnerability research platform"
+  },
+  "kenryu42/claude-code-safety-net": {
+   "repo": "kenryu42/claude-code-safety-net",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Pre-execution guard for coding agents"
+  },
+  "ASCIT31/Dark-Moon": {
+   "repo": "ASCIT31/Dark-Moon",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical pentesting product, not stack"
+  },
+  "luckyPipewrench/pipelock": {
+   "repo": "luckyPipewrench/pipelock",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Agent egress firewall and MCP protection"
+  },
+  "toby-bridges/api-relay-audit": {
+   "repo": "toby-bridges/api-relay-audit",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Audits risky AI API relays"
+  },
+  "arcjet/arcjet-js": {
+   "repo": "arcjet/arcjet-js",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Runtime guardrails for agent actions"
+  },
+  "h5i-dev/h5i": {
+   "repo": "h5i-dev/h5i",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Agent-native browser and traffic tool"
+  },
+  "hashgraph-online/hol-guard": {
+   "repo": "hashgraph-online/hol-guard",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Local antivirus for agent actions"
+  },
+  "PrismorSec/prismor": {
+   "repo": "PrismorSec/prismor",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Runtime policy control for agents"
+  },
+  "cynative/cynative": {
+   "repo": "cynative/cynative",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical security agents, not stack"
+  }
+ }
+}
