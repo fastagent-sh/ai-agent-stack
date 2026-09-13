@@ -1,2 +1,7 @@
 __pycache__/
 .DS_Store
+
+# The measurements are the point of this repository; the global ignore excludes data/.
+!data/
+!data/*.csv
+!data/*.json
