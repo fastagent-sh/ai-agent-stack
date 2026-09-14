@@ -2,7 +2,7 @@
 
 What keeps an agent alive between turns: queues, retries, state, serving.
 
-Of the 27 projects here, 20 shipped a release with real notes in the last 30 days, and 3 have shipped none in 90. Most user issues in the last 30 days: herdrdev/herdr (49), langchain-ai/langgraph (37), compozy/compozy (28). Most of them answered: Agent-Field/agentfield, rivet-dev/actors, langchain-ai/langgraph.
+Of the 27 projects here, 20 shipped a release with real notes in the last 30 days, and 3 have shipped none in 90. Most user issues in the last 30 days: herdrdev/herdr (49), langchain-ai/langgraph (38), compozy/compozy (28). Most of them answered: Agent-Field/agentfield, rivet-dev/actors, langchain-ai/langgraph.
 
 *27 open-source projects, measured 2026-09-14. [Back to the stack](../README.md).*
 
@@ -12,11 +12,11 @@ Of the 27 projects here, 20 shipped a release with real notes in the last 30 day
 | [agentrq/agentrq](https://github.com/agentrq/agentrq)<br><sub>AgentRQ: Human-in-loop realtime conversational task manager for AI Agents. Self-hosted! Co</sub> | **75** | 24 | 100 | — | 1,114 | — | — | 0d ago | 0+ |
 | [Yuan-lab-LLM/ClawManager](https://github.com/Yuan-lab-LLM/ClawManager)<br><sub>A Kubernetes-native control plane for AI agent instance management, with governed AI acces</sub> | **74** | 26 | 98 | — | 1,897 | — | — | 3d ago | 2 |
 | [agentlas-ai/Agentlas-OS](https://github.com/agentlas-ai/Agentlas-OS)<br><sub>Agent OS: keep specialist agents in a hub, spin up a temporary orchestrator per task. Loca</sub> | **74** | 24 | 100 | — | 1,110 | — | — | 1d ago | 2 |
-| [rivet-dev/actors](https://github.com/rivet-dev/actors)<br><sub>Rivet Actors are the primitive for stateful workloads. Built for AI agents, collaborative </sub> | **72** | 30 | 98 | 88 | 6,125 | — | — | 3d ago | 7+ |
+| [rivet-dev/actors](https://github.com/rivet-dev/actors)<br><sub>Rivet Actors are the primitive for stateful workloads. Built for AI agents, collaborative </sub> | **72** | 30 | 98 | 88 | 6,126 | — | — | 3d ago | 7+ |
 | [Atmosphere/atmosphere](https://github.com/Atmosphere/atmosphere)<br><sub>Portable AI agent runtime for the JVM. One @Agent class runs on Spring AI, LangChain4j, An</sub> | **72** | 29 | 94 | — | 3,811 | — | — | 13d ago | 0 |
-| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph)<br><sub>Build resilient agents.</sub> | **71** | 37 | 92 | 84 | 41,597 | — | — | 17d ago | 37+ |
 | [inngest/inngest](https://github.com/inngest/inngest)<br><sub>The leading workflow orchestration platform.  Run stateful step functions and AI workflows</sub> | **71** | 30 | 91 | — | 5,829 | — | — | 18d ago | 2+ |
-| [herdrdev/herdr](https://github.com/herdrdev/herdr)<br><sub>the runtime your coding agents live on</sub> | **69** | 37 | 97 | 73 | 38,284 | — | — | 6d ago | 49+ |
+| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph)<br><sub>Build resilient agents.</sub> | **70** | 37 | 92 | 82 | 41,602 | — | — | 17d ago | 38+ |
+| [herdrdev/herdr](https://github.com/herdrdev/herdr)<br><sub>the runtime your coding agents live on</sub> | **69** | 37 | 97 | 73 | 38,289 | — | — | 6d ago | 49+ |
 | [fastagent-sh/fastagent](https://github.com/fastagent-sh/fastagent)<br><sub>Vibe first. Then FastAgent — turn a local agent directory into a live service: in your app</sub> | **69** | 14 | 96 | — | 62 | — | — | 7d ago | 0+ |
 | [hatchet-dev/hatchet](https://github.com/hatchet-dev/hatchet)<br><sub>🪓 An orchestration engine for background tasks, AI agents, and durable workflows</sub> | **65** | 31 | 98 | 67 | 7,933 | — | — | 4d ago | 12+ |
 | [iflytek/astron-agent](https://github.com/iflytek/astron-agent)<br><sub>Enterprise-grade, commercial-friendly agentic workflow platform for building next-generati</sub> | **62** | 32 | 77 | — | 9,002 | — | — | 6d ago | 2 |
@@ -33,7 +33,7 @@ Of the 27 projects here, 20 shipped a release with real notes in the last 30 day
 | [aeonfun/aeon](https://github.com/aeonfun/aeon)<br><sub>The most autonomous AI agent framework: runs unattended on GitHub Actions, self-healing sk</sub> | **28** | 23 | 31 | — | 728 | — | — | 66d ago | 2+ |
 | [builderz-labs/mission-control](https://github.com/builderz-labs/mission-control)<br><sub>Self-hosted control plane for AI agents: dispatch tasks, review runs, track spend, and ope</sub> | **26** | 30 | 47 | 0 | 6,215 | — | — | 50d ago | 7 |
 | [durable-streams/durable-streams](https://github.com/durable-streams/durable-streams)<br><sub>The data primitive for the agent loop.</sub> | **15** | 26 | 9 | — | 1,693 | — | — | 102d ago | 2 |
-| [moltis-org/moltis](https://github.com/moltis-org/moltis)<br><sub>A secure persistent personal agent server in Rust. One binary, sandboxed execution, multi-</sub> | **14** | 28 | 0 | 15 | 2,858 | — | — | — | 13 |
+| [moltis-org/moltis](https://github.com/moltis-org/moltis)<br><sub>A secure persistent personal agent server in Rust. One binary, sandboxed execution, multi-</sub> | **14** | 28 | 0 | 15 | 2,859 | — | — | — | 13 |
 | [google/ax](https://github.com/google/ax)<br><sub>An open source distributed agent runtime</sub> | **10** | 26 | 2 | — | 2,004 | — | — | 117d ago | 0 |
 
 
