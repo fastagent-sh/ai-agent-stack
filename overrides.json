@@ -1,0 +1,18 @@
+{
+  "_comment": "The only hand-written file. `include` forces a project into a layer, `exclude` keeps one out, `packages` declares what a repository publishes so weekly installs can be read. Give every entry a reason: the pipeline reruns weekly and a reason is how the next person knows whether the correction still holds.",
+  "include": {},
+  "exclude": {
+    "fastagent-sh/fastagent": "ours; we measure the stack, we are not neutral about our own place in it"
+  },
+  "packages": {
+    "browser-use/browser-use": "pypi:browser-use",
+    "agno-agi/agno": "pypi:agno",
+    "crewAIInc/crewAI": "pypi:crewai",
+    "google/adk-python": "pypi:google-adk",
+    "pydantic/pydantic-ai": "pypi:pydantic-ai",
+    "run-llama/llama_index": "pypi:llama-index",
+    "mem0ai/mem0": "pypi:mem0ai",
+    "confident-ai/deepeval": "pypi:deepeval",
+    "promptfoo/promptfoo": "npm:promptfoo"
+  }
+}
