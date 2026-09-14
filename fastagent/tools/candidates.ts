@@ -1,26 +1,23 @@
-import { spawn } from "node:child_process";
 import { defineTool, z } from "@fastagent-sh/fastagent";
+import { discover } from "../lib/discover.ts";
 import { unjudged } from "../lib/index-data.ts";
 
-// Discovery is deterministic — searches, other people's lists, a floor anyone can check — so it stays
-// in scripts/discover.py. This tool runs it and hands back only what still needs a judgement.
-//   fastagent tool candidates '{"limit":20}'
+// Discovery is deterministic — searches, new-repository sweeps, other people's lists, a floor anyone
+// can check — so it stays out of the model. This returns only what still needs a judgement.
+//   fastagent tool candidates '{"refresh":true}'
 export default defineTool({
   description:
-    "Projects that discovery found and nobody has judged yet, newest sweep first. Set `refresh` to " +
-    "re-run discovery (a few minutes, and it hits the GitHub API) or leave it off to read the last sweep.",
+    "Projects discovery found that nobody has judged yet, repositories created in the last month first. " +
+    "Set `refresh` to run a new sweep (several minutes, hits the GitHub API) or leave it off to read the " +
+    "last one.",
   input: z.object({
-    refresh: z.boolean().default(false).describe("re-run scripts/discover.py before reading"),
+    refresh: z.boolean().default(false),
+    minStars: z.number().int().min(0).max(5000).default(100).describe("floor for unlisted projects; ten user issues in 30 days also passes"),
+    freshDays: z.number().int().min(1).max(180).default(30).describe("how new a repository counts as new"),
     limit: z.number().int().min(1).max(60).default(25),
   }),
-  async execute({ refresh, limit }, ctx) {
-    if (refresh) {
-      const code = await new Promise<number>((done) => {
-        const child = spawn("python3", ["-u", "scripts/discover.py"], { cwd: ctx.cwd, stdio: "inherit" });
-        child.on("close", (status) => done(status ?? 1));
-      });
-      if (code !== 0) throw new Error(`scripts/discover.py exited ${code}`);
-    }
-    return unjudged(ctx.cwd, limit);
+  async execute({ refresh, minStars, freshDays, limit }, ctx) {
+    const swept = refresh ? await discover(ctx.cwd, minStars, freshDays) : undefined;
+    return { swept: swept && { pool: swept.pool, pastFloor: swept.candidates.length }, ...(await unjudged(ctx.cwd, limit)) };
   },
 });

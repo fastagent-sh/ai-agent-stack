@@ -1,0 +1,179 @@
+{
+  "_comment": "The sixteen layers, shared by discovery, classification and rendering. `queries` feed the GitHub search sweep; `keywords` place a candidate when no judgement exists yet; the agent decides real membership.",
+  "sourceLists": [
+    "hesreallyhim/awesome-claude-code",
+    "kyrolabs/awesome-agents",
+    "punkpeye/awesome-mcp-servers",
+    "e2b-dev/awesome-sdks-for-ai-agents",
+    "awesome-opencode/awesome-opencode",
+    "Shubhamsaboo/awesome-llm-apps",
+    "steven2358/awesome-generative-ai"
+  ],
+  "assetLayers": [
+    "skills"
+  ],
+  "layers": {
+    "coding-agents": {
+      "title": "Coding agents",
+      "blurb": "You use it to write and change code. You are its user, not a builder on it.",
+      "queries": [
+        "topic:coding-agent",
+        "\"coding agent\" in:name,description",
+        "topic:ai-coding-assistant"
+      ],
+      "keywords": "coding agent|code agent|pair program|cli agent|ide|editor|swe|vibe coding|codebase"
+    },
+    "research-agents": {
+      "title": "Research and knowledge agents",
+      "blurb": "Agents that go and find out: deep research, document analysis, report writing.",
+      "queries": [
+        "deep research agent in:name,description",
+        "research agent in:name,description",
+        "document analysis agent in:description"
+      ],
+      "keywords": "research|deep.?research|report|literature|analys[ei]s|knowledge base|summari"
+    },
+    "browser-agents": {
+      "title": "Browser and computer-use agents",
+      "blurb": "Agents that drive a screen: browsers, desktops, phones.",
+      "queries": [
+        "browser agent in:name,description",
+        "computer use agent in:description",
+        "gui agent in:name,description"
+      ],
+      "keywords": "browser|computer.use|gui agent|web automation|click|screenshot|desktop automation"
+    },
+    "assistant-agents": {
+      "title": "Personal and desktop assistants",
+      "blurb": "The agent that sits next to your work and does errands across your own tools.",
+      "queries": [
+        "personal ai assistant in:name,description",
+        "self-hosted assistant in:description",
+        "desktop ai agent in:description"
+      ],
+      "keywords": "personal|assistant|self.hosted|desktop|inbox|calendar|workspace|companion"
+    },
+    "clients": {
+      "title": "Clients and interfaces",
+      "blurb": "The chat window, terminal UI or desktop shell you put in front of an agent.",
+      "queries": [
+        "ai chat ui in:name,description",
+        "llm client in:name,description",
+        "agent ui in:name,description"
+      ],
+      "keywords": "\\bui\\b|client|chat(bot)? (app|interface|ui)|frontend|desktop app|tui|web ui"
+    },
+    "harness": {
+      "title": "Harnesses and agent runtimes",
+      "blurb": "The loop you build on: tool execution, context management, turn control. Opinionated, not a library.",
+      "queries": [
+        "agent harness in:name,description",
+        "agent runtime in:name,description",
+        "agent loop in:description"
+      ],
+      "keywords": "harness|agent loop|runtime|toolkit|agent os|execution engine"
+    },
+    "frameworks": {
+      "title": "Frameworks and SDKs",
+      "blurb": "Composable libraries for building an agent: handoffs, structured output, graphs.",
+      "queries": [
+        "topic:agent-framework",
+        "topic:ai-agents",
+        "agent sdk in:name,description"
+      ],
+      "keywords": "framework|sdk|library|multi.?agent|graph|orchestrat|workflow.*(build|defin)"
+    },
+    "skills": {
+      "title": "Skills and instruction assets",
+      "blurb": "Files you load into an agent: skills, prompt packs, AGENTS.md collections. No code to run.",
+      "queries": [
+        "topic:claude-code",
+        "agent skills in:name,description",
+        "topic:prompt-engineering stars:>3000"
+      ],
+      "keywords": "skill|prompt|instruction|agents\\.md|claude\\.md|playbook|persona|rules"
+    },
+    "orchestration": {
+      "title": "Orchestration, durability and deployment",
+      "blurb": "What keeps an agent alive between turns: queues, retries, state, serving.",
+      "queries": [
+        "durable execution in:description",
+        "workflow engine in:description stars:>2000",
+        "agent platform in:description"
+      ],
+      "keywords": "durable|queue|retry|state machine|serving|deploy|platform|scheduler"
+    },
+    "memory": {
+      "title": "Memory and context",
+      "blurb": "What the agent remembers after the session ends.",
+      "queries": [
+        "agent memory in:name,description",
+        "topic:memory stars:>2000",
+        "context engineering in:description"
+      ],
+      "keywords": "memory|context|recall|knowledge graph|retriev|rag\\b"
+    },
+    "gateways": {
+      "title": "Model gateways, routing and account switching",
+      "blurb": "Everything between your agent and whichever model answers: proxies, routers, key and account switchers.",
+      "queries": [
+        "llm gateway in:name,description",
+        "llm proxy in:name,description",
+        "model router in:description",
+        "api key switcher in:description"
+      ],
+      "keywords": "gateway|proxy|router|switch(er)?|load balanc|fallback|multi.?provider|rate limit|token.*(cost|budget)|api key"
+    },
+    "protocol": {
+      "title": "MCP, protocols and registries",
+      "blurb": "The standards agents speak, the SDKs that implement them, and the registries tools are published to.",
+      "queries": [
+        "topic:mcp stars:>2000",
+        "topic:model-context-protocol",
+        "agent2agent OR a2a protocol in:name,description",
+        "mcp registry in:name,description"
+      ],
+      "keywords": "\\bmcp\\b|model context protocol|protocol|registry|a2a|interop|spec\\b|standard"
+    },
+    "capability-tools": {
+      "title": "Capability tools",
+      "blurb": "What an agent reaches for: search, scraping, documents, data access.",
+      "queries": [
+        "web scraping ai in:description",
+        "agent tools in:name,description",
+        "llm search api in:description"
+      ],
+      "keywords": "scrap|crawl|search|document|spreadsheet|extract|data access|api wrapper"
+    },
+    "sandboxes": {
+      "title": "Sandboxes and execution",
+      "blurb": "Where the agent's code is allowed to run.",
+      "queries": [
+        "code interpreter sandbox in:description",
+        "topic:sandbox stars:>2000",
+        "agent sandbox in:description"
+      ],
+      "keywords": "sandbox|isolat|container|microvm|execution environment|code interpreter"
+    },
+    "evaluation": {
+      "title": "Evaluation and observability",
+      "blurb": "How you find out whether the agent is still doing its job.",
+      "queries": [
+        "topic:llm-evaluation",
+        "llm observability in:name,description",
+        "agent evaluation in:name,description"
+      ],
+      "keywords": "eval|observab|tracing|monitor|benchmark|telemetry|experiment"
+    },
+    "security": {
+      "title": "Security and guardrails",
+      "blurb": "Stopping an agent from being talked into something, or taking the system with it.",
+      "queries": [
+        "prompt injection in:name,description",
+        "llm guardrails in:name,description",
+        "agent security in:description"
+      ],
+      "keywords": "injection|guardrail|security|permission|red team|scanner|governance|policy"
+    }
+  }
+}

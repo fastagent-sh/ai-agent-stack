@@ -27,5 +27,7 @@ change `overrides.json` instead, and rerun the pipeline.
   in it, and `overrides.json` records that exclusion.
 - Removing a project that people rely on is worse than carrying one too many for a week. When a listed
   project looks borderline, leave it and flag it for the owner.
+- You may improve the pipeline in `fastagent/lib/` when it is wrong, but say so in the same reply. Code
+  written silently during an unrelated task is how a repository grows things nobody reviewed.
 - Commit generated changes; never push credentials, `.state/`, or the local caches under `data/.*`.
 - Talk to the owner in Chinese. Keep project names, quotes and layer ids in English.

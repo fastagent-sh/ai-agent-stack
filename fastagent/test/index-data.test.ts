@@ -11,23 +11,25 @@ async function workspace() {
   await writeFile(
     join(dir, "data/candidates.json"),
     JSON.stringify({
-      layers: {
-        memory: { title: "Memory", candidates: [{ repo: "a/known", stars: 50, description: "d", hints: [] }, { repo: "b/fresh", stars: 900, description: "d", hints: [] }] },
-        security: { title: "Security", candidates: [{ repo: "c/fresh", stars: 100, description: "d", hints: [] }] },
-      },
+      candidates: [
+        { repo: "a/known", stars: 50, description: "d", foundVia: [], ageDays: 400, pushedDays: 1 },
+        { repo: "b/fresh", stars: 900, description: "d", foundVia: [], ageDays: 400, pushedDays: 1 },
+        { repo: "c/new", stars: 100, description: "d", foundVia: ["new"], ageDays: 5, pushedDays: 0 },
+      ],
     }),
   );
   await writeFile(join(dir, "data/classified.json"), JSON.stringify({ verdicts: { "a/known": { repo: "a/known", in_stack: true, layer: "memory", why: "judged" } } }));
   return dir;
 }
 
-test("only unjudged candidates are offered, largest first", async () => {
+test("unjudged candidates are offered, new ones ahead of merely large ones", async () => {
   const dir = await workspace();
   const { total, candidates } = await unjudged(dir, 10);
   assert.equal(total, 2, "the already-judged project is not re-read");
-  assert.deepEqual(candidates.map((row) => row.repo), ["b/fresh", "c/fresh"]);
-  assert.equal(candidates[0].foundUnder, "memory");
-  assert.deepEqual(await layerIds(dir), ["memory", "security"]);
+  // A repository created five days ago outranks one with nine times the stars: a list cannot already
+  // hold the new one, which is the only reason to spend a judgement on it first.
+  assert.deepEqual(candidates.map((row) => row.repo), ["c/new", "b/fresh"]);
+  assert.equal((await layerIds(dir)).length, 16);
 });
 
 test("a verdict for an unknown layer is refused, and a correction overwrites", async () => {

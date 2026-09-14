@@ -1,7 +1,7 @@
 name: measure
 on:
   schedule:
-    - cron: "0 6 * * 1" # Monday 06:00 UTC
+    - cron: "0 6 * * *" # daily; velocity needs snapshots a day apart
   workflow_dispatch:
 permissions:
   contents: write
@@ -13,17 +13,17 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           token: ${{ secrets.MEASURE_TOKEN || github.token }}
-      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+      - uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
         with:
-          python-version: "3.12"
-      - run: python3 scripts/collect.py
+          node-version: "22"
+      # Measurement needs no model, so it runs here. Discovery and judgement run in the agent.
+      - run: node scripts/refresh.ts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: python3 scripts/changes.py
-      - name: Commit the week's measurement
+      - name: Commit the day's measurement
         run: |
           git config user.name "measure-bot"
           git config user.email "actions@github.com"
-          git add data README.md CHANGES.md layers
+          git add data README.md CHANGES.md layers seeds.json
           git diff --staged --quiet || git commit -m "measure: $(date -u +%Y-%m-%d)"
           git push

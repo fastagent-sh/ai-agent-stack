@@ -2420,9 +2420,9 @@
   },
   "apify/crawlee": {
    "repo": "apify/crawlee",
-   "in_stack": false,
-   "layer": null,
-   "why": "Generic scraping and automation library"
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "web crawling/scraping tool for agents"
   },
   "PromtEngineer/localGPT": {
    "repo": "PromtEngineer/localGPT",
@@ -2704,7 +2704,7 @@
    "repo": "NVIDIA/garak",
    "in_stack": true,
    "layer": "security",
-   "why": "LLM red-teaming and vulnerability scanner"
+   "why": "LLM vulnerability scanner/red-teaming"
   },
   "superagent-ai/superagent": {
    "repo": "superagent-ai/superagent",
@@ -2848,91 +2848,91 @@
    "repo": "KimYx0207/AI-Coding-Guide-Zh",
    "in_stack": false,
    "layer": null,
-   "why": "\u6559\u7a0b\u8d44\u6599\uff0c\u4e0d\u662f\u53ef\u7ec4\u88c5\u7ec4\u4ef6"
+   "why": "教程资料，不是可组装组件"
   },
   "Aider-AI/aider": {
    "repo": "Aider-AI/aider",
    "in_stack": true,
    "layer": "coding-agents",
-   "why": "\u7ec8\u7aef AI \u7ed3\u5bf9\u7f16\u7a0b\u4ee3\u7406"
+   "why": "终端 AI 结对编程代理"
   },
   "All-Hands-AI/OpenHands": {
    "repo": "All-Hands-AI/OpenHands",
    "in_stack": true,
    "layer": "coding-agents",
-   "why": "\u81ea\u6258\u7ba1\u7f16\u7801\u4ee3\u7406\u63a7\u5236\u4e2d\u5fc3"
+   "why": "自托管编码代理控制中心"
   },
   "Arize-ai/phoenix": {
    "repo": "Arize-ai/phoenix",
    "in_stack": true,
    "layer": "evaluation",
-   "why": "LLM \u53ef\u89c2\u6d4b\u4e0e\u8bc4\u4f30\u5e73\u53f0"
+   "why": "LLM 可观测与评估平台"
   },
   "anthropics/claude-code": {
    "repo": "anthropics/claude-code",
    "in_stack": true,
    "layer": "coding-agents",
-   "why": "\u5b98\u65b9\u7ec8\u7aef\u7f16\u7801\u4ee3\u7406"
+   "why": "官方终端编码代理"
   },
   "block/goose": {
    "repo": "block/goose",
    "in_stack": true,
    "layer": "assistant-agents",
-   "why": "\u672c\u5730\u901a\u7528\u684c\u9762 AI \u52a9\u624b"
+   "why": "本地通用桌面 AI 助手"
   },
   "dapr/dapr-agents": {
    "repo": "dapr/dapr-agents",
    "in_stack": true,
    "layer": "frameworks",
-   "why": "\u6784\u5efa\u5f39\u6027\u591a\u4ee3\u7406\u7cfb\u7edf\u6846\u67b6"
+   "why": "构建弹性多代理系统框架"
   },
   "e2b-dev/E2B": {
    "repo": "e2b-dev/E2B",
    "in_stack": true,
    "layer": "sandboxes",
-   "why": "AI \u4ee3\u7801\u5b89\u5168\u6c99\u7bb1\u57fa\u7840\u8bbe\u65bd"
+   "why": "AI 代码安全沙箱基础设施"
   },
   "fastagent-sh/fastagent": {
    "repo": "fastagent-sh/fastagent",
    "in_stack": true,
    "layer": "orchestration",
-   "why": "\u628a\u672c\u5730\u4ee3\u7406\u90e8\u7f72\u6210\u670d\u52a1"
+   "why": "把本地代理部署成服务"
   },
   "getzep/zep": {
    "repo": "getzep/zep",
-   "in_stack": false,
-   "layer": null,
-   "why": "\u793a\u4f8b\u548c\u96c6\u6210\uff0c\u4e0d\u662f\u4ea7\u54c1\u672c\u4f53"
+   "in_stack": true,
+   "layer": "memory",
+   "why": "agent memory integrations and ingestion"
   },
   "inngest/inngest": {
    "repo": "inngest/inngest",
    "in_stack": true,
    "layer": "orchestration",
-   "why": "\u6301\u4e45\u51fd\u6570\u3001\u91cd\u8bd5\u548c\u8c03\u5ea6"
+   "why": "持久函数、重试和调度"
   },
   "langchain-ai/langgraph": {
    "repo": "langchain-ai/langgraph",
    "in_stack": true,
    "layer": "orchestration",
-   "why": "\u957f\u8fd0\u884c\u6709\u72b6\u6001\u4ee3\u7406\u7f16\u6392"
+   "why": "长运行有状态代理编排"
   },
   "langfuse/langfuse": {
    "repo": "langfuse/langfuse",
    "in_stack": true,
    "layer": "evaluation",
-   "why": "\u5f00\u6e90 LLM \u8ffd\u8e2a\u8bc4\u4f30"
+   "why": "开源 LLM 追踪评估"
   },
   "langgenius/dify": {
    "repo": "langgenius/dify",
    "in_stack": true,
    "layer": "harness",
-   "why": "\u4f4e\u4ee3\u7801\u4ee3\u7406\u5de5\u4f5c\u6d41\u8fd0\u884c\u5e73\u53f0"
+   "why": "低代码代理工作流运行平台"
   },
   "letta-ai/letta": {
    "repo": "letta-ai/letta",
    "in_stack": true,
    "layer": "memory",
-   "why": "\u5e26\u957f\u671f\u8bb0\u5fc6\u7684\u6709\u72b6\u6001\u4ee3\u7406"
+   "why": "带长期记忆的有状态代理"
   },
   "mastra-ai/mastra": {
    "repo": "mastra-ai/mastra",
