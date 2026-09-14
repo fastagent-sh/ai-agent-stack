@@ -16,6 +16,11 @@ Two rules keep the page useful:
 A project is dropped when it stops being findable in the data: no release with notes and no commits for
 months. That removal is automatic in the numbers and manual in `seeds.json`; open a PR for it.
 
+Membership is decided by the agent in [`fastagent/`](fastagent/): it reads each candidate's README and
+places it in a layer, following [`fastagent/skills/curate-index/SKILL.md`](fastagent/skills/curate-index/SKILL.md).
+To overrule it permanently, edit [`overrides.json`](overrides.json) — `include`, `exclude` and `packages`,
+each entry with a reason. That file is the only hand-written data in the repository.
+
 Corrections to the measurement itself are more valuable than additions. If a number is wrong, say which
 repository and what you expected — the collector is [`scripts/collect.py`](scripts/collect.py) and it
 runs in about two minutes.

@@ -1,0 +1,16 @@
+{
+  "name": "ai-agent-stack-agent",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@fastagent-sh/fastagent": "^0.21.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "typescript": "^7.0.2"
+  }
+}

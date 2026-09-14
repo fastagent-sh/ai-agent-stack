@@ -32,7 +32,15 @@ API = "https://api.github.com"
 
 # Curated by people who do it full time. Sampled 2026-09-13: 17/25 and 13/25 of their links had been
 # pushed within 30 days, against 5/24 for e2b-dev/awesome-ai-agents, which is excluded for that reason.
-SOURCE_LISTS = ["hesreallyhim/awesome-claude-code", "kyrolabs/awesome-agents"]
+SOURCE_LISTS = [
+    "hesreallyhim/awesome-claude-code",
+    "kyrolabs/awesome-agents",
+    "punkpeye/awesome-mcp-servers",
+    "e2b-dev/awesome-sdks-for-ai-agents",
+    "awesome-opencode/awesome-opencode",
+    "Shubhamsaboo/awesome-llm-apps",
+    "steven2358/awesome-generative-ai",
+]
 
 # One query set per layer. The layer a project lands in is decided by the query that found it and by
 # the keywords below, so a project can be proposed for a layer without anyone having heard of it.
@@ -210,6 +218,15 @@ def pool() -> dict[str, set[str]]:
             time.sleep(1)  # the search endpoint allows 30 requests a minute
             for item in result.get("items", []):
                 found.setdefault(item["full_name"], set()).add(layer)
+    for query in ("topic:llmops", "topic:agentic-ai", "topic:autonomous-agents", "topic:ai-agent stars:>300"):
+        try:
+            result = api(f"/search/repositories?q={urllib.parse.quote(query + ' pushed:>' + (NOW.replace(day=1)).strftime('%Y-%m-%d'))}&sort=updated&per_page=30")
+            time.sleep(1)
+            for item in result.get("items", []):
+                found.setdefault(item["full_name"], set()).add("ecosystem-topic")
+        except Exception as error:  # noqa: BLE001
+            print(f"  ! {query}: {error}", file=sys.stderr)
+
     for source in SOURCE_LISTS:
         try:
             with urllib.request.urlopen(urllib.request.Request(f"https://raw.githubusercontent.com/{source}/HEAD/README.md", headers={"user-agent": "x"}), timeout=30) as response:

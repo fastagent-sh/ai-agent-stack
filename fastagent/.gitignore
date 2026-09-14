@@ -1,0 +1,16 @@
+# This file is yours — fastagent writes it once, at `init`, and never touches git again.
+# (`.secrets/` carries its own, so the credentials stay protected however you edit this one.)
+
+# dependencies (reinstalled at deploy). No trailing slash on purpose: `node_modules/` matches only a
+# DIRECTORY, so a symlinked one (pnpm, a shared store) would show up as untracked.
+node_modules
+
+# machine state: sessions, channel state, schedule state
+.state
+.cache
+
+# fastagent reads the agent's env from .secrets/.env (which un-ignores its own .env.example). A bare
+# .env at THIS level is the file habit puts here — `dev` says so when it finds one; this keeps it
+# uncommittable meanwhile.
+.env
+.env.*
