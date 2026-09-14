@@ -20,6 +20,7 @@ import json
 import os
 import re
 import urllib.parse
+import math
 import statistics
 import sys
 import threading
@@ -178,6 +179,41 @@ def _measure(entry: str | dict) -> dict | None:
     }
 
 
+def score(row: dict, asset: bool) -> dict:
+    """
+    Three sub-scores and their average, in the shape npms.io uses for npm packages: separate numbers say
+    more than one number, and Libraries.io's SourceRank 2.0 notes state the rest of the rule — comparable
+    within an ecosystem, readable without explanation, and with the breakdown published. Scores here are
+    comparable *within a layer*, never across the whole page.
+
+    Every input is an observation already in the table, so a reader can check the arithmetic. That also
+    limits how far it can be gamed: stars and issue counts can be bought, which is why adoption is log
+    scaled and carries the least weight, and why maintenance rests on releases that contain real notes.
+    """
+    installs = row.get("weekly_downloads") or 0
+    adoption = min(100, 8 * math.log10(max(10, row["stars"])) + (10 * math.log10(installs) if installs else 0))
+
+    if asset:
+        # Skills and prompt packs ship no releases, so their upkeep shows up as commits.
+        maintenance = min(100, row["commits_90d"] * 1.2 + max(0, 40 - (row["pushed_days"] or 99)))
+    else:
+        recency = max(0, 60 - (row["last_release_days"] if row["last_release_days"] is not None else 400) / 2)
+        maintenance = min(100, recency + min(40, row["releases_with_notes_90d"] * 4))
+
+    issues = row["user_issues_30d"]
+    if issues >= 3:
+        # Answering half of many questions is worth more than answering both of two.
+        responsiveness = min(100, 100 * row["user_issues_answered_30d"] / issues * min(1.0, 0.6 + issues / 25))
+    else:
+        responsiveness = 0  # too few questions to judge; shown as "—", not as a bad score
+    return {
+        "adoption": round(adoption),
+        "maintenance": round(maintenance),
+        "responsiveness": round(responsiveness) if issues >= 3 else None,
+        "score": round((adoption + maintenance + (responsiveness if issues >= 3 else maintenance)) / 3),
+    }
+
+
 def load_previous() -> dict[str, list[tuple[str, int]]]:
     history: dict[str, list[tuple[str, int]]] = {}
     if SNAPSHOTS.exists():
@@ -199,11 +235,11 @@ def velocity(repo: str, stars: int, history: dict) -> float | None:
 def table(rows: list[dict], asset_layer: bool = False) -> str:
     """Asset layers get different columns: a folder of skills has no releases to count."""
     if asset_layer:
-        head = ("| Project | Stars | Stars/day | Commits (90d) | User issues (30d) | Answered | Last push |\n"
-                "|---|---:|---:|---:|---:|---:|---:|\n")  # asset layers publish no package
+        head = ("| Project | Score | Adoption | Upkeep | Answers | Stars | Stars/day | Commits (90d) | User issues (30d) |\n"
+                "|---|---:|---:|---:|---:|---:|---:|---:|---:|\n")  # asset layers publish no package
     else:
-        head = ("| Project | Stars | Stars/day | Weekly installs | Last release with notes | Releases (90d) | User issues (30d) | Answered |\n"
-                "|---|---:|---:|---:|---:|---:|---:|---:|\n")
+        head = ("| Project | Score | Adoption | Upkeep | Answers | Stars | Stars/day | Weekly installs | Last release | User issues (30d) |\n"
+                "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n")
     lines = []
     for row in rows:
         release = f"{row['last_release_days']}d ago" if row["last_release_days"] is not None else "—"
@@ -211,13 +247,17 @@ def table(rows: list[dict], asset_layer: bool = False) -> str:
         pace = f"+{row['velocity']}" if row.get("velocity") else "—"
         issues = f"{row['user_issues_30d']}{'+' if row.get('user_issues_truncated') else ''}"
         answered = f"{row['user_issues_answered_30d']}/{row['user_issues_30d']}" if row["user_issues_30d"] else "—"
-        name = f"| [{row['repo']}](https://github.com/{row['repo']})<br><sub>{row['description'][:90]}</sub> | {row['stars']:,} | {pace} "
+        answers = f"{row['responsiveness']}" if row["responsiveness"] is not None else "—"
+        name = (
+            f"| [{row['repo']}](https://github.com/{row['repo']})<br><sub>{row['description'][:90]}</sub> "
+            f"| **{row['score']}** | {row['adoption']} | {row['maintenance']} | {answers} | {row['stars']:,} | {pace} "
+        )
         if asset_layer:
             commits = f"{row['commits_90d']}{'+' if row['commits_90d'] >= 100 else ''}"
-            lines.append(name + f"| {commits} | {issues} | {answered} | {push} |")
+            lines.append(name + f"| {commits} | {issues} |")
         else:
             installs = f"{row['weekly_downloads']:,}" if row.get("weekly_downloads") else "—"
-            lines.append(name + f"| {installs} | {release} | {row['releases_with_notes_90d']} | {issues} | {answered} |")
+            lines.append(name + f"| {installs} | {release} | {issues} |")
     return head + "\n".join(lines) + "\n"
 
 
@@ -240,7 +280,9 @@ def main() -> None:
             rows.append(row)
             snapshot_rows.append([measured_at, row["repo"], row["stars"], row["pushed_days"], row["user_issues_30d"]])
         print(f"   {len(rows)} measured")
-        rows.sort(key=lambda r: (-(r["velocity"] or 0), -r["stars"]))
+        for row in rows:
+            row.update(score(row, category["id"] in ASSET_LAYERS))
+        rows.sort(key=lambda r: (-r["score"], -r["stars"]))
         results.append({**category, "rows": rows})
 
     SNAPSHOTS.parent.mkdir(exist_ok=True)
@@ -295,6 +337,20 @@ def main() -> None:
         (LAYER_PAGES / f"{category['id']}.md").write_text("\n".join(page))
     body += [
         "## How to read this",
+        "",
+        "**Score** is the average of three sub-scores, and it only compares projects *inside the same layer*. "
+        "The shape is borrowed from [npms.io](https://github.com/npms-io/npms-analyzer), which scores npm packages "
+        "on separate quality, popularity and maintenance axes, and from [Libraries.io's SourceRank](https://github.com/librariesio/libraries.io/issues/1916), "
+        "whose stated goals are a number comparable within one ecosystem, readable without explanation, and published with its breakdown.",
+        "",
+        "| Sub-score | Built from | Why |",
+        "|---|---|---|",
+        "| **Adoption** | stars and weekly installs, both log scaled | Stars can be bought, so they are compressed hard and an install counts for more than a star |",
+        "| **Upkeep** | how recently a release with real notes shipped, and how many in 90 days (commits, for asset layers) | Attention is not maintenance |",
+        "| **Answers** | share of the last 30 days' user issues that got a reply, weighted by how many there were | Answering half of forty beats answering both of two. Shown as — under three issues, which is too few to judge |",
+        "",
+        "A composite score can be gamed — [there is a paper on exactly that for SourceRank](https://arxiv.org/html/2512.24400v1) — "
+        "so every input here is a number printed in the same row. If a score looks wrong, the arithmetic is checkable.",
         "",
         "- **Weekly installs** is npm or PyPI downloads for the package the repository publishes, read from its own manifest. A star is a bookmark; an install is a dependency. A dash means the project ships no package.",
         "- **Stars/day** comes from comparing snapshots in [`data/snapshots.csv`](data/snapshots.csv). A first measurement has none, so the column fills in from the second run onwards.",

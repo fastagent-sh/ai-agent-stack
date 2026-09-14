@@ -246,7 +246,7 @@ def classify(info: dict, hinted: set[str]) -> str | None:
 
 
 def main() -> None:
-    minimum = int(sys.argv[sys.argv.index("--stars") + 1]) if "--stars" in sys.argv else 500
+    minimum = int(sys.argv[sys.argv.index("--stars") + 1]) if "--stars" in sys.argv else 100
     seeds = json.loads((ROOT / "seeds.json").read_text())
     already = {
         (entry if isinstance(entry, str) else entry["repo"])
@@ -267,9 +267,11 @@ def main() -> None:
         if not info:
             continue
         reasons = []
+        # The bar is now a floor, not a filter: scoring ranks, so gatekeeping by size only hides things.
+        # It keeps out what cannot be measured or is already dead, and nothing else.
         adopted = info["stargazers_count"] >= minimum
-        if days_since(info["pushed_at"]) > 30:
-            reasons.append("not pushed in 30d")
+        if days_since(info["pushed_at"]) > 90:
+            reasons.append("not pushed in 90d")
         if info.get("fork"):
             reasons.append("fork")
         if not (info.get("license") or {}).get("spdx_id", "").replace("NOASSERTION", ""):
@@ -300,7 +302,7 @@ def main() -> None:
             "hints": sorted(hints),
         })
 
-    out = {"generated_at": NOW.isoformat(), "bar": {"min_stars_or_user_issues": [minimum, 10], "pushed_within_days": 30, "open_licence": True}, "layers": {}}
+    out = {"generated_at": NOW.isoformat(), "bar": {"min_stars_or_user_issues": [minimum, 10], "pushed_within_days": 90, "open_licence": True}, "layers": {}}
     for layer, (title, blurb, _, _) in LAYERS.items():
         rows = sorted(proposals.get(layer, []), key=lambda row: -row["stars"])
         out["layers"][layer] = {"title": title, "blurb": blurb, "candidates": rows}
