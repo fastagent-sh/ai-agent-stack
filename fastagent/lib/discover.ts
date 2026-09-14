@@ -1,7 +1,7 @@
 import { existsSync } from "node:fs";
 import { readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { HttpError, api, daysSince, pooled, searchRepos, serial, type Repo } from "./github.ts";
+import { HttpError, api, daysSince, json, pooled, searchRepos, serial, type Repo } from "./github.ts";
 import { LAYERS } from "./layers.ts";
 
 /**
@@ -77,6 +77,60 @@ async function userIssueCount(repo: string): Promise<number> {
   }
 }
 
+/**
+ * Where a project is talked about before GitHub ranking notices it. Each source is wrapped: one that
+ * will not load is a gap in breadth, never a reason to abandon the sweep.
+ *
+ * Product Hunt was checked and left out — its feed carries launches, and launches rarely link a
+ * repository — and Lobsters is included cheaply despite thin GitHub coverage.
+ */
+export async function mentionSources(): Promise<Map<string, string>> {
+  const found = new Map<string, string>();
+  const add = (repo: string, source: string) => {
+    if (!found.has(repo)) found.set(repo, source);
+  };
+  const linked = (text: string | null | undefined) => text?.match(/github\.com\/([A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+)/)?.[1];
+
+  const month = Math.floor(Date.now() / 1000) - 30 * 86_400;
+  for (const query of ["agent", "llm", "mcp", "ai coding"]) {
+    try {
+      const result = await json<{ hits: { url?: string; title: string; points: number }[] }>(
+        `https://hn.algolia.com/api/v1/search?tags=story&query=${encodeURIComponent(query)}&numericFilters=points>10,created_at_i>${month}&hitsPerPage=40`,
+      );
+      for (const hit of result.hits) {
+        const repo = linked(hit.url);
+        if (repo) add(repo, "hn");
+      }
+    } catch {
+      // Algolia is free and unauthenticated; when it is down we simply see less this run.
+    }
+  }
+
+  try {
+    // GitHub publishes no trending API, so this reads the page. Fragile by nature, hence wrapped.
+    const response = await fetch("https://github.com/trending?since=daily", {
+      headers: { "user-agent": "Mozilla/5.0 (ai-agent-stack)" },
+      signal: AbortSignal.timeout(20_000),
+    });
+    if (response.ok) {
+      for (const [, repo] of (await response.text()).matchAll(/href="\/([\w.-]+\/[\w.-]+)\/stargazers"/g)) add(repo, "trending");
+    }
+  } catch {
+    // ignore
+  }
+
+  try {
+    const stories = await json<{ url: string; title: string }[]>("https://lobste.rs/t/ai.json");
+    for (const story of stories) {
+      const repo = linked(story.url);
+      if (repo) add(repo, "lobsters");
+    }
+  } catch {
+    // ignore
+  }
+  return found;
+}
+
 export async function collectPool(workspace: string, freshDays: number): Promise<Map<string, Set<string>>> {
   const found = new Map<string, Set<string>>();
   const add = (repo: string, source: string) => found.set(repo, (found.get(repo) ?? new Set()).add(source));
@@ -93,7 +147,7 @@ export async function collectPool(workspace: string, freshDays: number): Promise
   const fresh = new Date(Date.now() - freshDays * 86_400_000).toISOString().slice(0, 10);
 
   await serial(LAYERS.flatMap((layer) => layer.queries.map((query) => ({ layer: layer.id, query }))), 1000, async ({ layer, query }) => {
-    for (const repo of await searchRepos(`${query} pushed:>${month}`).catch(() => [])) add(repo.full_name, layer);
+    for (const repo of await searchRepos(`${query} pushed:>${month}`, "stars", 20, 2).catch(() => [])) add(repo.full_name, layer);
   });
   await serial(ECOSYSTEM_QUERIES, 1000, async (query) => {
     for (const repo of await searchRepos(`${query} pushed:>${month}`, "updated", 30).catch(() => [])) add(repo.full_name, "ecosystem");
@@ -102,6 +156,8 @@ export async function collectPool(workspace: string, freshDays: number): Promise
   await serial(FRESH_QUERIES, 1000, async (query) => {
     for (const repo of await searchRepos(`${query} created:>${fresh}`, "stars", 30).catch(() => [])) add(repo.full_name, "new");
   });
+
+  for (const [repo, source] of await mentionSources()) add(repo, source);
 
   let budget = NEW_PER_RUN;
   for (const source of SOURCE_LISTS) {

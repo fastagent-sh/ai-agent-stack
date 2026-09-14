@@ -12,7 +12,11 @@ type Issue = { pull_request?: unknown; author_association?: string; created_at: 
  * published with its breakdown. Scores compare projects *within a layer*, never across the page.
  */
 export type Metrics = {
+  /** The name GitHub resolves to. A renamed or transferred repository still answers on its old path,
+   *  so storing the requested name put block/goose and aaif-goose/goose on the page as two projects. */
   repo: string;
+  requestedAs?: string;
+  archived: boolean;
   description: string;
   stars: number;
   language: string;
@@ -48,7 +52,9 @@ export async function measureRepo(entry: string | { repo: string; package?: stri
       (issue) => !issue.pull_request && OUTSIDE.has(issue.author_association ?? "") && within(daysSince(issue.created_at), 30),
     );
     return {
-      repo,
+      repo: info.full_name ?? repo,
+      requestedAs: info.full_name && info.full_name !== repo ? repo : undefined,
+      archived: Boolean(info.archived),
       description: (info.description ?? "").trim(),
       stars: info.stargazers_count,
       language: info.language ?? "",

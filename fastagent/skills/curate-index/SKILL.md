@@ -43,7 +43,25 @@ loop you build on. When a project ships both, place it where its users think of 
 If neither question has a clear answer after reading, mark it not in stack and say why. A wrong
 inclusion is visible and correctable; a vague one rots.
 
-## 3. Record verdicts, then refresh
+## 3. Re-read what changed, on the evidence
+
+`review-queue` lists projects whose verdict may no longer hold and why: archived, renamed, description
+changed since it was judged, silent for months, or filed under a layer the verdict never named. It ranks
+by how many signals a project shows; it decides nothing.
+
+There is deliberately no "re-judge everything every 30 days" rule. Most projects do not change in a
+month, and the ones that matter change the week they pivot — a calendar spends judgement evenly on a
+problem that is not evenly distributed. Read the projects whose signals suggest the description you
+judged is no longer the project, and leave the rest.
+
+Two signals mean different things. **Archived or silent** is a fact about maintenance, and the page
+already prints it, so removal is rarely the answer — a widely used project that stopped shipping is
+exactly what a reader wants to see flagged. **A changed description** is a fact about identity, and it
+is the one that moves a project between layers or out of the index.
+
+Recording a new verdict for a project replaces the old one, so a correction is just a rerun.
+
+## 4. Record verdicts, then refresh
 
 `record-verdict` appends to `data/classified.json`; one call per batch of judgements. Then `refresh`
 runs the deterministic half: seeds, measurement, scores, README, the sixteen layer pages, and the
@@ -55,7 +73,7 @@ project into a layer, `exclude` keeps one out, `packages` declares what a reposi
 weekly installs can be read. Every entry needs a reason, because the pipeline reruns and the next
 reader has to know whether the correction still applies.
 
-## 4. Report
+## 5. Report
 
 Say what was judged, what was added, what was removed and what you would not decide alone. Name the
 projects; counts alone hide the mistake you want caught. When a run is thin, say that rather than

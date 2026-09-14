@@ -25,6 +25,12 @@ Corrections to the measurement itself are more valuable than additions. If a num
 repository and what you expected — the collector is [`scripts/collect.py`](scripts/collect.py) and it
 runs in about two minutes.
 
+## Using the data
+
+Everything on the page is also [`data/index.json`](data/index.json): one object per project with its
+layer, raw counts and the four sub-scores, regenerated whenever the page is. Attribution is welcome,
+scraping the Markdown is not necessary.
+
 ## Changing the workflow
 
 Two organisation policies apply, and both fail in ways that are easy to misread.

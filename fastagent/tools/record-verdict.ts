@@ -15,6 +15,7 @@ export default defineTool({
           in_stack: z.boolean(),
           layer: z.string().nullable().describe("layer id; null when not in the stack"),
           why: z.string().min(3).max(60).describe("the reason, a few words"),
+          judgedDescription: z.string().optional().describe("the project's description as read, so a later change is visible"),
         }),
       )
       .min(1)
@@ -22,6 +23,9 @@ export default defineTool({
   }),
   async execute({ verdicts }, ctx) {
     const layers = await layerIds(ctx.cwd);
+    // Stamped so a later run can tell whether the project has changed since anyone looked at it.
+    const judgedAt = new Date().toISOString();
+    verdicts = verdicts.map((verdict) => ({ ...verdict, judgedAt }));
     const wrong = wrongLayers(verdicts, layers);
     if (wrong.length) {
       throw new Error(

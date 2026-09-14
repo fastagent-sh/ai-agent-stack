@@ -57,9 +57,17 @@ export async function json<T = any>(url: string): Promise<T> {
 }
 
 /** Code search is limited to roughly 30 requests a minute, so callers space these out. */
-export async function searchRepos(query: string, sort = "stars", perPage = 20): Promise<Repo[]> {
-  const result = await api<{ items: Repo[] }>(`/search/repositories?q=${encodeURIComponent(query)}&sort=${sort}&per_page=${perPage}`);
-  return result.items ?? [];
+export async function searchRepos(query: string, sort = "stars", perPage = 20, pages = 1): Promise<Repo[]> {
+  const found: Repo[] = [];
+  for (let page = 1; page <= pages; page++) {
+    const result = await api<{ items: Repo[] }>(
+      `/search/repositories?q=${encodeURIComponent(query)}&sort=${sort}&per_page=${perPage}&page=${page}`,
+    );
+    found.push(...(result.items ?? []));
+    if ((result.items ?? []).length < perPage) break; // the last page is short; stop paying for the next
+    if (page < pages) await new Promise((done) => setTimeout(done, 1000));
+  }
+  return found;
 }
 
 /**

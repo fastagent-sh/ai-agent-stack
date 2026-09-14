@@ -9,12 +9,15 @@ import { pooled, within } from "./github.ts";
 const TOP_PER_LAYER = 12;
 const SNAPSHOTS = "data/snapshots.csv";
 
-export type Row = Metrics & Scores & { category: string; starsPerDay?: number };
+export type Row = Metrics & Scores & { category: string; starsPerDay?: number; starsPerDayMonth?: number };
 
 type Seeds = { categories: { id: string; title: string; blurb: string; repos: (string | { repo: string; package?: string })[] }[] };
 
-/** Star velocity from the oldest snapshot we hold. Two points hours apart say nothing, so a day is the floor. */
-async function velocities(workspace: string): Promise<Map<string, number>> {
+/**
+ * Star velocity over a window. Taking the oldest snapshot instead turns "gaining now" into "average
+ * since we started watching" within weeks, which is the number nobody wants.
+ */
+async function velocities(workspace: string, windowDays: number): Promise<Map<string, number>> {
   const path = resolve(workspace, SNAPSHOTS);
   if (!existsSync(path)) return new Map();
   const series = new Map<string, { at: number; stars: number }[]>();
@@ -27,7 +30,8 @@ async function velocities(workspace: string): Promise<Map<string, number>> {
   for (const [repo, points] of series) {
     points.sort((a, b) => a.at - b.at);
     const now = points[points.length - 1];
-    const earlier = points.find((point) => now.at - point.at >= 86_400_000);
+    // The most recent snapshot at least a window old: a comparison point hours away is rounding noise.
+    const earlier = [...points].reverse().find((point) => now.at - point.at >= windowDays * 86_400_000);
     if (earlier) out.set(repo, ((now.stars - earlier.stars) / (now.at - earlier.at)) * 86_400_000);
   }
   return out;
@@ -35,7 +39,7 @@ async function velocities(workspace: string): Promise<Map<string, number>> {
 
 export async function refresh(workspace: string) {
   const seeds = JSON.parse(await readFile(resolve(workspace, "seeds.json"), "utf8")) as Seeds;
-  const history = await velocities(workspace);
+  const [week, month] = [await velocities(workspace, 7), await velocities(workspace, 30)];
   const measuredAt = new Date().toISOString();
   const snapshot: string[] = [];
   const results: { id: string; title: string; blurb: string; rows: Row[] }[] = [];
@@ -45,11 +49,26 @@ export async function refresh(workspace: string) {
     const rows: Row[] = [];
     for (const metrics of measured) {
       if (!metrics) continue;
-      const starsPerDay = history.get(metrics.repo);
-      rows.push({ ...metrics, ...scoreProject(metrics, starsPerDay, ASSET_LAYERS.has(category.id)), category: category.id, starsPerDay });
+      // A week is the shortest span that is not noise; the month is kept for the changes page.
+      const starsPerDay = week.get(metrics.repo) ?? month.get(metrics.repo);
+      rows.push({
+        ...metrics,
+        ...scoreProject(metrics, starsPerDay, ASSET_LAYERS.has(category.id)),
+        category: category.id,
+        starsPerDay,
+        starsPerDayMonth: month.get(metrics.repo),
+      });
       snapshot.push([measuredAt, metrics.repo, metrics.stars, metrics.pushedDays ?? "", metrics.userIssues30d].join(","));
     }
-    rows.sort((a, b) => b.score - a.score || b.stars - a.stars);
+    const canonical = new Map<string, Row>();
+    for (const row of rows) {
+      const key = row.repo.toLowerCase();
+      const existing = canonical.get(key);
+      if (!existing || row.score > existing.score) canonical.set(key, row);
+    }
+    const rows2 = [...canonical.values()].sort((a, b) => b.score - a.score || b.stars - a.stars);
+    rows.length = 0;
+    rows.push(...rows2);
     results.push({ id: category.id, title: category.title, blurb: category.blurb, rows });
     console.log(`-- ${category.title}: ${rows.length} measured`);
   }
@@ -58,13 +77,46 @@ export async function refresh(workspace: string) {
   if (!existsSync(path)) await writeFile(path, "measured_at,repo,stars,pushed_days,user_issues_30d\n");
   await appendFile(path, `${snapshot.join("\n")}\n`);
   await writeFile(resolve(workspace, "data/latest.json"), `${JSON.stringify({ measuredAt, categories: results }, null, 1)}\n`);
+  // A stable, documented shape for anyone who wants the data rather than the page.
+  await writeFile(
+    resolve(workspace, "data/index.json"),
+    `${JSON.stringify(
+      {
+        measuredAt,
+        source: "https://github.com/fastagent-sh/ai-agent-stack",
+        licence: "MIT",
+        scoring: "score = mean(adoption, upkeep, growth, answers); comparable within a layer only",
+        projects: results.flatMap((category) =>
+          category.rows.map((row) => ({
+            repo: row.repo,
+            layer: category.id,
+            layerTitle: category.title,
+            description: row.description,
+            archived: row.archived,
+            stars: row.stars,
+            starsPerDay7d: row.starsPerDay ?? null,
+            starsPerDay30d: row.starsPerDayMonth ?? null,
+            weeklyDownloads: row.weeklyDownloads ?? null,
+            lastReleaseDays: row.lastReleaseDays ?? null,
+            releasesWithNotes90d: row.releasesWithNotes90d,
+            commits90d: row.commits90d,
+            userIssues30d: row.userIssues30d,
+            userIssuesAnswered30d: row.userIssuesAnswered30d,
+            scores: { adoption: row.adoption, upkeep: row.upkeep, growth: row.growth ?? null, answers: row.answers ?? null, score: row.score },
+          })),
+        ),
+      },
+      null,
+      1,
+    )}\n`,
+  );
   await writePages(workspace, results, measuredAt);
   await writeChanges(workspace, results);
   return { measuredAt, projects: results.reduce((sum, category) => sum + category.rows.length, 0), layers: results.length };
 }
 
 const cell = (row: Row) =>
-  `| [${row.repo}](https://github.com/${row.repo})<br><sub>${row.description.slice(0, 90)}</sub> | **${row.score}** | ${row.adoption} | ${row.upkeep} | ${row.growth ?? "—"} | ${row.answers ?? "—"} | ${row.stars.toLocaleString()} | ${row.starsPerDay ? `+${row.starsPerDay.toFixed(0)}` : "—"} `;
+  `| [${row.repo}](https://github.com/${row.repo})${row.archived ? " ⚠️ archived" : ""}<br><sub>${row.description.slice(0, 90)}</sub> | **${row.score}** | ${row.adoption} | ${row.upkeep} | ${row.growth ?? "—"} | ${row.answers ?? "—"} | ${row.stars.toLocaleString()} | ${row.starsPerDay ? `+${row.starsPerDay.toFixed(0)}` : "—"} `;
 
 function table(rows: Row[], asset: boolean): string {
   const head = asset
@@ -137,6 +189,7 @@ const howToRead = () => [
     "input is printed in the same row. If a score looks wrong, the arithmetic is checkable.",
   "",
   "- **User issues** counts issues opened in the last 30 days by someone who is not a maintainer, via GitHub's `author_association`. It separates a project with users from one with an author. A `+` means the count filled an API page.",
+  "- Every number here is also published as JSON at [`data/index.json`](data/index.json), regenerated with the page.",
   "- **Weekly installs** is npm or PyPI downloads for a package declared in [`overrides.json`](overrides.json). Detecting it from a repository's root manifest was tried and removed: in a monorepo it reads the placeholder package.",
   "",
 ];
