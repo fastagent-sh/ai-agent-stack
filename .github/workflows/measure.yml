@@ -9,17 +9,21 @@ jobs:
   measure:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      # Pinned to commit SHAs: the organisation requires it, and a moving tag is a supply-chain hole.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          token: ${{ secrets.MEASURE_TOKEN || github.token }}
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.12"
       - run: python3 scripts/collect.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: python3 scripts/changes.py
       - name: Commit the week's measurement
         run: |
           git config user.name "measure-bot"
           git config user.email "actions@github.com"
-          git add data README.md
+          git add data README.md CHANGES.md layers
           git diff --staged --quiet || git commit -m "measure: $(date -u +%Y-%m-%d)"
           git push
