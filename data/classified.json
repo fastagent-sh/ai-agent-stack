@@ -2843,6 +2843,156 @@
    "in_stack": false,
    "layer": null,
    "why": "Vertical security agents, not stack"
+  },
+  "KimYx0207/AI-Coding-Guide-Zh": {
+   "repo": "KimYx0207/AI-Coding-Guide-Zh",
+   "in_stack": false,
+   "layer": null,
+   "why": "\u6559\u7a0b\u8d44\u6599\uff0c\u4e0d\u662f\u53ef\u7ec4\u88c5\u7ec4\u4ef6"
+  },
+  "Aider-AI/aider": {
+   "repo": "Aider-AI/aider",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "\u7ec8\u7aef AI \u7ed3\u5bf9\u7f16\u7a0b\u4ee3\u7406"
+  },
+  "All-Hands-AI/OpenHands": {
+   "repo": "All-Hands-AI/OpenHands",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "\u81ea\u6258\u7ba1\u7f16\u7801\u4ee3\u7406\u63a7\u5236\u4e2d\u5fc3"
+  },
+  "Arize-ai/phoenix": {
+   "repo": "Arize-ai/phoenix",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "LLM \u53ef\u89c2\u6d4b\u4e0e\u8bc4\u4f30\u5e73\u53f0"
+  },
+  "anthropics/claude-code": {
+   "repo": "anthropics/claude-code",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "\u5b98\u65b9\u7ec8\u7aef\u7f16\u7801\u4ee3\u7406"
+  },
+  "block/goose": {
+   "repo": "block/goose",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "\u672c\u5730\u901a\u7528\u684c\u9762 AI \u52a9\u624b"
+  },
+  "dapr/dapr-agents": {
+   "repo": "dapr/dapr-agents",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "\u6784\u5efa\u5f39\u6027\u591a\u4ee3\u7406\u7cfb\u7edf\u6846\u67b6"
+  },
+  "e2b-dev/E2B": {
+   "repo": "e2b-dev/E2B",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "AI \u4ee3\u7801\u5b89\u5168\u6c99\u7bb1\u57fa\u7840\u8bbe\u65bd"
+  },
+  "fastagent-sh/fastagent": {
+   "repo": "fastagent-sh/fastagent",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "\u628a\u672c\u5730\u4ee3\u7406\u90e8\u7f72\u6210\u670d\u52a1"
+  },
+  "getzep/zep": {
+   "repo": "getzep/zep",
+   "in_stack": false,
+   "layer": null,
+   "why": "\u793a\u4f8b\u548c\u96c6\u6210\uff0c\u4e0d\u662f\u4ea7\u54c1\u672c\u4f53"
+  },
+  "inngest/inngest": {
+   "repo": "inngest/inngest",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "\u6301\u4e45\u51fd\u6570\u3001\u91cd\u8bd5\u548c\u8c03\u5ea6"
+  },
+  "langchain-ai/langgraph": {
+   "repo": "langchain-ai/langgraph",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "\u957f\u8fd0\u884c\u6709\u72b6\u6001\u4ee3\u7406\u7f16\u6392"
+  },
+  "langfuse/langfuse": {
+   "repo": "langfuse/langfuse",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "\u5f00\u6e90 LLM \u8ffd\u8e2a\u8bc4\u4f30"
+  },
+  "langgenius/dify": {
+   "repo": "langgenius/dify",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "\u4f4e\u4ee3\u7801\u4ee3\u7406\u5de5\u4f5c\u6d41\u8fd0\u884c\u5e73\u53f0"
+  },
+  "letta-ai/letta": {
+   "repo": "letta-ai/letta",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "\u5e26\u957f\u671f\u8bb0\u5fc6\u7684\u6709\u72b6\u6001\u4ee3\u7406"
+  },
+  "mastra-ai/mastra": {
+   "repo": "mastra-ai/mastra",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "TypeScript framework for building agents"
+  },
+  "microsoft/autogen": {
+   "repo": "microsoft/autogen",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Multi-agent application framework"
+  },
+  "modelcontextprotocol/servers": {
+   "repo": "modelcontextprotocol/servers",
+   "in_stack": false,
+   "layer": null,
+   "why": "Reference examples, not production stack"
+  },
+  "openai/openai-agents-python": {
+   "repo": "openai/openai-agents-python",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "SDK for multi-agent workflows"
+  },
+  "openclaw/openclaw": {
+   "repo": "openclaw/openclaw",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Cross-platform personal assistant product"
+  },
+  "restatedev/restate": {
+   "repo": "restatedev/restate",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Durable execution for resilient agents"
+  },
+  "temporalio/temporal": {
+   "repo": "temporalio/temporal",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Durable workflows keep agents running"
+  },
+  "traceloop/openllmetry": {
+   "repo": "traceloop/openllmetry",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "LLM observability via OpenTelemetry"
+  },
+  "vercel/ai": {
+   "repo": "vercel/ai",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "TypeScript SDK for AI apps"
+  },
+  "dottxt-ai/outlines": {
+   "repo": "dottxt-ai/outlines",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Structured output library for LLMs"
   }
  }
 }

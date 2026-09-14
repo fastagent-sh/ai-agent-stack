@@ -187,14 +187,25 @@ def days_since(timestamp: str) -> int:
 
 
 def pool() -> dict[str, set[str]]:
-    """Candidates, remembering which layer's query found each one."""
+    """
+    Candidates, remembering which layer's query found each one.
+
+    Everything already on the page goes in first. Without that, a listed project falls off silently the
+    week its search ranking dips: the first run of this version lost Claude Code, LangGraph, LiteLLM,
+    Mastra, AutoGen, Langfuse and E2B, none of which had changed at all.
+    """
     found: dict[str, set[str]] = {}
+    seeds = json.loads((ROOT / "seeds.json").read_text())
+    for category in seeds["categories"]:
+        for entry in category["repos"]:
+            repo = entry if isinstance(entry, str) else entry["repo"]
+            found.setdefault(repo, set()).add("listed")
     for layer, (_, _, queries, _) in LAYERS.items():
         for query in queries:
             try:
                 result = api(f"/search/repositories?q={urllib.parse.quote(query + ' pushed:>' + (NOW.replace(day=1)).strftime('%Y-%m-%d'))}&sort=stars&per_page=20")
-            except urllib.error.HTTPError as error:
-                print(f"  ! {query}: {error.code}", file=sys.stderr)
+            except Exception as error:  # noqa: BLE001 - a dropped search is a gap, not a crash
+                print(f"  ! {query}: {error}", file=sys.stderr)
                 continue
             time.sleep(1)  # the search endpoint allows 30 requests a minute
             for item in result.get("items", []):
@@ -237,7 +248,11 @@ def classify(info: dict, hinted: set[str]) -> str | None:
 def main() -> None:
     minimum = int(sys.argv[sys.argv.index("--stars") + 1]) if "--stars" in sys.argv else 500
     seeds = json.loads((ROOT / "seeds.json").read_text())
-    already = {repo for category in seeds["categories"] for repo in category["repos"]}
+    already = {
+        (entry if isinstance(entry, str) else entry["repo"])
+        for category in seeds["categories"]
+        for entry in category["repos"]
+    }
 
     candidates = {repo: hints for repo, hints in pool().items() if not EXCLUDE.search(repo)}
     print(f"pool: {len(candidates)} candidates, reading repositories...")
@@ -261,7 +276,9 @@ def main() -> None:
             reasons.append("no open licence")
         if EXCLUDE.search(info.get("description") or ""):
             reasons.append("list or tutorial")
-        if not adopted:
+        if "listed" in hints:
+            pass
+        elif not adopted:
             # A project with fewer stars but real users beats a starred repository nobody files against.
             # dapr/dapr-agents has 743 stars and 13 user issues in 30 days; stars alone would drop it.
             if user_issues(repo) < 10:

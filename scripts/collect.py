@@ -18,8 +18,12 @@ from __future__ import annotations
 import csv
 import json
 import os
+import re
+import urllib.parse
 import statistics
 import sys
+import threading
+import time
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -36,20 +40,78 @@ SNAPSHOTS = ROOT / "data" / "snapshots.csv"
 LATEST = ROOT / "data" / "latest.json"
 README = ROOT / "README.md"
 API = "https://api.github.com"
+DOWNLOAD_CACHE = ROOT / "data" / ".package-cache.json"
 NOW = datetime.now(UTC)
 OUTSIDE = {"NONE", "CONTRIBUTOR", "FIRST_TIME_CONTRIBUTOR", "FIRST_TIMER", "MANNEQUIN"}
 # A release body shorter than this says "v1.2.3" and nothing about what changed for the user.
 NOTE_CHARS = 80
 
 
-def api(path: str):
+def api(path: str, attempts: int = 3):
     request = urllib.request.Request(
         API + path,
         headers={"user-agent": "ai-agent-stack", "accept": "application/vnd.github+json",
                  **({"authorization": f"Bearer {os.environ['GITHUB_TOKEN']}"} if os.environ.get("GITHUB_TOKEN") else {})},
     )
-    with urllib.request.urlopen(request, timeout=30) as response:
+    for attempt in range(attempts):
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                return json.load(response)
+        except urllib.error.HTTPError:
+            raise
+        except Exception:
+            # Connections drop under concurrency; one flaky read should not end a 400-repo sweep.
+            if attempt == attempts - 1:
+                raise
+            time.sleep(2 * (attempt + 1))
+
+
+def http_json(url: str):
+    request = urllib.request.Request(url, headers={"user-agent": "ai-agent-stack"})
+    with urllib.request.urlopen(request, timeout=20) as response:
         return json.load(response)
+
+
+_package_cache: dict[str, dict] = json.loads(DOWNLOAD_CACHE.read_text()) if DOWNLOAD_CACHE.exists() else {}
+_cache_lock = threading.Lock()
+# pypistats answers 429 under concurrency, so registry reads are taken one at a time. There are only a
+# handful of declared packages, so the wait costs nothing.
+_registry_lock = threading.Lock()
+
+
+def package_downloads(repo: str, declared: str | None) -> tuple[str, int] | tuple[None, None]:
+    """
+    Weekly installs, which is closer to use than a star: a star is a bookmark, an install is a
+    dependency.
+
+    The package must be declared in seeds.json as `npm:name` or `pypi:name`. Detecting it from the
+    repository's root manifest was tried and removed: in a monorepo the root package is a placeholder,
+    so vercel/ai resolved to "ai-repo" at 3 downloads a week against millions for the real package. A
+    number that is quietly wrong is worse for this page than no number at all.
+    """
+    if not declared:
+        return (None, None)
+    # Six threads writing one file produced a corrupt cache on the first run; keep it in memory.
+    with _cache_lock:
+        entry = _package_cache.get(repo)
+    if entry:
+        return entry.get("package"), entry.get("weekly")
+    registry, _, name = declared.partition(":")
+    found: tuple[str | None, int | None] = (declared, None)
+    with _registry_lock:
+        for attempt in range(3):
+            try:
+                if registry == "npm":
+                    found = (declared, http_json(f"https://api.npmjs.org/downloads/point/last-week/{urllib.parse.quote(name, safe='@/')}")["downloads"])
+                elif registry == "pypi":
+                    found = (declared, http_json(f"https://pypistats.org/api/packages/{name.lower().replace('_', '-')}/recent")["data"]["last_week"])
+                break
+            except Exception:  # noqa: BLE001 - a registry outage is a gap, not a zero
+                time.sleep(5 * (attempt + 1))
+        time.sleep(1)
+    with _cache_lock:
+        _package_cache[repo] = {"package": found[0], "weekly": found[1]}
+    return found
 
 
 def days_since(timestamp: str | None) -> int | None:
@@ -64,12 +126,19 @@ def within(days: int | None, limit: int) -> bool:
     return days is not None and days <= limit
 
 
-def measure(repo: str) -> dict | None:
+def measure(entry: str | dict) -> dict | None:
+    """Seeds hold either "owner/repo" or {"repo": ..., "package": "npm:name"}."""
     try:
-        info = api(f"/repos/{repo}")
-    except urllib.error.HTTPError as error:
-        print(f"  skip {repo}: {error.code}", file=sys.stderr)
+        return _measure(entry)
+    except Exception as error:  # noqa: BLE001 - a repository we cannot read is a gap, not a crash
+        print(f"  skip {entry}: {error}", file=sys.stderr)
         return None
+
+
+def _measure(entry: str | dict) -> dict | None:
+    repo = entry if isinstance(entry, str) else entry["repo"]
+    declared = None if isinstance(entry, str) else entry.get("package")
+    info = api(f"/repos/{repo}")
     releases = api(f"/repos/{repo}/releases?per_page=30")
     issues = api(f"/repos/{repo}/issues?state=all&sort=created&direction=desc&per_page=100")
 
@@ -82,6 +151,7 @@ def measure(repo: str) -> dict | None:
     answered = [i for i in outside_issues if i.get("comments", 0) > 0]
     # One page is 100 issues. A very busy tracker hits that ceiling, so the count is a floor, not a total.
     truncated = len(issues) == 100 and all(within(days_since(i["created_at"]), 30) for i in issues)
+    package, weekly = package_downloads(repo, declared)
     commits_90d = 0
     try:
         since = (NOW - timedelta(days=90)).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -93,6 +163,8 @@ def measure(repo: str) -> dict | None:
         "repo": repo,
         "user_issues_truncated": truncated,
         "commits_90d": commits_90d,
+        "package": package,
+        "weekly_downloads": weekly,
         "name": info["name"],
         "description": (info.get("description") or "").strip(),
         "stars": info["stargazers_count"],
@@ -128,9 +200,9 @@ def table(rows: list[dict], asset_layer: bool = False) -> str:
     """Asset layers get different columns: a folder of skills has no releases to count."""
     if asset_layer:
         head = ("| Project | Stars | Stars/day | Commits (90d) | User issues (30d) | Answered | Last push |\n"
-                "|---|---:|---:|---:|---:|---:|---:|\n")
+                "|---|---:|---:|---:|---:|---:|---:|\n")  # asset layers publish no package
     else:
-        head = ("| Project | Stars | Stars/day | Last release with notes | Releases (90d) | User issues (30d) | Answered | Last push |\n"
+        head = ("| Project | Stars | Stars/day | Weekly installs | Last release with notes | Releases (90d) | User issues (30d) | Answered |\n"
                 "|---|---:|---:|---:|---:|---:|---:|---:|\n")
     lines = []
     for row in rows:
@@ -144,7 +216,8 @@ def table(rows: list[dict], asset_layer: bool = False) -> str:
             commits = f"{row['commits_90d']}{'+' if row['commits_90d'] >= 100 else ''}"
             lines.append(name + f"| {commits} | {issues} | {answered} | {push} |")
         else:
-            lines.append(name + f"| {release} | {row['releases_with_notes_90d']} | {issues} | {answered} | {push} |")
+            installs = f"{row['weekly_downloads']:,}" if row.get("weekly_downloads") else "—"
+            lines.append(name + f"| {installs} | {release} | {row['releases_with_notes_90d']} | {issues} | {answered} |")
     return head + "\n".join(lines) + "\n"
 
 
@@ -178,6 +251,7 @@ def main() -> None:
             writer.writerow(["measured_at", "repo", "stars", "pushed_days", "user_issues_30d"])
         writer.writerows(snapshot_rows)
     LATEST.write_text(json.dumps({"measured_at": measured_at, "categories": results}, indent=1) + "\n")
+    DOWNLOAD_CACHE.write_text(json.dumps(_package_cache))
 
     all_rows = [row for category in results for row in category["rows"]]
     shipping = [r for r in all_rows if within(r["last_release_days"], 30)]
@@ -199,8 +273,19 @@ def main() -> None:
             f"\n[All {len(category['rows'])} projects in this layer →](layers/{category['id']}.md)" if more > 0 else "",
             "",
         ]
+        rows = category["rows"]
+        shipping = [r for r in rows if within(r["last_release_days"], 30)]
+        responsive = sorted((r for r in rows if r["user_issues_30d"] >= 5), key=lambda r: -(r["user_issues_answered_30d"] / max(1, r["user_issues_30d"])))[:3]
+        busiest = sorted(rows, key=lambda r: -r["user_issues_30d"])[:3]
+        summary = (
+            f"Of the {len(rows)} projects here, {len(shipping)} shipped a release with real notes in the last 30 days"
+            + (f", and {len([r for r in rows if not within(r['last_release_days'], 90)])} have shipped none in 90" if not asset else "")
+            + ". "
+            + (f"Most user issues in the last 30 days: {', '.join(f'{r[chr(39)+chr(39)] if False else r["repo"]} ({r["user_issues_30d"]})' for r in busiest)}. " if busiest else "")
+            + (f"Most of them answered: {', '.join(r['repo'] for r in responsive)}." if responsive else "")
+        )
         page = [
-            f"# {category['title']}", "", category["blurb"], "",
+            f"# {category['title']}", "", category["blurb"], "", summary, "",
             f"*{len(category['rows'])} open-source projects, measured {NOW:%Y-%m-%d}. "
             f"[Back to the stack](../README.md).*", "",
             table(category["rows"], asset), "",
@@ -211,6 +296,7 @@ def main() -> None:
     body += [
         "## How to read this",
         "",
+        "- **Weekly installs** is npm or PyPI downloads for the package the repository publishes, read from its own manifest. A star is a bookmark; an install is a dependency. A dash means the project ships no package.",
         "- **Stars/day** comes from comparing snapshots in [`data/snapshots.csv`](data/snapshots.csv). A first measurement has none, so the column fills in from the second run onwards.",
         "- **Last release with notes** ignores tags whose body is a version number. A release that does not say what changed for the user is a code change, not a release.",
         f"- Each layer page lists every project in it; the front page shows the {TOP_PER_LAYER} moving fastest.",

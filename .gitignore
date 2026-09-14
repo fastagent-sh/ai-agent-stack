@@ -8,3 +8,4 @@ __pycache__/
 
 # A local read-through cache of the GitHub API, not a measurement.
 data/.repo-cache.json
+data/.package-cache.json

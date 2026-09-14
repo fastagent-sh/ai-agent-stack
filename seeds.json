@@ -8,6 +8,8 @@
       "repos": [
         "1jehuang/jcode",
         "777genius/agent-teams-ai",
+        "Aider-AI/aider",
+        "All-Hands-AI/OpenHands",
         "Chachamaru127/claude-code-harness",
         "HKUDS/DeepCode",
         "Hmbown/Codewhale",
@@ -17,6 +19,7 @@
         "Untrivial-ai/agent-orchestrator",
         "alibaba/open-code-review",
         "anomalyco/opencode",
+        "anthropics/claude-code",
         "can1357/oh-my-pi",
         "chaitanyagiri/munder-difflin",
         "chaitin/MonkeyCode",
@@ -69,7 +72,10 @@
         "Player-YN/PawWork_ZhuaZhua",
         "actionbook/actionbook",
         "alibaba/page-agent",
-        "browser-use/browser-use",
+        {
+          "repo": "browser-use/browser-use",
+          "package": "pypi:browser-use"
+        },
         "browseros-ai/BrowserOS",
         "bytedance/UI-TARS-desktop",
         "citrolabs/ego-lite",
@@ -102,6 +108,7 @@
         "aaif-goose/goose",
         "adolfousier/opencrabs",
         "agentscope-ai/QwenPaw",
+        "block/goose",
         "dust-tt/dust",
         "eigent-ai/eigent",
         "fox-in-the-box-ai/fox-in-the-box",
@@ -113,6 +120,7 @@
         "nearai/ironclaw",
         "netease-youdao/LobsterAI",
         "nousresearch/hermes-agent",
+        "openclaw/openclaw",
         "osaurus-ai/osaurus",
         "razzant/ouroboros",
         "siddsachar/row-bot",
@@ -184,7 +192,10 @@
         "TokenRhythm/opensquilla",
         "Tura-AI/tura",
         "aden-hive/hive",
-        "agno-agi/agno",
+        {
+          "repo": "agno-agi/agno",
+          "package": "pypi:agno"
+        },
         "anthropics/claude-agent-sdk-python",
         "avifenesh/agentsys",
         "awslabs/cli-agent-orchestrator",
@@ -198,6 +209,7 @@
         "github/copilot-sdk",
         "langchain-ai/deepagents",
         "langflow-ai/langflow",
+        "langgenius/dify",
         "micro/go-micro",
         "modu-ai/moai-adk",
         "omnigent-ai/omnigent",
@@ -232,21 +244,39 @@
         "agentscope-ai/agentscope-java",
         "botpress/botpress",
         "browserbase/stagehand",
-        "crewAIInc/crewAI",
+        {
+          "repo": "crewAIInc/crewAI",
+          "package": "pypi:crewai"
+        },
+        "dapr/dapr-agents",
         "deepset-ai/haystack",
+        "dottxt-ai/outlines",
         "fetchai/uAgents",
         "google-antigravity/antigravity-sdk-python",
         "google/adk-go",
-        "google/adk-python",
+        {
+          "repo": "google/adk-python",
+          "package": "pypi:google-adk"
+        },
         "kyegomez/swarms",
         "langchain-ai/langchain",
+        "mastra-ai/mastra",
         "microsoft/agent-framework",
+        "microsoft/autogen",
         "microsoft/prompty",
         "microsoft/semantic-kernel",
+        "openai/openai-agents-python",
         "pipecat-ai/pipecat",
-        "pydantic/pydantic-ai",
-        "run-llama/llama_index",
+        {
+          "repo": "pydantic/pydantic-ai",
+          "package": "pypi:pydantic-ai"
+        },
+        {
+          "repo": "run-llama/llama_index",
+          "package": "pypi:llama-index"
+        },
         "trpc-group/trpc-agent-go",
+        "vercel/ai",
         "vercel/eve"
       ]
     },
@@ -332,12 +362,17 @@
         "dataelement/bisheng",
         "desplega-ai/agent-swarm",
         "durable-streams/durable-streams",
+        "fastagent-sh/fastagent",
         "google/ax",
         "hatchet-dev/hatchet",
         "herdrdev/herdr",
         "iflytek/astron-agent",
+        "inngest/inngest",
+        "langchain-ai/langgraph",
         "moltis-org/moltis",
-        "rivet-dev/actors"
+        "restatedev/restate",
+        "rivet-dev/actors",
+        "temporalio/temporal"
       ]
     },
     {
@@ -358,7 +393,11 @@
         "headroomlabs-ai/headroom",
         "infiniflow/ragflow",
         "iwe-org/iwe",
-        "mem0ai/mem0",
+        "letta-ai/letta",
+        {
+          "repo": "mem0ai/mem0",
+          "package": "pypi:mem0ai"
+        },
         "plastic-labs/honcho",
         "rohitg00/agentmemory",
         "smaramwbc/statewave",
@@ -469,6 +508,7 @@
         "arcboxlabs/arcbox",
         "astrid-runtime/astrid",
         "cofy-x/axern",
+        "e2b-dev/E2B",
         "mensfeld/code-on-incus",
         "opensandbox-group/OpenSandbox",
         "pydantic/monty",
@@ -482,26 +522,35 @@
       "blurb": "How you find out whether the agent is still doing its job.",
       "repos": [
         "2akouwu/reverify",
+        "Arize-ai/phoenix",
         "CopilotKit/aimock",
         "Giskard-AI/giskard-oss",
         "Helicone/helicone",
         "IBM/AssetOpsBench",
         "comet-ml/opik",
-        "confident-ai/deepeval",
+        {
+          "repo": "confident-ai/deepeval",
+          "package": "pypi:deepeval"
+        },
         "coze-dev/coze-loop",
         "es617/claude-replay",
         "evidentlyai/evidently",
         "future-agi/future-agi",
         "hoangsonww/Claude-Code-Agent-Monitor",
         "ifixai-ai/iFixAi",
+        "langfuse/langfuse",
         "langwatch/langwatch",
         "latitude-dev/latitude-llm",
         "lmnr-ai/lmnr",
         "mlflow/mlflow",
         "openlit/openlit",
-        "promptfoo/promptfoo",
+        {
+          "repo": "promptfoo/promptfoo",
+          "package": "npm:promptfoo"
+        },
         "pydantic/logfire",
         "simple10/agents-observe",
+        "traceloop/openllmetry",
         "truera/trulens"
       ]
     },
