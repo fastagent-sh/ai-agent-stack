@@ -3,7 +3,7 @@ import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 import { ASSET_LAYERS, LAYERS, layerById } from "./layers.ts";
 import { measureRepo, scoreProject, type Metrics, type Scores } from "./measure.ts";
-import { pooled, within } from "./github.ts";
+import { pooled, saveEtags, within } from "./github.ts";
 
 /** The front page ranks; a layer page lists. A navigation site needs both. */
 const TOP_PER_LAYER = 12;
@@ -45,7 +45,7 @@ export async function refresh(workspace: string) {
   const results: { id: string; title: string; blurb: string; rows: Row[] }[] = [];
 
   for (const category of seeds.categories) {
-    const measured = await pooled(category.repos, 6, (entry) => measureRepo(entry, workspace));
+    const measured = await pooled(category.repos, 6, (entry) => measureRepo(entry, workspace, ASSET_LAYERS.has(category.id)));
     const rows: Row[] = [];
     for (const metrics of measured) {
       if (!metrics) continue;
@@ -110,6 +110,7 @@ export async function refresh(workspace: string) {
       1,
     )}\n`,
   );
+  await saveEtags();
   await writePages(workspace, results, measuredAt);
   await writeChanges(workspace, results);
   return { measuredAt, projects: results.reduce((sum, category) => sum + category.rows.length, 0), layers: results.length };

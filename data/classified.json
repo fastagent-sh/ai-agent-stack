@@ -8951,6 +8951,4342 @@
    "why": "desktop agent client with tools",
    "judgedDescription": "⚡ Open-source AI Agent desktop client — multi-LLM, long-term memory, browser automation & tool orchestration | Tauri v2",
    "judgedAt": "2026-09-14T21:09:40.646Z"
+  },
+  "Rion-Wu-tech/wechat-intelligence-hub": {
+   "repo": "Rion-Wu-tech/wechat-intelligence-hub",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "WeChat data tool and Codex skill",
+   "judgedDescription": "Local-first WeChat intelligence system with a read-only CLI, Codex skills, searchable chat history, daily briefings, fol",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "vinzdg/codenotch": {
+   "repo": "vinzdg/codenotch",
+   "in_stack": false,
+   "layer": null,
+   "why": "Peripheral usage-limit meter app",
+   "judgedDescription": "A macOS app that pins usage limits from Claude Code, Cursor, Codex, and Antigravity to a screen edge.",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "donvito/codex-astra-luna-orchestrator": {
+   "repo": "donvito/codex-astra-luna-orchestrator",
+   "in_stack": false,
+   "layer": null,
+   "why": "Codex config/profile template",
+   "judgedDescription": "Use Astra as orchestrator and Luna for subagents in Codex",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "crwdla/tokentab": {
+   "repo": "crwdla/tokentab",
+   "in_stack": false,
+   "layer": null,
+   "why": "Local usage analytics, not agent stack",
+   "judgedDescription": "A CLI that reads Claude Code, Codex, and Gemini CLI session logs and works out how much they cost, by model, project, an",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "cclank/lanshu-create-ai-presenter-video": {
+   "repo": "cclank/lanshu-create-ai-presenter-video",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Installable Codex video skill",
+   "judgedDescription": "Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized presenter image.",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "shadcn-ui/lint": {
+   "repo": "shadcn-ui/lint",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Agent-facing design-system linter",
+   "judgedDescription": "An agent-first linter for Tailwind design systems. Write design system rules that agents can verify.",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "furkankly/zoetrope": {
+   "repo": "furkankly/zoetrope",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Live trace graph for agent sessions",
+   "judgedDescription": "Watch a Claude Code or Codex session as a live flow graph, in your terminal or your browser.",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "LB623/no-negative-echo": {
+   "repo": "LB623/no-negative-echo",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Agent skill for delivery cleanup",
+   "judgedDescription": "让 Codex 根据最终结果生成标题、注释、commit 和 PR，减少被否决方案在交付中的残留。",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "kruzovic7/ai-data-extractor": {
+   "repo": "kruzovic7/ai-data-extractor",
+   "in_stack": false,
+   "layer": null,
+   "why": "Chat-history export and backup tool",
+   "judgedDescription": "Free open-source extractor for AI coding assistant chat histories. Supports Claude Code, Cursor, Windsurf, Aider, Cline/",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "panxunying/ai-coding-welfare": {
+   "repo": "panxunying/ai-coding-welfare",
+   "in_stack": false,
+   "layer": null,
+   "why": "Directory of relay/freebie sites",
+   "judgedDescription": "AI Coding 福利站导航：免费白嫖 Claude Code / Codex 的中转站与公益站合集，含额度、模型、价格自动更新与一键配置脚本",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "slee-persis/GVS5H": {
+   "repo": "slee-persis/GVS5H",
+   "in_stack": false,
+   "layer": null,
+   "why": "Paper and benchmark code",
+   "judgedDescription": "GVS5H: Five Qwen3.8-27B Models Match Claude Fable 5 on LiveCodeBench Hard  |  Fable 5 Level Coding for a Fifth the Price",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "Yuzzyuk/marketing-os": {
+   "repo": "Yuzzyuk/marketing-os",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Installable marketing agent skill",
+   "judgedDescription": "An entire marketing department as one Claude skill. 14 modules: audits scored 0-100, an 18-tactic hook engine, copy grad",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "only-cli/oc": {
+   "repo": "only-cli/oc",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Compact web CLI for agents",
+   "judgedDescription": "Turn any website into a compact CLI tailored for AI agents. Browse the web in hundreds of tokens, not tens of thousands.",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "grpcer/ownmem": {
+   "repo": "grpcer/ownmem",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Git-native memory for coding agents",
+   "judgedDescription": "Open-source, Git-native memory for AI coding agents — deterministic local recall for Claude Code, Codex, Cursor, Gemini ",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "MaxHu-xuan/task-state-guard": {
+   "repo": "MaxHu-xuan/task-state-guard",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Agent task-state reconciliation guard",
+   "judgedDescription": "Reconcile stuck AI-agent tasks after restarts and timeouts. Preview SQLite changes, close stale delivery states, and nev",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "useagenthq/useagent": {
+   "repo": "useagenthq/useagent",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "Self-hosted agents with cloud computer",
+   "judgedDescription": "The open-source AI coworker for your team: agents with their own cloud computer, your tools and context, handing back fi",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "cocoyes/zhizhi-agent-runtime": {
+   "repo": "cocoyes/zhizhi-agent-runtime",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Go runtime for planning agents",
+   "judgedDescription": "A model-agnostic, stateless Go agent runtime featuring dual-IR planning, dependency-aware batch scheduling, capability-d",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "Matthew0822/ToolReplay": {
+   "repo": "Matthew0822/ToolReplay",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Deterministic replay for tool calls",
+   "judgedDescription": "Audit AI agent tool-call transcripts: hash-chain sealing, deterministic replay, and scope overreach checks. Dependency-f",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "r1c7/CluxMate": {
+   "repo": "r1c7/CluxMate",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "AI coding agent with CLI and UI",
+   "judgedDescription": "AI coding agent with one Python core and three front-ends — headless CLI, Textual TUI, and an Electron desktop. Works wi",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "Atomburstofficial/geiger": {
+   "repo": "Atomburstofficial/geiger",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Scans local agent exposure",
+   "judgedDescription": "A Geiger counter for AI agents — one read-only command that inventories every agent, MCP server, plugin, and AI extensio",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "thomasbek3/hermes-bot-kit": {
+   "repo": "thomasbek3/hermes-bot-kit",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Desktop plugins for Hermes agents",
+   "judgedDescription": "The Grok Bot experience for your Hermes fleet: iMessage-style chat bubbles + a live window into your bots' computers. No",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "reality-opened/openreality": {
+   "repo": "reality-opened/openreality",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "MCP tools for 3D scene queries",
+   "judgedDescription": "Open Reality: phone video to AI-queryable 3D scenes. MCP tools for Claude/Codex/Cursor (npm openreality-mcp), the self-h",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "joe960913/Jixu": {
+   "repo": "joe960913/Jixu",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Durable TypeScript agent harness",
+   "judgedDescription": "Durable single-Agent Harness for TypeScript: recoverable Threads, context continuity, explicit side effects, and a nativ",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "jinhanbuilds/hoist-the-elephant": {
+   "repo": "jinhanbuilds/hoist-the-elephant",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Skill for re-anchoring conversations",
+   "judgedDescription": "Re-anchor long conversations that drift through repeated local corrections.",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "Prism-Shadow/travel-agent": {
+   "repo": "Prism-Shadow/travel-agent",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical travel booking application",
+   "judgedDescription": "An open-source travel agent that works on real websites: plan trips, book in a browser beside the chat, stop at the paym",
+   "judgedAt": "2026-09-15T03:20:46.522Z"
+  },
+  "ldbumble/taskuary": {
+   "repo": "ldbumble/taskuary",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "AI task hub orchestrates agents",
+   "judgedDescription": "Automate your job: local-first AI task hub. Email, Teams, Slack & reports -> one timeline -> AI triage -> your coding ag",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "speakeasy-api/kit": {
+   "repo": "speakeasy-api/kit",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "coding agent runtime",
+   "judgedDescription": "Kit is a coding agent runtime. Claude Code but faster, cheaper and more to the point 🎯",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "philphilphil/blunderbase": {
+   "repo": "philphilphil/blunderbase",
+   "in_stack": false,
+   "layer": null,
+   "why": "chess app; MCP incidental",
+   "judgedDescription": "Personal chess database",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "BardiaN/kronk-cli": {
+   "repo": "BardiaN/kronk-cli",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "terminal coding agent",
+   "judgedDescription": "Zero-dependency terminal coding agent for local LLMs served by Kronk. Streaming chat, tool calling with approval gating,",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "smirnovegorv/reproducible-claim-record": {
+   "repo": "smirnovegorv/reproducible-claim-record",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "agent handoff record format",
+   "judgedDescription": "RCR, Reproducible Claim Record: a plain-text format for passing findings, claims and hand-offs between agents that do no",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "LouPineWays/Loop-Dee-Loup": {
+   "repo": "LouPineWays/Loop-Dee-Loup",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "coding-agent workflow instructions",
+   "judgedDescription": "An opinionated, token-lean execution loop for autonomous coding agents.",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "woahwhattheheck/commons": {
+   "repo": "woahwhattheheck/commons",
+   "in_stack": false,
+   "layer": null,
+   "why": "public board and services",
+   "judgedDescription": "Public Commons board. HTTP is not the computer.",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "microsoft/markitdown": {
+   "repo": "microsoft/markitdown",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "document conversion for LLMs",
+   "judgedDescription": "Python tool for converting files and office documents to Markdown.",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "github/spec-kit": {
+   "repo": "github/spec-kit",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "spec-driven coding process",
+   "judgedDescription": "💫 Toolkit to help you get started with Spec-Driven Development",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "harry0703/MoneyPrinterTurbo": {
+   "repo": "harry0703/MoneyPrinterTurbo",
+   "in_stack": false,
+   "layer": null,
+   "why": "vertical video generator",
+   "judgedDescription": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "ruvnet/RuView": {
+   "repo": "ruvnet/RuView",
+   "in_stack": false,
+   "layer": null,
+   "why": "WiFi sensing application",
+   "judgedDescription": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "vllm-project/vllm": {
+   "repo": "vllm-project/vllm",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "LLM inference serving engine",
+   "judgedDescription": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "localsend/localsend": {
+   "repo": "localsend/localsend",
+   "in_stack": false,
+   "layer": null,
+   "why": "file sharing app",
+   "judgedDescription": "An open-source cross-platform alternative to AirDrop",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "unslothai/unsloth": {
+   "repo": "unslothai/unsloth",
+   "in_stack": false,
+   "layer": null,
+   "why": "model training desktop app",
+   "judgedDescription": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "666ghj/MiroFish": {
+   "repo": "666ghj/MiroFish",
+   "in_stack": false,
+   "layer": null,
+   "why": "prediction engine, not agent stack",
+   "judgedDescription": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "dani-garcia/vaultwarden": {
+   "repo": "dani-garcia/vaultwarden",
+   "in_stack": false,
+   "layer": null,
+   "why": "password manager server",
+   "judgedDescription": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "usestrix/strix": {
+   "repo": "usestrix/strix",
+   "in_stack": true,
+   "layer": "security",
+   "why": "AI pentesting agent tool",
+   "judgedDescription": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "zylon-ai/private-gpt": {
+   "repo": "zylon-ai/private-gpt",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "API layer for private AI apps",
+   "judgedDescription": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works wi",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "reactive-resume/reactive-resume": {
+   "repo": "reactive-resume/reactive-resume",
+   "in_stack": false,
+   "layer": null,
+   "why": "resume builder app",
+   "judgedDescription": "A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source a",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "hpcaitech/ColossalAI": {
+   "repo": "hpcaitech/ColossalAI",
+   "in_stack": false,
+   "layer": null,
+   "why": "model training infrastructure",
+   "judgedDescription": "Making large AI models cheaper, faster and more accessible",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "OpenBMB/VoxCPM": {
+   "repo": "OpenBMB/VoxCPM",
+   "in_stack": false,
+   "layer": null,
+   "why": "TTS model, not agent stack",
+   "judgedDescription": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "github/github-mcp-server": {
+   "repo": "github/github-mcp-server",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "GitHub tool access for agents",
+   "judgedDescription": "GitHub's official MCP Server",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "ScrapeGraphAI/Scrapegraph-ai": {
+   "repo": "ScrapeGraphAI/Scrapegraph-ai",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "LLM web scraping tool",
+   "judgedDescription": "Python scraper based on AI",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "simstudioai/sim": {
+   "repo": "simstudioai/sim",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "build deploy monitor agents",
+   "judgedDescription": "Sim is the collaborative workspace to build, deploy, and monitor AI agents and workflows. Used by 100,000+ builders.",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "decolua/9router": {
+   "repo": "decolua/9router",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "AI model router for code tools",
+   "judgedDescription": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via ",
+   "judgedAt": "2026-09-15T03:24:36.993Z"
+  },
+  "google-labs-code/design.md": {
+   "repo": "google-labs-code/design.md",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "design context format for coding agents",
+   "judgedDescription": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structure",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "phuryn/pm-skills": {
+   "repo": "phuryn/pm-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Claude/Cowork PM agent skills",
+   "judgedDescription": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and g",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "JimLiu/baoyu-skills": {
+   "repo": "JimLiu/baoyu-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "installable skills for AI agents",
+   "judgedDescription": "",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "temporalio/temporal": {
+   "repo": "temporalio/temporal",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "durable workflow execution platform",
+   "judgedDescription": "Temporal service",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "Skyvern-AI/skyvern": {
+   "repo": "Skyvern-AI/skyvern",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "LLM browser workflow automation",
+   "judgedDescription": "Automate browser based workflows with AI",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "czlonkowski/n8n-mcp": {
+   "repo": "czlonkowski/n8n-mcp",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "MCP server for n8n automation",
+   "judgedDescription": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you ",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "trycua/cua": {
+   "repo": "trycua/cua",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "computers and VMs for agents",
+   "judgedDescription": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data gene",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "PromtEngineer/localGPT": {
+   "repo": "PromtEngineer/localGPT",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "private RAG document platform",
+   "judgedDescription": "Chat with your documents on your local device using GPT models. No data leaves your device and 100% private. ",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "modelscope/FunASR": {
+   "repo": "modelscope/FunASR",
+   "in_stack": false,
+   "layer": null,
+   "why": "speech toolkit, not agent stack",
+   "judgedDescription": "Open-source speech recognition toolkit for training, inference, streaming ASR, VAD, punctuation, speaker diarization pip",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "t8y2/dbx": {
+   "repo": "t8y2/dbx",
+   "in_stack": false,
+   "layer": null,
+   "why": "database client with AI features",
+   "judgedDescription": "20 MB lightweight cross-platform database client for 90+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB,",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "nukeop/nuclear": {
+   "repo": "nukeop/nuclear",
+   "in_stack": false,
+   "layer": null,
+   "why": "music player application",
+   "judgedDescription": "Streaming music player that finds free music for you",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "nesquena/hermes-webui": {
+   "repo": "nesquena/hermes-webui",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "web client for Hermes Agent",
+   "judgedDescription": "Hermes WebUI: The best way to use Hermes Agent from the web or from your phone!",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "browser-use/browser-harness": {
+   "repo": "browser-use/browser-harness",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "browser control harness for LLMs",
+   "judgedDescription": "Browser Harness | Self-healing harness that enables LLMs to complete any task.",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "cft0808/edict": {
+   "repo": "cft0808/edict",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "multi-agent orchestration system",
+   "judgedDescription": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, ",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "triggerdotdev/trigger.dev": {
+   "repo": "triggerdotdev/trigger.dev",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "durable AI workflows platform",
+   "judgedDescription": "Trigger.dev – build and deploy durable AI agents and workflows",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "alibaba/zvec": {
+   "repo": "alibaba/zvec",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "in-process vector database",
+   "judgedDescription": "A lightweight, lightning-fast, in-process vector database",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "xpzouying/xiaohongshu-mcp": {
+   "repo": "xpzouying/xiaohongshu-mcp",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "MCP server for Xiaohongshu",
+   "judgedDescription": "MCP for xiaohongshu.com",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "earthtojake/text-to-cad": {
+   "repo": "earthtojake/text-to-cad",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "CAD/CAE/CAM agent skills",
+   "judgedDescription": "A library of agent skills for CAD, CAE and CAM",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "yusufkaraaslan/Skill_Seekers": {
+   "repo": "yusufkaraaslan/Skill_Seekers",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "tool to generate Claude skills",
+   "judgedDescription": "Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with automatic conflict detection",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "nanobrowser/nanobrowser": {
+   "repo": "nanobrowser/nanobrowser",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "browser extension web automation agent",
+   "judgedDescription": "Open-Source Chrome extension for AI-powered web automation. Run multi-agent workflows using your own LLM API key. Altern",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "datahub-project/datahub": {
+   "repo": "datahub-project/datahub",
+   "in_stack": false,
+   "layer": null,
+   "why": "general data catalog platform",
+   "judgedDescription": "The Context Platform for your Data and AI Stack",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "JoeanAmier/XHS-Downloader": {
+   "repo": "JoeanAmier/XHS-Downloader",
+   "in_stack": false,
+   "layer": null,
+   "why": "Xiaohongshu downloader app",
+   "judgedDescription": "小红书（XiaoHongShu、RedNote）链接提取/作品采集工具",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "mrexodia/ida-pro-mcp": {
+   "repo": "mrexodia/ida-pro-mcp",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "MCP bridge for IDA Pro",
+   "judgedDescription": "AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP.",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "OpenByteInc/QuantDinger": {
+   "repo": "OpenByteInc/QuantDinger",
+   "in_stack": false,
+   "layer": null,
+   "why": "vertical AI trading app",
+   "judgedDescription": "Open-source AI Trading OS and commercial-ready multi-tenant SaaS platform — research markets, build Python strategies, b",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "0xJacky/nginx-ui": {
+   "repo": "0xJacky/nginx-ui",
+   "in_stack": false,
+   "layer": null,
+   "why": "general Nginx administration UI",
+   "judgedDescription": "Yet another WebUI for Nginx",
+   "judgedAt": "2026-09-15T03:27:15.400Z"
+  },
+  "alibaba/spring-ai-alibaba": {
+   "repo": "alibaba/spring-ai-alibaba",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Java agent app framework",
+   "judgedDescription": "Agentic AI Framework for Java Developers",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "go-vgo/robotgo": {
+   "repo": "go-vgo/robotgo",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "desktop automation for agents",
+   "judgedDescription": "RobotGo, Go Native cross-platform RPA, GUI automation, Auto test and Computer use  @vcaesar",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "langchain-ai/open-swe": {
+   "repo": "langchain-ai/open-swe",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "asynchronous coding agent",
+   "judgedDescription": "An Open-Source Asynchronous Coding Agent",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "xinnan-tech/xiaozhi-esp32-server": {
+   "repo": "xinnan-tech/xiaozhi-esp32-server",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "voice agent backend server",
+   "judgedDescription": "本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service for xiaozhi-esp32, helps you quickly build an ESP32 device c",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "yzhao062/pyod": {
+   "repo": "yzhao062/pyod",
+   "in_stack": false,
+   "layer": null,
+   "why": "anomaly detection library",
+   "judgedDescription": "A Python library for anomaly detection across tabular, time series, graph, text, image, and audio data. 60+ detectors, b",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "awslabs/mcp": {
+   "repo": "awslabs/mcp",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "AWS MCP server suite",
+   "judgedDescription": "Open source MCP Servers for AWS",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "petergyang/no-ai-slop": {
+   "repo": "petergyang/no-ai-slop",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "portable writing skill",
+   "judgedDescription": "Removes 20+ patterns of AI slop from any piece of writing.",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "Justson/AgentWeb": {
+   "repo": "Justson/AgentWeb",
+   "in_stack": false,
+   "layer": null,
+   "why": "Android WebView library",
+   "judgedDescription": " AgentWeb is a powerful library based on Android WebView.",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "Agents365-ai/drawio-skill": {
+   "repo": "Agents365-ai/drawio-skill",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "diagram generation skill",
+   "judgedDescription": "Agent skill that turns natural language, code, Terraform/K8s, SQL, OpenAPI, AsyncAPI, Protobuf and GraphQL sources into ",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "AgriciDaniel/claude-ads": {
+   "repo": "AgriciDaniel/claude-ads",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "paid-media agent skill",
+   "judgedDescription": "Claude-first paid-media operations skill for Claude Code across 12 ad platforms (Google, Meta, YouTube, LinkedIn, TikTok",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "modem-dev/hunk": {
+   "repo": "modem-dev/hunk",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "reviews agent code diffs",
+   "judgedDescription": "Review-first terminal diff viewer for agentic coders",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "openstatusHQ/openstatus": {
+   "repo": "openstatusHQ/openstatus",
+   "in_stack": false,
+   "layer": null,
+   "why": "uptime monitoring platform",
+   "judgedDescription": "🫖 Status page with uptime monitoring & API monitoring as code   🫖",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "OpenBMB/XAgent": {
+   "repo": "OpenBMB/XAgent",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "general autonomous agent",
+   "judgedDescription": "An Autonomous LLM Agent for Complex Task Solving",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "bytedance/flowgram.ai": {
+   "repo": "bytedance/flowgram.ai",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "AI workflow builder framework",
+   "judgedDescription": "FlowGram is an extensible workflow development framework with built-in canvas, form, variable, and materials that helps ",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "reconurge/flowsint": {
+   "repo": "reconurge/flowsint",
+   "in_stack": false,
+   "layer": null,
+   "why": "OSINT investigation app",
+   "judgedDescription": "A modern platform for visual, flexible, and extensible graph-based investigations. For cybersecurity analysts and invest",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "OpenWhispr/openwhispr": {
+   "repo": "OpenWhispr/openwhispr",
+   "in_stack": false,
+   "layer": null,
+   "why": "dictation end-user app",
+   "judgedDescription": "Voice-to-text dictation app with local (Nvidia Parakeet/Whisper) and cloud models (BYOK). Privacy-first and available cr",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "rikkahub/rikkahub": {
+   "repo": "rikkahub/rikkahub",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Android LLM chat client",
+   "judgedDescription": "RikkaHub is an Android APP that supports for multiple LLM providers.",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "Ylianst/MeshCentral": {
+   "repo": "Ylianst/MeshCentral",
+   "in_stack": false,
+   "layer": null,
+   "why": "remote management software",
+   "judgedDescription": "A complete web-based remote monitoring and management web site. Once setup you can install agents and perform remote des",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "xerrors/Yuxi": {
+   "repo": "xerrors/Yuxi",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "self-hosted agent platform",
+   "judgedDescription": "可私有部署的多租户知识智能体平台：统一 RAG、知识图谱、多智能体、MCP/Skills、沙盒与权限管理。Self-hosted knowledge agent platform for RAG, knowledge graphs and ",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "mishushakov/llm-scraper": {
+   "repo": "mishushakov/llm-scraper",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "LLM structured web extraction",
+   "judgedDescription": "Turn any webpage into structured data using LLMs",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "zenstory-ai/oh-story-claudecode": {
+   "repo": "zenstory-ai/oh-story-claudecode",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "writing workflow skill pack",
+   "judgedDescription": "Claude Code / Codex / OpenCode agent skills for writing Chinese web novels (网文): 扫榜、拆文、写作、去AI味、封面全流程，长篇短篇都支持 | 13 skills",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "adbar/trafilatura": {
+   "repo": "adbar/trafilatura",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "web text extraction tool",
+   "judgedDescription": "Python & Command-line tool to gather text and metadata on the Web: Crawling, scraping, extraction, output as CSV, JSON, ",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "tbphp/gpt-load": {
+   "repo": "tbphp/gpt-load",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "self-hosted AI gateway",
+   "judgedDescription": "Self-hosted AI gateway for multi-channel, multi-credential setups — API keys and subscription accounts, scheduling, fail",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "genkit-ai/genkit": {
+   "repo": "genkit-ai/genkit",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "agentic app framework",
+   "judgedDescription": "Open-source framework for building agentic apps in JavaScript, Go, Dart, and Python, built and used in production by Goo",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "github/CopilotForXcode": {
+   "repo": "github/CopilotForXcode",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Xcode coding assistant",
+   "judgedDescription": "AI coding assistant for Xcode",
+   "judgedAt": "2026-09-15T03:33:30.547Z"
+  },
+  "anysearch-ai/anysearch-skill": {
+   "repo": "anysearch-ai/anysearch-skill",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Search skill for agents",
+   "judgedDescription": "Unified real-time search engine skill for AI agents. Supports general web search, vertical domain search, parallel batch",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "smol-machines/smolvm": {
+   "repo": "smol-machines/smolvm",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "Portable microVM execution",
+   "judgedDescription": "Branchable computing by using a portable, lightweight, self-contained virtual machine",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "kunchenguid/firstmate": {
+   "repo": "kunchenguid/firstmate",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Agent distro supervises crews",
+   "judgedDescription": "Talk to one agent. Ship with a crew.",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "gosom/google-maps-scraper": {
+   "repo": "gosom/google-maps-scraper",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Scraping tool agents can run",
+   "judgedDescription": "scrape data  from Google Maps. Extracts data such as the name, address, phone number, website URL, rating,  reviews numb",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "OpenSenseNova/SenseNova-Skills": {
+   "repo": "OpenSenseNova/SenseNova-Skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Office workflow skill pack",
+   "judgedDescription": "Modular SenseNova skills for building AI-powered office assistants and productivity workflows",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "junhoyeo/tokscale": {
+   "repo": "junhoyeo/tokscale",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Token usage observability",
+   "judgedDescription": "🛰️ Track token usage across AI coding agents from your terminal. 🏅 Global leaderboard with trillions of tokens tracked",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "0xeb/TheBigPromptLibrary": {
+   "repo": "0xeb/TheBigPromptLibrary",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Prompt and instruction assets",
+   "judgedDescription": "A collection of prompts, system prompts and LLM instructions",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "unlayer/react-email-editor": {
+   "repo": "unlayer/react-email-editor",
+   "in_stack": false,
+   "layer": null,
+   "why": "General email editor component",
+   "judgedDescription": "Drag-n-Drop Email Editor Component for React.js",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "buxuku/SmartSub": {
+   "repo": "buxuku/SmartSub",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical subtitle desktop app",
+   "judgedDescription": "视频转字幕、字幕翻译、AI 配音与声音克隆、字幕烧录——免费开源的一站式桌面工具。基于 Whisper / FunASR 等本地模型离线语音转文字，批量处理 + 全平台 GPU 加速，跨 Windows / macOS / Linux。Fr",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "PeonPing/peon-ping": {
+   "repo": "PeonPing/peon-ping",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Agent notification interface",
+   "judgedDescription": "Warcraft III Peon voice notifications (+ more!) for Claude Code, Codex, IDEs, and any AI agent. Stop babysitting your te",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "TabularisDB/tabularis": {
+   "repo": "TabularisDB/tabularis",
+   "in_stack": false,
+   "layer": null,
+   "why": "General SQL workspace",
+   "judgedDescription": "Open-source desktop SQL workspace for PostgreSQL, MySQL/MariaDB, SQLite and 15+ more databases like DuckDB, ClickHouse, ",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "SolaceLabs/solace-agent-mesh": {
+   "repo": "SolaceLabs/solace-agent-mesh",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Multi-agent framework",
+   "judgedDescription": "An event-driven framework designed to build and orchestrate multi-agent AI systems. It enables seamless integration of A",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "ruc-datalab/DeepAnalyze": {
+   "repo": "ruc-datalab/DeepAnalyze",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Autonomous data science agent",
+   "judgedDescription": "DeepAnalyze is the first agentic LLM for autonomous data science. 🎈你的AI数据分析师，自动分析大量数据，一键生成专业分析报告！",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "callstack/agent-device": {
+   "repo": "callstack/agent-device",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "Device automation for agents",
+   "judgedDescription": "Mobile app automation and verification for AI coding agents. CLI, MCP server, and typed Node.js API for iOS, Android, Ha",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "elementalsouls/Claude-BugHunter": {
+   "repo": "elementalsouls/Claude-BugHunter",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Claude red-team skill bundle",
+   "judgedDescription": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-repo",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "nolabs-ai/nono": {
+   "repo": "nolabs-ai/nono",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "Least-privilege agent sandbox",
+   "judgedDescription": "secure multiplexed execution paths for agents - zero trust, zero setup, zero latency.",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "OSU-NLP-Group/HippoRAG": {
+   "repo": "OSU-NLP-Group/HippoRAG",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Long-term memory RAG framework",
+   "judgedDescription": "[NeurIPS'24] HippoRAG is a novel RAG framework inspired by human long-term memory that enables LLMs to continuously inte",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "muxuuu/serenity-skill": {
+   "repo": "muxuuu/serenity-skill",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Investment research agent skill",
+   "judgedDescription": "Serenity-inspired Agent Skill for supply-chain bottleneck stock research",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "dagucloud/dagu": {
+   "repo": "dagucloud/dagu",
+   "in_stack": false,
+   "layer": null,
+   "why": "General workflow engine",
+   "judgedDescription": "Self-hostable workflow orchestrator for teams whose main work isn't orchestration. Declarative YAML over your scripts, S",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "nickjvandyke/opencode.nvim": {
+   "repo": "nickjvandyke/opencode.nvim",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Neovim interface for OpenCode",
+   "judgedDescription": "Neovim 🤝 OpenCode in the flow that you already know.",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "nowork-studio/notfair-plugin": {
+   "repo": "nowork-studio/notfair-plugin",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Marketing agent skills",
+   "judgedDescription": "Open-source SEO, GEO, and marketing skills for AI agents.",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "UsefulSoftwareCo/executor": {
+   "repo": "UsefulSoftwareCo/executor",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "Shared MCP tool catalog",
+   "judgedDescription": "The missing integration layer for AI agents. Let them call any OpenAPI / MCP / GraphQL / custom js functions in secure e",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "pipeshub-ai/pipeshub-ai": {
+   "repo": "pipeshub-ai/pipeshub-ai",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Enterprise context for agents",
+   "judgedDescription": "PipesHub is an open-source platform for securely connecting enterprise knowledge to AI. Give AI agents trusted context a",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "glitternetwork/pinme": {
+   "repo": "glitternetwork/pinme",
+   "in_stack": false,
+   "layer": null,
+   "why": "General deployment CLI",
+   "judgedDescription": "Deploy Your Frontend in a Single Command. Claude Code Skills supported.",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "spinabot/brigade": {
+   "repo": "spinabot/brigade",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Personal multi-agent assistant",
+   "judgedDescription": "Brigade — Your personal intelligence, built enterprise-grade",
+   "judgedAt": "2026-09-15T03:36:30.487Z"
+  },
+  "opensumi/core": {
+   "repo": "opensumi/core",
+   "in_stack": false,
+   "layer": null,
+   "why": "AI IDE framework, not agent stack component",
+   "judgedDescription": "A framework helps you quickly build AI Native IDE products. MCP Client, supports Model Context Protocol (MCP) tools via ",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "peetzweg/opendisplay": {
+   "repo": "peetzweg/opendisplay",
+   "in_stack": false,
+   "layer": null,
+   "why": "second monitor utility, not agent stack",
+   "judgedDescription": "Free, open-source Sidecar/Duet alternative — use your iPhone or iPad as a true second monitor for your Mac over USB or W",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "giancarloerra/SocratiCode": {
+   "repo": "giancarloerra/SocratiCode",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "codebase intelligence MCP for agents",
+   "judgedDescription": "Enterprise-grade (40m+ LOC) codebase intelligence, zero-setup, local & private Plugin/Skill/Extension or MCP: hybrid sem",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "Ontos-AI/knowhere": {
+   "repo": "Ontos-AI/knowhere",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "prepares unstructured data for RAG agents",
+   "judgedDescription": "Knowhere extracts, parses, and outputs structured chunks ready for AI Agents and RAG.",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "ljagiello/ctf-skills": {
+   "repo": "ljagiello/ctf-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "installable agent skills for CTF work",
+   "judgedDescription": "Agent skills for solving CTF challenges - web exploitation, binary pwn, crypto, reverse engineering, forensics, OSINT, a",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "agent-of-empires/agent-of-empires": {
+   "repo": "agent-of-empires/agent-of-empires",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "client manages multiple coding agents",
+   "judgedDescription": "Manage multiple Claude Code, OpenCode agents from either TUI or Web for easy access on mobile. Also supports Mistral Vib",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "taylorwilsdon/google_workspace_mcp": {
+   "repo": "taylorwilsdon/google_workspace_mcp",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Google Workspace MCP tools for agents",
+   "judgedDescription": "Control Gmail, Google Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search & Drive with AI - Comprehensive Google ",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "cosmicstack-labs/mercury-agent": {
+   "repo": "cosmicstack-labs/mercury-agent",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "runnable personal assistant agent",
+   "judgedDescription": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI or Tele",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "SciSharp/BotSharp": {
+   "repo": "SciSharp/BotSharp",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": ".NET multi-agent application framework",
+   "judgedDescription": "AI Multi-Agent Framework in .NET",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "lowdefy/lowdefy": {
+   "repo": "lowdefy/lowdefy",
+   "in_stack": false,
+   "layer": null,
+   "why": "general app framework, not agent component",
+   "judgedDescription": "Build apps that AI can generate, humans can review, and teams can maintain. Config that works between code and natural l",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "dwgx/WindsurfAPI": {
+   "repo": "dwgx/WindsurfAPI",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "converts model APIs to standard protocols",
+   "judgedDescription": "Turn Windsurf / Devin Desktop's 100+ AI models (Claude, GPT, Gemini, DeepSeek, Kimi, GLM, SWE) into OpenAI-, Anthropic- ",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "eracle/OpenOutreach": {
+   "repo": "eracle/OpenOutreach",
+   "in_stack": false,
+   "layer": null,
+   "why": "vertical lead generation application",
+   "judgedDescription": "Open-source AI agent for B2B lead generation — describe your product, it finds the people who fit, explains why each one",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "zenbu-labs/terminal-browser": {
+   "repo": "zenbu-labs/terminal-browser",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "browser interface controllable by agents",
+   "judgedDescription": "A browser inside your terminal",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "microvm-nix/microvm.nix": {
+   "repo": "microvm-nix/microvm.nix",
+   "in_stack": false,
+   "layer": null,
+   "why": "general Nix MicroVM infrastructure",
+   "judgedDescription": "NixOS MicroVMs",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "vllm-project/vllm-ascend": {
+   "repo": "vllm-project/vllm-ascend",
+   "in_stack": false,
+   "layer": null,
+   "why": "hardware plugin for model serving",
+   "judgedDescription": "Community maintained hardware plugin for vLLM on Ascend",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "addyosmani/web-quality-skills": {
+   "repo": "addyosmani/web-quality-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "agent skills for web quality audits",
+   "judgedDescription": "Agent Skills for optimizing web quality based on Lighthouse and Core Web Vitals.",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "ciembor/agent-rules-books": {
+   "repo": "ciembor/agent-rules-books",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "installable coding-agent rules and skills",
+   "judgedDescription": "AGENTS.md rules / skills for AI coding agents: Codex, Cursor & Claude Code. Inspired by Clean Code, Refactoring, DDD, Cl",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "CyberStrikeus/CyberStrike": {
+   "repo": "CyberStrikeus/CyberStrike",
+   "in_stack": true,
+   "layer": "security",
+   "why": "offensive security agent harness",
+   "judgedDescription": "Open-source AI-powered offensive security harness for automated penetration testing.",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "makecindy/cindy": {
+   "repo": "makecindy/cindy",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "local AI agent client for real tasks",
+   "judgedDescription": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "brightdata/brightdata-mcp": {
+   "repo": "brightdata/brightdata-mcp",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "MCP web access and extraction tools",
+   "judgedDescription": "A powerful Model Context Protocol (MCP) server that provides an all-in-one solution for public web access.",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "bestruirui/octopus": {
+   "repo": "bestruirui/octopus",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "LLM API aggregation gateway",
+   "judgedDescription": "One Hub All LLMs For You | 为个人打造的 LLM API 聚合网关",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "sergebulaev/linkedin-skills": {
+   "repo": "sergebulaev/linkedin-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "agent skills for LinkedIn workflows",
+   "judgedDescription": "Claude skills for LinkedIn. 11 Claude Code and Codex skills that write human-sounding LinkedIn posts, craft comments tha",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "0xMassi/webclaw": {
+   "repo": "0xMassi/webclaw",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "web extraction MCP and SDK for agents",
+   "judgedDescription": "Fast, local-first web content extraction for LLMs. Scrape, crawl, extract structured data — all from Rust. CLI, REST API",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "daodao97/chatmcp": {
+   "repo": "daodao97/chatmcp",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "cross-platform MCP chat client",
+   "judgedDescription": "ChatMCP is an AI chat client implementing the Model Context Protocol (MCP).",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "getkimchi/kimchi": {
+   "repo": "getkimchi/kimchi",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "terminal coding agent CLI",
+   "judgedDescription": "Terminal coding agent powered by Kimchi's multi-model orchestration ",
+   "judgedAt": "2026-09-15T03:39:26.517Z"
+  },
+  "wondelai/skills": {
+   "repo": "wondelai/skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Installable agent skill packs",
+   "judgedDescription": "Wondel.ai Agent Skills — Business, Marketing, UX & Coding Frameworks from Bestselling Books. 50 skills + 12 guided journ",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "beelzebub-labs/beelzebub": {
+   "repo": "beelzebub-labs/beelzebub",
+   "in_stack": false,
+   "layer": null,
+   "why": "Honeypot deception framework",
+   "judgedDescription": "A secure low code deception runtime framework, leveraging AI for System Virtualization.",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "cogwheel0/conduit": {
+   "repo": "cogwheel0/conduit",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Mobile client for agents",
+   "judgedDescription": "Native iOS and Android client for Open WebUI, direct OpenAI-compatible, Ollama, and Hermes agents.",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "rlaope/oh-my-hermes": {
+   "repo": "rlaope/oh-my-hermes",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Hermes workflow plugin pack",
+   "judgedDescription": "All in one plugin for Hermes Agent ⚚ the coding intelligence, a long-term memory system and model optimized workflow pac",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "iFurySt/open-codex-computer-use": {
+   "repo": "iFurySt/open-codex-computer-use",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "MCP computer-use tool",
+   "judgedDescription": "👾 Open Computer Use – Open-Source Alternative to Codex Computer Use",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "doobidoo/mcp-memory-service": {
+   "repo": "doobidoo/mcp-memory-service",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Persistent agent memory service",
+   "judgedDescription": "Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "Syngnat/GoNavi": {
+   "repo": "Syngnat/GoNavi",
+   "in_stack": false,
+   "layer": null,
+   "why": "General database client",
+   "judgedDescription": "High-performance multi-data-source database client — ~30MB, AI & MCP ready, zero Electron bloat. | 高性能多数据源数据库客户端：约 30MB，",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "matrixorigin/matrixone": {
+   "repo": "matrixorigin/matrixone",
+   "in_stack": false,
+   "layer": null,
+   "why": "General HTAP database",
+   "judgedDescription": "AI-native HTAP database with Git-for-Data and built-in vector search, serving as the data and memory backbone for intell",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "dongsheng123132/u-claw": {
+   "repo": "dongsheng123132/u-claw",
+   "in_stack": false,
+   "layer": null,
+   "why": "Portable installer bundle",
+   "judgedDescription": "U-Claw 虾盘 — OpenClaw AI 助手离线安装 U 盘：一键装好 Claude Code/Codex/OpenClaw，无需联网即插即用；新品 U-King AI 装机管家详见 u-king.org，另有远程支持与定制 AI ",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "WordPress/mcp-adapter": {
+   "repo": "WordPress/mcp-adapter",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "MCP adapter for WordPress",
+   "judgedDescription": "An MCP adapter that bridges the Abilities API to the Model Context Protocol, enabling MCP clients to discover and invoke",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "LLPhant/LLPhant": {
+   "repo": "LLPhant/LLPhant",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "PHP GenAI framework",
+   "judgedDescription": "LLPhant - A comprehensive PHP Generative AI Framework using OpenAI GPT 4. Inspired by Langchain",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "iwe-org/iwe": {
+   "repo": "iwe-org/iwe",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Markdown MCP memory graph",
+   "judgedDescription": "Markdown knowledge graph — LSP for your editor, CLI + MCP memory for your AI agents",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "fetchai/uAgents": {
+   "repo": "fetchai/uAgents",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Python agent framework",
+   "judgedDescription": "A fast and lightweight framework for creating decentralized agents with ease.",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "chigwell/telegram-mcp": {
+   "repo": "chigwell/telegram-mcp",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "MCP server for Telegram",
+   "judgedDescription": "Telegram MCP server powered by Telethon to let MCP clients read chats, manage groups, and send/modify messages, media, c",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "rulego/rulego": {
+   "repo": "rulego/rulego",
+   "in_stack": false,
+   "layer": null,
+   "why": "General rule engine",
+   "judgedDescription": "⛓️RuleGo is a lightweight, high-performance, embedded, next-generation component orchestration rule engine framework for",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "punkpeye/mcp-remote": {
+   "repo": "punkpeye/mcp-remote",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "Remote MCP bridge",
+   "judgedDescription": "Connect an MCP Client that only supports local (stdio) servers to a Remote MCP Server.",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "DeadWaveWave/opencove": {
+   "repo": "DeadWaveWave/opencove",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Workspace for coding agents",
+   "judgedDescription": "Your infinite canvas workspace for agents, tasks, knowledge, and research. An infinite canvas for Claude Code, Codex, te",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "mex-memory/mex": {
+   "repo": "mex-memory/mex",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Git-backed team memory",
+   "judgedDescription": "Team memory for engineers and their AI agents. Lives in your repo. Shared through Git.",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "dbos-inc/dbos-transact-py": {
+   "repo": "dbos-inc/dbos-transact-py",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Durable workflow library",
+   "judgedDescription": "Database-Backed Durable Python Workflows",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "ggml-org/Llama-macOS": {
+   "repo": "ggml-org/Llama-macOS",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Local OpenAI-compatible server",
+   "judgedDescription": "A cosy home for your LLMs.",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "liquidmetal-dev/flintlock": {
+   "repo": "liquidmetal-dev/flintlock",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "MicroVM lifecycle manager",
+   "judgedDescription": "Lock, Stock, and Two Smoking MicroVMs. Create and manage the lifecycle of MicroVMs backed by containerd.",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "silverstein/minutes": {
+   "repo": "silverstein/minutes",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "MCP meeting memory",
+   "judgedDescription": "Open-source, local-first Granola/Otter alternative that Claude Code, Codex, Cursor, and any MCP client can query. Meetin",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "Open-Source-Legal/OpenContracts": {
+   "repo": "Open-Source-Legal/OpenContracts",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical document app",
+   "judgedDescription": "The open document intelligence platform for builders and hackers - DMS for the agentic world",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "agent0ai/dox": {
+   "repo": "agent0ai/dox",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "AGENTS.md instruction framework",
+   "judgedDescription": "Self-documenting AGENTS.md",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "Paritok-official/paritok-4b-v1": {
+   "repo": "Paritok-official/paritok-4b-v1",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Token compression proxy",
+   "judgedDescription": "Non-destructive compression gateway for AI coding agents. Cuts token bills 25% on turn 1 to past 85% in long or saturate",
+   "judgedAt": "2026-09-15T03:42:22.192Z"
+  },
+  "MiroShark/MiroShark": {
+   "repo": "MiroShark/MiroShark",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "multi-agent simulation engine",
+   "judgedDescription": "Simulate anything, for $1 & less than 10 min - Universal Swarm Intelligence Engine",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "e2b-dev/runtime": {
+   "repo": "e2b-dev/runtime",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "Firecracker agent sandboxes",
+   "judgedDescription": "The runtime behind every E2B stack: Cloud, Enterprise, and your own machine.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "larlarua/AutoCVE": {
+   "repo": "larlarua/AutoCVE",
+   "in_stack": true,
+   "layer": "security",
+   "why": "agentic CVE auditing platform",
+   "judgedDescription": "Agent-driven automated CVE discovery platform for source code auditing, vulnerability verification, and report generation.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "ovg-project/kvcached": {
+   "repo": "ovg-project/kvcached",
+   "in_stack": false,
+   "layer": null,
+   "why": "LLM serving GPU cache infra",
+   "judgedDescription": "Virtualized Elastic KV Cache for Dynamic GPU Sharing and Beyond",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "morettt/my-neuro": {
+   "repo": "morettt/my-neuro",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "custom desktop AI companion",
+   "judgedDescription": "This project lets you create your own AI desktop companion with customizable characters and voice conversations that respond in just 1 second. Features include long-term memory, visual recognition, voice cloning and LLM training. Compatible with various Live2D customizations.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "dbos-inc/dbos-transact-ts": {
+   "repo": "dbos-inc/dbos-transact-ts",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "durable workflow library",
+   "judgedDescription": "Database-Backed Durable TypeScript Workflows",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "1lck/Lithe-IDEA": {
+   "repo": "1lck/Lithe-IDEA",
+   "in_stack": false,
+   "layer": null,
+   "why": "lightweight IDE, not agent",
+   "judgedDescription": "A lightweight, cross-platform IDE for the AI era, with on-demand tools and services.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "razzant/ouroboros": {
+   "repo": "razzant/ouroboros",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "general-purpose persistent agent",
+   "judgedDescription": "Ouroboros — self-creating AI agent. Born Feb 16, 2026.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "openworkflowdev/openworkflow": {
+   "repo": "openworkflowdev/openworkflow",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "durable resumable workflows",
+   "judgedDescription": "Open-source TypeScript framework for building durable, resumable workflows. Supports Node.js and Bun.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "vellum-ai/vellum-assistant": {
+   "repo": "vellum-ai/vellum-assistant",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "personal assistant with memory",
+   "judgedDescription": "An AI Assistant that’s easy to setup, does your work 24/7, knows your preferences and gets better over time.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "SimonSchubert/Kai": {
+   "repo": "SimonSchubert/Kai",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "cross-platform memory assistant",
+   "judgedDescription": "OpenClaw alternative in your pocket",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "ihor-sokoliuk/mcp-searxng": {
+   "repo": "ihor-sokoliuk/mcp-searxng",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "MCP web search tool",
+   "judgedDescription": "Private web search for AI assistants via SearXNG — supports Claude, Cursor, and any MCP client",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "K-Dense-AI/k-dense-byok": {
+   "repo": "K-Dense-AI/k-dense-byok",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "desktop AI research assistant",
+   "judgedDescription": "An AI co-scientist running on your desktop. Claude Science but better.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "Arize-ai/openinference": {
+   "repo": "Arize-ai/openinference",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "AI observability instrumentation",
+   "judgedDescription": "OpenTelemetry Instrumentation for AI Observability",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "temporalio/sdk-python": {
+   "repo": "temporalio/sdk-python",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "durable workflow SDK",
+   "judgedDescription": "Temporal Python SDK",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "ENTERPILOT/GoModel": {
+   "repo": "ENTERPILOT/GoModel",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "AI gateway and proxy",
+   "judgedDescription": "AI gateway / AI control plane / AI proxy written in Go. Unified OpenAI-compatible and Anthropic-compatible API for OpenAI, Anthropic, Gemini, Groq, xAI, Ollama, vLLM and more. A LiteLLM alternative with observability, guardrails, streaming, cost tracking, intelligent routing, sticky sessions, failover, real-time logs and usage tracking. Prod ready.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "AGenUI/AGenUI": {
+   "repo": "AGenUI/AGenUI",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "native generative UI SDK",
+   "judgedDescription": "Native A2UI Renderer for iOS/Android/HarmonyOS. High performance streaming Generative UI. Custom Components, Styles and more. ",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "xuzhougeng/wisp-science": {
+   "repo": "xuzhougeng/wisp-science",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "science research workbench agent",
+   "judgedDescription": "Open-source, local-first desktop AI research workbench for scientific computing with Python/R, MCP bioinformatics tools, SSH/WSL/GPU runtimes, and OpenAI/Anthropic models.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "codelibs/fess": {
+   "repo": "codelibs/fess",
+   "in_stack": false,
+   "layer": null,
+   "why": "general enterprise search server",
+   "judgedDescription": "Open-source, self-hosted enterprise & site search server built on OpenSearch. Crawls web / file / DB / cloud sources, 20+ languages, REST API, and AI/RAG & semantic search. Apache-2.0.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "vamplabAI/sgr-agent-core": {
+   "repo": "vamplabAI/sgr-agent-core",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "agent framework library",
+   "judgedDescription": "Schema-Guided Reasoning (SGR) has agentic system design created by neuraldeep community",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "mateaix/mateclaw": {
+   "repo": "mateaix/mateclaw",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "second-brain agent runtime",
+   "judgedDescription": "🤖 MateClaw — Your second brain with Multi-Agent Orchestration, MCP Protocol, Skills & Memory, Dream, and Multi-Channel Support. Built on Spring AI Alibaba.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "yeahhe365/Gemini-Nexus": {
+   "repo": "yeahhe365/Gemini-Nexus",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "browser AI assistant extension",
+   "judgedDescription": "Gemini Nexus 是一款面向浏览器场景的 AI 助手扩展，集成 Gemini Web、Gemini API 与 OpenAI 兼容接口，支持网页上下文、图像处理、工具调用和 MCP 浏览器控制。",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "alexgreensh/attention-span": {
+   "repo": "alexgreensh/attention-span",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Claude Code output styles",
+   "judgedDescription": "Make your agents talk human. ADHD-friendly output styles for Claude Code, Codex, and others. So you can pay attention, not tokens.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "openebs/mayastor": {
+   "repo": "openebs/mayastor",
+   "in_stack": false,
+   "layer": null,
+   "why": "general Kubernetes storage",
+   "judgedDescription": "Dynamically provision Stateful Persistent Replicated Cluster-wide Fabric Volumes & Filesystems for Kubernetes that is provisioned from an optimized NVME SPDK backend data storage stack.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "NirDiamant/Agent_Memory_Techniques": {
+   "repo": "NirDiamant/Agent_Memory_Techniques",
+   "in_stack": false,
+   "layer": null,
+   "why": "educational notebooks",
+   "judgedDescription": "Agent memory for LLMs: 30 runnable Jupyter notebooks covering conversation buffers, vector stores, knowledge graphs, episodic and semantic memory, MemGPT, Mem0, Letta, Zep, Graphiti, LoCoMo benchmarks, and production patterns.",
+   "judgedAt": "2026-09-15T03:48:56.144Z"
+  },
+  "AlmanacCode/codealmanac": {
+   "repo": "AlmanacCode/codealmanac",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "codebase memory for coding agents",
+   "judgedDescription": "A codebase wiki for AI coding agents. Captures what the code can't say: decisions, flows, invariants, gotchas.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "temporalio/sdk-go": {
+   "repo": "temporalio/sdk-go",
+   "in_stack": false,
+   "layer": null,
+   "why": "general workflow SDK",
+   "judgedDescription": "Temporal Go SDK",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "sudo-tee/opencode.nvim": {
+   "repo": "sudo-tee/opencode.nvim",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Neovim frontend for opencode",
+   "judgedDescription": "neovim frontend for opencode - a terminal-based AI coding agent",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "CelestoAI/celesto": {
+   "repo": "CelestoAI/celesto",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "persistent VMs for agents",
+   "judgedDescription": "Secure and persistent computer for AI agents -- build your own Grokbot, and Muse.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "milisp/codexia": {
+   "repo": "milisp/codexia",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "workstation for coding agents",
+   "judgedDescription": "Lightweight Agent Workstation for Codex CLI + Claude Code — with task scheduler, git worktree & remote control",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "temporalio/sdk-typescript": {
+   "repo": "temporalio/sdk-typescript",
+   "in_stack": false,
+   "layer": null,
+   "why": "general workflow SDK",
+   "judgedDescription": "Temporal TypeScript SDK",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "GeyserMC/MCProtocolLib": {
+   "repo": "GeyserMC/MCProtocolLib",
+   "in_stack": false,
+   "layer": null,
+   "why": "Minecraft protocol library",
+   "judgedDescription": "A library for communication with a Minecraft client/server.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "EasyJailbreak/EasyJailbreak": {
+   "repo": "EasyJailbreak/EasyJailbreak",
+   "in_stack": true,
+   "layer": "security",
+   "why": "LLM jailbreak testing framework",
+   "judgedDescription": "An easy-to-use Python framework to generate adversarial jailbreak prompts.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "Deodat-Lawson/LaunchStack": {
+   "repo": "Deodat-Lawson/LaunchStack",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "AI app engine with RAG and jobs",
+   "judgedDescription": "AI-powered StartUp Accelerator Engine built with Next.js, LangChain, PostgreSQL + pgvector. Upload, organize, and chat with documents. Includes predictive missing-document detection, role-based workflows, and page-level insight extraction.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "l0ng-ai/tty7": {
+   "repo": "l0ng-ai/tty7",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "agent-aware terminal workbench",
+   "judgedDescription": "A terminal workbench in pure Rust: shells, persistent sessions, SSH, coding agents. GPU-rendered on Zed's gpui, VT core from Alacritty.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "RyanAlberts/best-of-Agent-Harnesses": {
+   "repo": "RyanAlberts/best-of-Agent-Harnesses",
+   "in_stack": false,
+   "layer": null,
+   "why": "curated list, not stack component",
+   "judgedDescription": "🏆 Curated, ranked list of AI agent harnesses (100+) — plus an MCP server, llms.txt & JSON so agents can recommend them too. Rescored weekly.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "promptise-com/Foundry": {
+   "repo": "promptise-com/Foundry",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "full-stack agent framework",
+   "judgedDescription": "The foundation layer for agentic intelligence.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "jazzyalex/agent-sessions": {
+   "repo": "jazzyalex/agent-sessions",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "local coding-agent session browser",
+   "judgedDescription": "Local-first macOS app to browse, search, analyze, and resume supported AI coding-agent session history across Codex, Claude Code, OpenCode, Cursor Agent, Antigravity, Hermes, OpenClaw, Copilot CLI, and more.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "apify/mcpc": {
+   "repo": "apify/mcpc",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "universal MCP CLI client",
+   "judgedDescription": "A universal CLI client for MCP. mcpc supports persistent sessions, stdio/HTTP, OAuth 2.1, tasks, JSON output for code mode, proxy for AI sandboxes, x402, and more.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "strands-agents/samples": {
+   "repo": "strands-agents/samples",
+   "in_stack": false,
+   "layer": null,
+   "why": "samples and demos only",
+   "judgedDescription": "Agent samples built using the Strands Agents SDK.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "vinhnx/VTCode": {
+   "repo": "vinhnx/VTCode",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "terminal coding agent",
+   "judgedDescription": "VT Code is an open-source Rust terminal coding agent.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "dbos-inc/dbos-transact-golang": {
+   "repo": "dbos-inc/dbos-transact-golang",
+   "in_stack": false,
+   "layer": null,
+   "why": "general durable workflow infra",
+   "judgedDescription": "Database-Backed Durable Golang Workflows",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "coreyhaines31/makerskills": {
+   "repo": "coreyhaines31/makerskills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "installable agent skills",
+   "judgedDescription": "AI agent skills for the personal operator's craft — decisions, research, second-brain, content rotation, scenario modeling, and meta-skills to author more. Works with Claude Code, Codex, Cursor.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "christopherkarani/Wax": {
+   "repo": "christopherkarani/Wax",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "shared agent memory MCP",
+   "judgedDescription": "Shared Single-file memory layer for all your agents, sub mili-second RAG over text, photo and video on Apple Silicon.. No Server. No API. One File. Pure Swift",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "OleksandrChekhovskyi/hax": {
+   "repo": "OleksandrChekhovskyi/hax",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "terminal coding agent",
+   "judgedDescription": "A minimalist, terminal-native coding agent written in C.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "kdlbs/kandev": {
+   "repo": "kdlbs/kandev",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "orchestrates coding agents",
+   "judgedDescription": "AI Kanban & Development Environment. Orchestrate multiple agents, review changes, open PRs. Multi-provider, self-hostable, no telemetry.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "datagallery-ai/dataagent": {
+   "repo": "datagallery-ai/dataagent",
+   "in_stack": false,
+   "layer": null,
+   "why": "vertical data analysis workbench",
+   "judgedDescription": "DataFoundry is an open-source AI workbench for data analysis, unifying data sources, knowledge, tools, and agent runtime into a governed workspace for interactive analytics.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "rahilp/second-brain-cloudflare": {
+   "repo": "rahilp/second-brain-cloudflare",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "MCP memory layer",
+   "judgedDescription": "One memory layer, every AI tool. Store anything once — recall it in Claude, ChatGPT, Cursor, or any MCP client. Self-hosted on Cloudflare's free tier.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "awdr74100/figwright": {
+   "repo": "awdr74100/figwright",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Figma MCP tool server",
+   "judgedDescription": "Free, two-way Figma MCP server. Turn designs into framework-aware code, and push code back to the canvas. Works with Claude Code, Cursor, Codex, and any MCP client.",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "crabtalk/crabtalk": {
+   "repo": "crabtalk/crabtalk",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "embedded agent daemon",
+   "judgedDescription": "The long-running embedded agent",
+   "judgedAt": "2026-09-15T03:50:23.729Z"
+  },
+  "alikon-art/DeterminFlow": {
+   "repo": "alikon-art/DeterminFlow",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "AI workflow runtime",
+   "judgedDescription": "A production-oriented AI workflow runtime for building, validating, recovering, and shipping complex AI workflows as dependable services. 面向生产的 AI 工作流运行时：快速开发、验证和恢复复杂 AI 工作流，并将其稳定交付为服务。",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "dongshuyan/compass-skills": {
+   "repo": "dongshuyan/compass-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "agent skills library",
+   "judgedDescription": "司南：个性化 AI 任务总控 Skills 系统 /COMPASS: Personal Alignment Skills OS for AI Agents",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "huiliyi37/Tianshu-harness": {
+   "repo": "huiliyi37/Tianshu-harness",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "terminal coding agent runtime",
+   "judgedDescription": "天枢 (Tianshu) 是一个基于harness工程的终端编程智能体运行时（Tui X Gui），针对DeepSeek V4 做了前缀缓存工程优化（长会话实测稳态命中率 97–99%）和深度适配。它跳出了传统 AI 编程助手把大模型仅当成“工具”的局限，基于认知虚拟机 (CVM)、自感知层和信息素（Stigmergy）自衰减记忆构建，让 AI 成为有独立判断与认知防护的“开发伙伴”。",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "comet-ml/opik-openclaw": {
+   "repo": "comet-ml/opik-openclaw",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "agent trace observability plugin",
+   "judgedDescription": "🦞 Official plugin for OpenClaw that exports agent traces to Opik. See and monitor agent behaviour, cost, tokens, errors and more.",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "NetBSDfr/smolBSD": {
+   "repo": "NetBSDfr/smolBSD",
+   "in_stack": false,
+   "layer": null,
+   "why": "general microVM builder",
+   "judgedDescription": "smolBSD is a tiny BSD UNIX (NetBSD) system creation tool, primarily aimed at building modern, lightweight, fast micro VMs",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "thedivergentai/GD-Agentic-Skills": {
+   "repo": "thedivergentai/GD-Agentic-Skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Godot skills for agents",
+   "judgedDescription": "The official \"Long-Term Memory\" for Godot 4.7+ AI Agents. A high-density library of 99 expert skills and 27 genre blueprints, providing audited, strictly typed GDScript patterns, automated persona orchestration (Analyst, Auditor, Builder), and production-grade game engineering.",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "xichan96/dinotty": {
+   "repo": "xichan96/dinotty",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "terminal UI for coding agents",
+   "judgedDescription": "Multi-device terminal server for AI coding agents. Server-side VTE, session persistence, file browser, web preview, plugin system. Self-hosted.",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "OpenClaudia/openclaudia-skills": {
+   "repo": "OpenClaudia/openclaudia-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "marketing skills for agents",
+   "judgedDescription": "77 open-source marketing skills for Claude Code, Codex, and other AI coding agents. SEO, content, email, ads, analytics, and growth.",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "NIyueeE/ds-free-api": {
+   "repo": "NIyueeE/ds-free-api",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "OpenAI-compatible API proxy",
+   "judgedDescription": "DeepSeek网页端API代理，支持OpenAI与Anthropic兼容接口 | OpenAI & Anthropic compatible API proxy for DeepSeek web",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "0xnyn/airship": {
+   "repo": "0xnyn/airship",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "visual editor for coding agents",
+   "judgedDescription": "Figma like visual editor built for Claude Code, Codex and OpenCode",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "databufflabs/databuff": {
+   "repo": "databufflabs/databuff",
+   "in_stack": false,
+   "layer": null,
+   "why": "general APM with AI ops",
+   "judgedDescription": "DataBuff is an AI-native APM built on Opentelemetry，with multi-agent troubleshooting out of the box.",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "LerSent001/orb": {
+   "repo": "LerSent001/orb",
+   "in_stack": false,
+   "layer": null,
+   "why": "shader editor app",
+   "judgedDescription": "持续迭代维护的实时 WebGPU 液态玻璃球编辑器，支持 Web 与 SwiftUI/Metal 导出，使用 OpenAI Codex 辅助开发与验证",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "rusiaaman/wcgw": {
+   "repo": "rusiaaman/wcgw",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "MCP shell and code tools",
+   "judgedDescription": "Shell and coding agent on mcp clients",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "soumatheusgomes/vibe-coding-toolkit": {
+   "repo": "soumatheusgomes/vibe-coding-toolkit",
+   "in_stack": false,
+   "layer": null,
+   "why": "prompts and workflow notes",
+   "judgedDescription": "A curated, battle-tested AI-coding toolkit: Claude Code plugins, subagent orchestration, quality gates, and ready-to-copy prompts, extracted from real production use.",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "Sliverkiss/workbuddy2api": {
+   "repo": "Sliverkiss/workbuddy2api",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "OpenAI-compatible reverse proxy",
+   "judgedDescription": "WorkBuddy的 OpenAI 兼容反向代理，支持 OAuth 登录、多账号轮转、工具调用与流式响应。",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "myYangyunfan/dsh_desktop": {
+   "repo": "myYangyunfan/dsh_desktop",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "desktop client for DSH",
+   "judgedDescription": "DeepSeek Harness (dsh) Windows desktop client - bundled Node.js + dsh CLI, one-click launch",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "iAmCorey/kooky": {
+   "repo": "iAmCorey/kooky",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "terminal for AI coding",
+   "judgedDescription": "A minimal modern terminal for AI coding experience — Sidebar workspaces; horizontal / vertical split panes; one-click agent launch; per-agent activity readout; live workspace state with one-click Node and branch switching.",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "risa-labs-inc/BossConsole": {
+   "repo": "risa-labs-inc/BossConsole",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "operator console for agents",
+   "judgedDescription": "Open-source, multi-platform harness for AI agents - a native, multi-threaded operator's console (JVM, not Electron) to run Claude Code, Codex, Gemini or OpenCode with a real browser, terminal, editor, secrets & 100+ MCP tools. Built for enterprises, science & research.",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "henrydaum/second-brain": {
+   "repo": "henrydaum/second-brain",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "agentic framework",
+   "judgedDescription": "Second Brain is an agentic framework that acts as an operating system, using local file intelligence, workflow automation, and LLMs to complete tasks and communicate over multiple modalities and messaging platforms.",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "neovim/neovim.github.io": {
+   "repo": "neovim/neovim.github.io",
+   "in_stack": false,
+   "layer": null,
+   "why": "website source only",
+   "judgedDescription": "Neovim website",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "genomoncology/biomcp": {
+   "repo": "genomoncology/biomcp",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "biomedical MCP server",
+   "judgedDescription": "BioMCP: Biomedical Model Context Protocol",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "Sinholms/setup-gateway": {
+   "repo": "Sinholms/setup-gateway",
+   "in_stack": false,
+   "layer": null,
+   "why": "gateway config helper",
+   "judgedDescription": "Konfigurator gateway OpenAI-compatible untuk Claude Code, OpenCode, dan Codex CLI. Zero-dependency, interaktif + CI, backup atomik + restore, config preservation, selftest built-in.",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "ovh/shai": {
+   "repo": "ovh/shai",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "terminal coding agent",
+   "judgedDescription": "shai is a coding agent, your pair programming buddy that lives in the terminal. Written in rust with love <3",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "danielealbano/android-remote-control-mcp": {
+   "repo": "danielealbano/android-remote-control-mcp",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Android control MCP server",
+   "judgedDescription": "An MCP Server for Android running on the phone, optmized for token usage, supports also files downloads and cloudflare and ngrok automated tunnelling.",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "agentic-os-org/ANOLISA": {
+   "repo": "agentic-os-org/ANOLISA",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "agent runtime operating layer",
+   "judgedDescription": "ANOLISA (Agentic Nexus Operating Layer & Interface System Architecture) | Agentic OS with runtime, security, observability, and Tokenless response compression for lower token usage and cost.",
+   "judgedAt": "2026-09-15T03:52:56.505Z"
+  },
+  "provos/ironcurtain": {
+   "repo": "provos/ironcurtain",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Policy-enforced agent runtime",
+   "judgedDescription": "A secure* runtime for autonomous AI agents. Policy from plain-English constitutions. (*https://ironcurtain.dev)",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "stevesolun/ctx": {
+   "repo": "stevesolun/ctx",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Evaluates coding-agent setups",
+   "judgedDescription": "Repo-aware recommendations for skills, agents, MCP servers, and model harnesses. Use your own inventory or the shipped 79,958-node graph with 68,494 skills, 467 agents, 10,790 MCPs, and 207 harnesses.",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "hoolulu/deep-research": {
+   "repo": "hoolulu/deep-research",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Research-report agent skill",
+   "judgedDescription": "Professional deep research report generation Skill — one command, ten minutes, broker-grade deep research / 深度调研报告生成 Skill — 一条命令，十分钟出券商级深度调研报告",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "temporalio/sdk-dotnet": {
+   "repo": "temporalio/sdk-dotnet",
+   "in_stack": false,
+   "layer": null,
+   "why": "General workflow SDK",
+   "judgedDescription": "Temporal .NET SDK",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "joinly-ai/joinly": {
+   "repo": "joinly-ai/joinly",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "MCP meeting connector for agents",
+   "judgedDescription": "Make your meetings accessible to AI Agents",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "hetpatel-11/Adobe_Premiere_Pro_MCP": {
+   "repo": "hetpatel-11/Adobe_Premiere_Pro_MCP",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "MCP tools for Premiere control",
+   "judgedDescription": "Adobe Premiere Pro MCP. Tools for AI-driven video editing via MCP, for Codex, Claude, and other MCP clients.",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "Fast-Editor/Lynkr": {
+   "repo": "Fast-Editor/Lynkr",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "LLM gateway and router",
+   "judgedDescription": "Streamline your workflow with Lynkr, a CLI tool that acts as an HTTP proxy for efficient code interactions using Claude Code CLI.",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "lightonai/next-plaid": {
+   "repo": "lightonai/next-plaid",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Local semantic code retrieval",
+   "judgedDescription": "NextPlaid, ColGREP: Multi-vector search, from database to coding agents.",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "Abilityai/trinity": {
+   "repo": "Abilityai/trinity",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Self-hosted agent fleet platform",
+   "judgedDescription": "Self-hosted AI Agents Platform supporting Claude Code, Codex, Gemini agents. Apache 2.0.  ",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "agent-sh/computer-use-linux": {
+   "repo": "agent-sh/computer-use-linux",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "Linux desktop computer-use MCP",
+   "judgedDescription": "Linux desktop control over MCP — AT-SPI, GNOME Shell, Wayland portals, ydotool",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "tzachbon/smart-ralph": {
+   "repo": "tzachbon/smart-ralph",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Spec workflow plugin for agents",
+   "judgedDescription": "Spec-driven development with smart compaction. Claude Code plugin combining Ralph Wiggum loop with structured specification workflow.",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "nossa-y/activity-frames": {
+   "repo": "nossa-y/activity-frames",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Local activity memory over MCP",
+   "judgedDescription": "Turn your workday into structured workflows agents can execute. 100% local, served over MCP.",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "ogulcancelik/pi-extensions": {
+   "repo": "ogulcancelik/pi-extensions",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Extensions for pi coding agent",
+   "judgedDescription": "Extensions for pi, the terminal-based coding agent",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "ooples/token-optimizer-mcp": {
+   "repo": "ooples/token-optimizer-mcp",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Context optimizer and knowledge graph",
+   "judgedDescription": "Measure token savings per AI coding agent, optimize context, and share a live local knowledge graph across 16 CLI clients.",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "Johell1NS/browser-search": {
+   "repo": "Johell1NS/browser-search",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Search and browsing skill kit",
+   "judgedDescription": "A skill for AI agents: search the web with SearXNG, browse with Camofox, bypass protections with CloakBrowser. Anti-hallucination by design. Self-hosted, free, unlimited.",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "BOMWiki/partmode": {
+   "repo": "BOMWiki/partmode",
+   "in_stack": false,
+   "layer": null,
+   "why": "CAD app, not agent stack",
+   "judgedDescription": "Open-source, local-first 3D parametric CAD that runs in the browser for people and permissioned typed agents, powered by OpenCascade WASM.",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "vincentkoc/tokenjuice": {
+   "repo": "vincentkoc/tokenjuice",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Deterministic context compaction",
+   "judgedDescription": "🧃 Token weight loss. Lean output compaction for terminal-heavy agent workflows. Works as a native CLI tool or as an extension to popular coding and agent frameworks.",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "hawkli-1994/deerflow-book": {
+   "repo": "hawkli-1994/deerflow-book",
+   "in_stack": false,
+   "layer": null,
+   "why": "Book, not stack component",
+   "judgedDescription": "本书围绕 DeerFlow 2.0，从理论到源码，系统讲解如何进行二次开发。(精校)",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "MAXeaglet/commandcode-proxy": {
+   "repo": "MAXeaglet/commandcode-proxy",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "OpenAI/Anthropic API proxy",
+   "judgedDescription": "Command Code API 反代代理，兼容 OpenAI 与 Anthropic 接口 | Reverse proxy exposing Command Code API as OpenAI- and Anthropic-compatible endpoints",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "caura-ai/caura": {
+   "repo": "caura-ai/caura",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Governed fleet memory layer",
+   "judgedDescription": "Caura (formerly MemClaw) — governed shared memory for AI agent fleets. Multi-agent, multi-tenant, MCP-native. Trust tiers, keystone policies, audit trails, knowledge graph, self-improving retrieval. Apache 2.0.",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "aqm857886159/Nomi": {
+   "repo": "aqm857886159/Nomi",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical video workbench",
+   "judgedDescription": "Open-source AI video workbench. Bring any model or your local ComfyUI, and let Claude Code / Codex / Cursor direct it over MCP — storyboard, references, generation, editable first cut on a real timeline. Local-first: projects, prompts, and keys stay on your machine. No account, no telemetry.",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "FSMargoo/dsh-at-file": {
+   "repo": "FSMargoo/dsh-at-file",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "DSH file-reference plugin",
+   "judgedDescription": "Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their path to prompts.",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "clawdotnet/openclaw.net": {
+   "repo": "clawdotnet/openclaw.net",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Self-hosted .NET agent runtime",
+   "judgedDescription": "Self-hosted Personal AI + agent runtime in .NET (NativeAOT-friendly)",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "1mcp-app/agent": {
+   "repo": "1mcp-app/agent",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "Aggregates MCP servers",
+   "judgedDescription": "A unified Model Context Protocol server implementation that aggregates multiple MCP servers into one.",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "PV-Bhat/vibe-check-mcp-server": {
+   "repo": "PV-Bhat/vibe-check-mcp-server",
+   "in_stack": true,
+   "layer": "security",
+   "why": "MCP oversight guardrail",
+   "judgedDescription": "Vibe Check is a tool that provides mentor-like feedback to AI Agents, preventing tunnel-vision, over-engineering and reasoning lock-in for complex and long-horizon agent workflows. KISS your over-eager AI Agents goodbye! Effective for: Coding, Ambiguous Tasks, High-Risk tasks",
+   "judgedAt": "2026-09-15T03:54:23.099Z"
+  },
+  "expectedparrot/edsl": {
+   "repo": "expectedparrot/edsl",
+   "in_stack": false,
+   "layer": null,
+   "why": "AI survey DSL, vertical research tool",
+   "judgedDescription": "Design, conduct and analyze results of AI-powered surveys and experiments. Simulate social science and market research with large numbers of AI agents and LLMs.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "gobii-ai/gobii-platform": {
+   "repo": "gobii-ai/gobii-platform",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Self-hosted always-on agent workforce",
+   "judgedDescription": "Your easy to use, always-on AI workforce 👾",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "gakonst/nanocodex": {
+   "repo": "gakonst/nanocodex",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Embeddable coding-agent runtime",
+   "judgedDescription": "Building blocks for frontier OpenAI agents in Rust. Nanocodex empowers you with Codex-level performance anywhere.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "mxyhi/ok-skills": {
+   "repo": "mxyhi/ok-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Reusable skills for coding agents",
+   "judgedDescription": "Curated AI coding agent skills and AGENTS.md playbooks for Codex, Claude Code, Cursor, OpenClaw, and other SKILL.md-compatible tools.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "termio-sh/termio": {
+   "repo": "termio-sh/termio",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Terminal client for running agents",
+   "judgedDescription": "A terminal-first agentic development environment for agentic coding. Build for CLI/TUI agent. Runtime for Coding Agent,  Tmux alternative",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "IvanWng97/pixtuoid": {
+   "repo": "IvanWng97/pixtuoid",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Dashboard for coding-agent sessions",
+   "judgedDescription": "Terminal pixel-art office for AI coding agents",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "yogsoth-ai/de-anthropocentric-research-engine": {
+   "repo": "yogsoth-ai/de-anthropocentric-research-engine",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Autonomous research agent skills",
+   "judgedDescription": "900+ pure-markdown skills for autonomous AI research, organized as 9 freely-composable packages over a 4-layer hierarchy (Campaign → Strategy → Tactic → SOP). Non-linear orchestration with backtracking, 6 MCP integrations. The AI is the researcher — you set the direction.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "livecontext-ai/livecontext-ce": {
+   "repo": "livecontext-ai/livecontext-ce",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Agent workflow automation platform",
+   "judgedDescription": "The AI automation platform, self-hosted. Describe the job in chat and LiveContext builds it: readable workflows, scoped AI agents, and small apps your team uses. Chat, Workflow, Agent and App on one canvas.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "Muvon/octocode": {
+   "repo": "Muvon/octocode",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Code intelligence MCP for agents",
+   "judgedDescription": "Structural code intelligence for AI agents — semantic search, knowledge graphs, and a built-in MCP server in one Rust binary. Give Claude, Cursor, and any MCP client a deep understanding of your codebase.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "angelnicolasc/graymatter": {
+   "repo": "angelnicolasc/graymatter",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Persistent memory MCP server",
+   "judgedDescription": "30 sec to give your AI agents persistent memory. Reduce 90% token consumption while also maintaining quality.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "apache/flink-agents": {
+   "repo": "apache/flink-agents",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Flink-based agent framework",
+   "judgedDescription": "Flink Agents is an Agentic AI framework based on Apache Flink",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "wanshuiyin/HERO-Anti-OverDefense": {
+   "repo": "wanshuiyin/HERO-Anti-OverDefense",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Paste-in behavior contract for agents",
+   "judgedDescription": "HERO = Hashing · Edge cases · Rubrics · Overbuild — the four shapes coding agents over-defend in. A paste-in contract that stops them. Works with Claude Code, Codex, Antigravity, Cursor, Copilot, Windsurf, Gemini CLI.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "alisaitteke/photoshop-mcp": {
+   "repo": "alisaitteke/photoshop-mcp",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Photoshop MCP tool server",
+   "judgedDescription": "MCP server for Adobe Photoshop — 118 tools, recipe workflows, generative AI, standalone web UI. Control Photoshop from Cursor, Claude, or natural language.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "run-llama/llama-agents": {
+   "repo": "run-llama/llama-agents",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Event-driven agent workflows",
+   "judgedDescription": "Llama Agents + Workflows are an event-driven, async-first, step-based way to control the execution flow of AI applications like agents.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "CodeSoul-co/Hypha": {
+   "repo": "CodeSoul-co/Hypha",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Production harness for agents",
+   "judgedDescription": "Harness-oriented agent system framework for production-grade LLM agent applications",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "linghungegeg/Linghun": {
+   "repo": "linghungegeg/Linghun",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "AI coding terminal/runtime",
+   "judgedDescription": "AGI-oriented, hallucination-resistant AI coding runtime grounded in evidence, tools, memory, agents, and verification.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "astronomer/agents": {
+   "repo": "astronomer/agents",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Airflow MCP and data skills",
+   "judgedDescription": "AI agent tooling for data engineering workflows.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "SponsioLabs/Sponsio": {
+   "repo": "SponsioLabs/Sponsio",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Tool-call safety guardrails",
+   "judgedDescription": "Deterministic safety solutions for probabilistic AI agents",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "markrai/scrumboy": {
+   "repo": "markrai/scrumboy",
+   "in_stack": false,
+   "layer": null,
+   "why": "Project management app with MCP add-on",
+   "judgedDescription": "Self-hosted project management • customizable project boards • cross-project workload and flow analytics • calendar-aware planning • sticky-note wall • portable imports/backups • realtime email notifications • MCP/Agent automation layer",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "Jia-Ethan/grok-keysmith": {
+   "repo": "Jia-Ethan/grok-keysmith",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Instruction installer for Grok Build",
+   "judgedDescription": "Preview-first Grok Build instruction deployment with compat and hook isolation, durable recovery, and layered uninstall.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "adithyan-ak/AgentHound": {
+   "repo": "adithyan-ak/AgentHound",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Security scanner for agent stack",
+   "judgedDescription": "Offensive security framework for AI agent infrastructure - recon, credential looting, model exfiltration, poisoning, and attack-path analysis across MCP, A2A, gateways, and AI services. BloodHound for the agentic stack.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "temporalio/sdk-java": {
+   "repo": "temporalio/sdk-java",
+   "in_stack": false,
+   "layer": null,
+   "why": "General workflow SDK, not agent-specific",
+   "judgedDescription": "Temporal Java SDK",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "LnYo-Cly/ai4j": {
+   "repo": "LnYo-Cly/ai4j",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Java agentic SDK and runtime",
+   "judgedDescription": "Java 8+ agentic SDK: unified LLM access (OpenAI/Anthropic/DashScope/Doubao/DeepSeek...), Tool Calling, MCP, RAG, Agent Runtime, and a built-in Coding Agent CLI/TUI/ACP.",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "dataiku/kiji-proxy": {
+   "repo": "dataiku/kiji-proxy",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Privacy proxy for AI API calls",
+   "judgedDescription": "Privacy proxy for your OpenAI requests",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "code-yeongyu/senpi": {
+   "repo": "code-yeongyu/senpi",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Coding-agent CLI/runtime fork",
+   "judgedDescription": "pi had nothing (nothing), so I made something (something) — sorry mariozechner-senpai, I went ahead and lovingly soiled your pure pi for you. opinionated fork of badlogic/pi-mono with extension-first additions. ganbare ganbare senpi 頑張れ頑張れ先輩",
+   "judgedAt": "2026-09-15T03:55:44.401Z"
+  },
+  "sanjay3290/ai-skills": {
+   "repo": "sanjay3290/ai-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Portable skills for agent clients",
+   "judgedDescription": "24 cross-platform agent skills for Claude Code, Cursor, Codex & Gemini CLI — databases, messaging, research, TTS, DevOps, and Google Workspace",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "temporalio/sdk-php": {
+   "repo": "temporalio/sdk-php",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Durable workflow SDK",
+   "judgedDescription": "Temporal PHP SDK",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "GizClaw/flowcraft": {
+   "repo": "GizClaw/flowcraft",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Go toolkit for building agents",
+   "judgedDescription": "Production-grade Go SDK for building AI agents with long-term memory, knowledge retrieval, and voice — runnable as a library, a daemon, or a real-time pipeline.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "smithersai/smithers": {
+   "repo": "smithersai/smithers",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Codebase maintainer agent",
+   "judgedDescription": "Smithers is an agentic workflow framework for defining workflows in simple TypeScript configuration files and executing them quickly, durably, and reliably",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "caipe-io/ai-platform-engineering": {
+   "repo": "caipe-io/ai-platform-engineering",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Platform for agent workflows",
+   "judgedDescription": "CAIPE is an open-source AI platform for building, governing, and operating AI agents and agentic workflows for platform engineering and beyond.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "getkern/kern": {
+   "repo": "getkern/kern",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "Rootless sandbox for tool calls",
+   "judgedDescription": "a fast, rootless sandbox and virtual resource runtime. Run any workload in a real container, including an agent's tool-call or LLM-generated code.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "IBM/mcp": {
+   "repo": "IBM/mcp",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "IBM MCP servers and tools",
+   "judgedDescription": "A collection of Model Context Protocol (MCP) servers, clients and developer tools by IBM.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "marcusquinn/aidevops": {
+   "repo": "marcusquinn/aidevops",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "OpenCode agent delivery framework",
+   "judgedDescription": "Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and personal development. Opinionated tools, services, CLI & API stack for speed, security, and 24/7 results. Open-source first. SOTA everything. The best AI harness for GitHub & teamwork.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "AmrDab/clawdcursor": {
+   "repo": "AmrDab/clawdcursor",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Desktop control MCP tool",
+   "judgedDescription": "clawdcursor compiles whatever's on screen into one UI map — accessibility tree and OCR fused into stable, addressable elements, with a screenshot only when needed — then drives apps through reusable scripts, verifying every action and routing it through a single safety gate.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "Agent-Threat-Rule/agent-threat-rules": {
+   "repo": "Agent-Threat-Rule/agent-threat-rules",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Agent threat detection rules",
+   "judgedDescription": "Open detection-rule standard for AI agent security threats — like Sigma, but for AI agents. Executable rules across 10 categories; merged into Microsoft AGT, Cisco AI Defense, MISP, OWASP, FINOS & SigmaHQ. MIT-licensed.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "ultracontext/ultracontext": {
+   "repo": "ultracontext/ultracontext",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Shared context infrastructure",
+   "judgedDescription": "Open Source Context infrastructure for AI agents. Auto-capture and share your agents' context everywhere.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "OctagonAI/kalshi-trading-bot-cli": {
+   "repo": "OctagonAI/kalshi-trading-bot-cli",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical trading app",
+   "judgedDescription": "AI-native CLI for trading Kalshi prediction markets. Runs deep fundamental research, generates independent probability estimates, computes edge vs. live order books, and executes trades with Kelly sizing and a 5-gate risk engine. ",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "DY-2026/GameDesignOS": {
+   "repo": "DY-2026/GameDesignOS",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical game-design workflow",
+   "judgedDescription": "Local-first game design OS for AI agents: turn sessions into evidence, experiments, reviewable decisions, and durable project memory—Human Gates and rollback.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "openai/tunnel-client": {
+   "repo": "openai/tunnel-client",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Secure MCP tunnel gateway",
+   "judgedDescription": "Customer-run client for Secure MCP Tunnel: connect private or localhost MCP servers to ChatGPT, Codex, the Responses API, and AgentKit without exposing them to the public internet.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "rcarmo/pve-microvm": {
+   "repo": "rcarmo/pve-microvm",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "MicroVM sandbox for agents",
+   "judgedDescription": "Firecracker-like microVMs for Proxmox VE — KVM isolation, under 200 ms boot.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "temporalio/cli": {
+   "repo": "temporalio/cli",
+   "in_stack": false,
+   "layer": null,
+   "why": "Temporal dev CLI, not agent component",
+   "judgedDescription": "Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "Arenukvern/mcp_flutter": {
+   "repo": "Arenukvern/mcp_flutter",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Closed feedback loop harness",
+   "judgedDescription": "MCP Toolkit for Flutter AI Agent Driven Development (MCP/CLI + custom client side tools) - via closed feedback loop (visual & semantic snapshot) and high client side customization adaptable for any Flutter app. Nowadays it is often called as agentic harness.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "vulnersCom/api": {
+   "repo": "vulnersCom/api",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vulnerability API SDK",
+   "judgedDescription": "Official Python SDK for the Vulners vulnerability-intelligence API — search CVEs, exploits and advisories (CVSS/EPSS/KEV), audit software, Linux/Windows hosts and SBOMs, and stream the whole graph. Typed sync + async clients, 100% v3-compatible, with a built-in MCP server for AI agents.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "omdsh-dev/dsh-mnemon": {
+   "repo": "omdsh-dev/dsh-mnemon",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Memory for DeepSeek Harness",
+   "judgedDescription": "Composable, view-based memory for DeepSeek Harness. Pluggable sources and strategies, with three-tier memory out of the box.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "temporalio/samples-python": {
+   "repo": "temporalio/samples-python",
+   "in_stack": false,
+   "layer": null,
+   "why": "Samples repository",
+   "judgedDescription": "Samples for working with the Temporal Python SDK",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "timwuhaotian/the-pair": {
+   "repo": "timwuhaotian/the-pair",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Desktop pair coding agents",
+   "judgedDescription": "Open-source AI pair programming for desktop: a Mentor + Executor agent cross-check each other's code to catch AI hallucinations. Works with Claude Code, Codex, Gemini & opencode. macOS / Windows / Linux.",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "whitelonng/mancode": {
+   "repo": "whitelonng/mancode",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Coding agent workflow harness",
+   "judgedDescription": "AI coding agent harness. Five modes: practice to playoffs. Stop your AI from over-engineering. Code like a man. Elbow out bloat. Score clean.    ... AI 代理调度框架。五种模式：训练到季后赛。 别让你的 AI 过度设计一切。像个man一样，肘开冗余，干净得分。",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "Cocolalilal/LastChat": {
+   "repo": "Cocolalilal/LastChat",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Android AI assistant client",
+   "judgedDescription": "A Fork of Rikkahub with an overhauled UI and feature additions",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "Justin0504/Aegis": {
+   "repo": "Justin0504/Aegis",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Runtime policy enforcement",
+   "judgedDescription": "Runtime policy enforcement for AI agents. Cryptographic audit trail, human-in-the-loop approvals, kill switch. Zero code changes.                                                                         ",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "inboundemail/inbound": {
+   "repo": "inboundemail/inbound",
+   "in_stack": false,
+   "layer": null,
+   "why": "Generic email infrastructure",
+   "judgedDescription": "email infrastructure for agent and indie devs",
+   "judgedAt": "2026-09-15T03:57:08.154Z"
+  },
+  "kerlenton/mcpsnoop": {
+   "repo": "kerlenton/mcpsnoop",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "MCP proxy and inspector",
+   "judgedDescription": "Wireshark for MCP. A transparent proxy that shows every real tool call between your AI client and your MCP servers, live in your terminal.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "vhive-serverless/vHive": {
+   "repo": "vhive-serverless/vHive",
+   "in_stack": false,
+   "layer": null,
+   "why": "General serverless research platform",
+   "judgedDescription": "vHive: Open-source framework for serverless experimentation",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "schmitech/orbit": {
+   "repo": "schmitech/orbit",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Self-hosted AI gateway backend",
+   "judgedDescription": "Self-hosted AI gateway for private RAG, natural-language data access, and tool-calling agents.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "beevibe-ai/beevibe": {
+   "repo": "beevibe-ai/beevibe",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Shared workspace for agent teams",
+   "judgedDescription": "The agent-native OS for companies.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "smaramwbc/statewave": {
+   "repo": "smaramwbc/statewave",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Agent memory runtime",
+   "judgedDescription": "Open-source memory runtime for AI agents — reproducible, provenance-tagged context bundles instead of query-time retrieval. Apache-2.0, self-hosted on Postgres + pgvector, Python + TypeScript SDKs.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "shenjingnan/xiaozhi-client": {
+   "repo": "shenjingnan/xiaozhi-client",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "MCP aggregation client",
+   "judgedDescription": "小智AI客户端，目前主要用于MCP的对接",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "mrhlaingbwardev/hb-recon": {
+   "repo": "mrhlaingbwardev/hb-recon",
+   "in_stack": false,
+   "layer": null,
+   "why": "Security recon workflow, not agent stack",
+   "judgedDescription": "Automated reconnaissance framework with AI-powered report generation. Auto-detects tools, enumerates subdomains, crawls endpoints for security assessments.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "reconness/reconness": {
+   "repo": "reconness/reconness",
+   "in_stack": false,
+   "layer": null,
+   "why": "Continuous recon platform, not AI agents",
+   "judgedDescription": "ReconNess is a platform to allow continuous recon (CR) where you can set up a pipeline of #recon tools (Agents) and trigger it base on schedule or events.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "Get-Concord-AI/concord-mcp": {
+   "repo": "Get-Concord-AI/concord-mcp",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Coordination layer for coding agents",
+   "judgedDescription": "Live messaging for coding agents",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "milisp/mcp-linker": {
+   "repo": "milisp/mcp-linker",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "MCP server config manager",
+   "judgedDescription": "mcp store manager, add & syncs MCP server configurations across clients like Claude code, Cursor💡mcphub",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "WrongStack/WrongStack": {
+   "repo": "WrongStack/WrongStack",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Standalone AI coding agent",
+   "judgedDescription": "An AI coding agent that reads your code, edits files, runs commands, and reasons through bugs — across a terminal REPL, a full-screen TUI, and a browser UI, while you keep your hand on every permission.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "7df-lab/devo": {
+   "repo": "7df-lab/devo",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Model-neutral coding agent",
+   "judgedDescription": "Model-neutral agent desktop/runtime for private, enterprise, and OpenAI-compatible / Anthropic-compatible model API. Tested on DeepSeek, Qwen, Kimi, GLM models. Supports MCP,  Skills,and local code search.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "clearml/clearml-agent": {
+   "repo": "clearml/clearml-agent",
+   "in_stack": false,
+   "layer": null,
+   "why": "General MLOps execution worker",
+   "judgedDescription": "ClearML Agent - MLOps/LLMOps made easy. MLOps/LLMOps scheduler & orchestration solution",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "jd-opensource/JoySafeter": {
+   "repo": "jd-opensource/JoySafeter",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Security agent platform",
+   "judgedDescription": "🚀 JoySafeter: An enterprise AI Agent Platform—Not just chatting. building、running、testing, and tracing autonomous Agent Teams with visual orchestration...",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "dengyier/OpenWorkProof": {
+   "repo": "dengyier/OpenWorkProof",
+   "in_stack": true,
+   "layer": "protocol",
+   "why": "Verifiable agent work protocol",
+   "judgedDescription": "Open protocol for AI agent work contracts and verifiable execution — authorization, evidence, and acceptance for multi-agent systems",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "AliAkhtari78/SpotifyScraper": {
+   "repo": "AliAkhtari78/SpotifyScraper",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "MCP tool for Spotify data",
+   "judgedDescription": "Extract public Spotify data — tracks, albums, artists, playlists, podcasts & lyrics — without the official API. Sync + async, typed models, one dependency.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "ucsandman/DashClaw": {
+   "repo": "ucsandman/DashClaw",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Agent approvals and policy checks",
+   "judgedDescription": "Remote approvals, policy checks, and execution evidence for unattended AI agents.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "FonaTech/Clouds-Coder": {
+   "repo": "FonaTech/Clouds-Coder",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Local-first coding agent platform",
+   "judgedDescription": "Clouds Coder is a local-first coding agent platform centered on separating the CLI execution plane from the Web user plane, with Web UI, Skills Studio, resilient streaming, and long-task recovery controls.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "agentgg-dev/agentgg": {
+   "repo": "agentgg-dev/agentgg",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Agentic code security scanner",
+   "judgedDescription": "Open source agentic SAST. The engine behind hundreds of disclosed zero-days. 100+ AI security agents, any repo or PR diff, bring your own model.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "zenml-io/kitaru": {
+   "repo": "zenml-io/kitaru",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Replay-based agent evals",
+   "judgedDescription": "Agent traces you can run, not just read.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "jarrycyx/openlens-ai": {
+   "repo": "jarrycyx/openlens-ai",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Autonomous research agent",
+   "judgedDescription": "OpenLens AI: A Fully Autonomous Multimodal Research Agent｜ OpenLens AI：全自主多模态科研智能体",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "GautamVhavle/CatGPT-Gateway": {
+   "repo": "GautamVhavle/CatGPT-Gateway",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "OpenAI-compatible model gateway",
+   "judgedDescription": "Turn your ChatGPT or Claude account into a fully working OpenAI-compatible API. No API keys needed. Supports tool calling, vision, file attachments, and image generation.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "FootprintAI/Containarium": {
+   "repo": "FootprintAI/Containarium",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "Isolated runtime for agents",
+   "judgedDescription": "Open-source agent runtime — SSH-native isolation, eBPF egress policy, Kubernetes + LXC backends, GPU passthrough, MCP-native CLI",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "lyonzin/knowledge-rag": {
+   "repo": "lyonzin/knowledge-rag",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Local RAG MCP memory server",
+   "judgedDescription": "Local RAG MCP server for Claude Code — hybrid search (semantic + BM25), cross-encoder reranking, 13 MCP tools, 20 format parsers. Zero external servers, zero API keys.",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "compiiile/compiiile": {
+   "repo": "compiiile/compiiile",
+   "in_stack": false,
+   "layer": null,
+   "why": "Markdown publishing tool, not agents",
+   "judgedDescription": "The most convenient way to render and deploy a folder containing markdown files. Previewing and searching markdown files has never been that easy. Your alternative to Notion and Obsidian. No need for AI everywhere nor a second brain, you already have a fine one!",
+   "judgedAt": "2026-09-15T03:58:28.307Z"
+  },
+  "langfuse/skills": {
+   "repo": "langfuse/skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Langfuse agent skills",
+   "judgedDescription": "Agent Skills for Langfuse, the open source LLM engineering platform for tracing, prompt management, and evaluation",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "Atomic-Mail/atomic-mail-agentic": {
+   "repo": "Atomic-Mail/atomic-mail-agentic",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Agent email tools",
+   "judgedDescription": "Let your agents read, send, and react to email autonomously, without human involvement",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "ImFeH2/huddol": {
+   "repo": "ImFeH2/huddol",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Runs agent organization",
+   "judgedDescription": "Run your own organization of agents",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "taichuy/1flowbase": {
+   "repo": "taichuy/1flowbase",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "AI and MCP gateway",
+   "judgedDescription": "Build for agents — from the AI Gateway to the entire application stack.",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "timgordontg/engrim": {
+   "repo": "timgordontg/engrim",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Agent memory engine",
+   "judgedDescription": "The Universal Cross-Model Episodic Memory Standard. Local-first, project-scoped SQLite engine for Google Antigravity, Cl",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "tinyhumansai/tinycortex": {
+   "repo": "tinyhumansai/tinycortex",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Embeddable memory core",
+   "judgedDescription": "The Fastest AI Memory Model - Your Second Brain",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "l33tdawg/sage": {
+   "repo": "l33tdawg/sage",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Consensus agent memory",
+   "judgedDescription": "(S)AGE - (Sovereign) Agent Governed Experience",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "codecoradev/uteke": {
+   "repo": "codecoradev/uteke",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Local MCP memory",
+   "judgedDescription": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic emb",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "cocofhu/grasp": {
+   "repo": "cocofhu/grasp",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Visual coding agent workflow",
+   "judgedDescription": "Grasp helps you manage multiple projects and parallel coding agents in one visual workflow, so humans can understand fas",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "yzhao062/anywhere-agents": {
+   "repo": "yzhao062/anywhere-agents",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Shared agent config and skills",
+   "judgedDescription": "One config to rule all your AI agents: portable (every project, every session), effective (curated writing, routing, ski",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "knowns-dev/knowns": {
+   "repo": "knowns-dev/knowns",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Project context layer",
+   "judgedDescription": "The memory layer for AI-native development - giving AI persistent understanding of your software projects.",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "suitedaces/dorabot": {
+   "repo": "suitedaces/dorabot",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Desktop autonomous agent",
+   "judgedDescription": "macOS app for 24/7 AI agents in an IDE with memory, scheduled tasks, browser use + access to Whatsapp, Telegram, Slack.",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "sendbird/sendbird-uikit-react": {
+   "repo": "sendbird/sendbird-uikit-react",
+   "in_stack": false,
+   "layer": null,
+   "why": "Generic chat UI kit",
+   "judgedDescription": "Build chat in minutes with Sendbird UIKit open source code.",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "qdrant/skills": {
+   "repo": "qdrant/skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Qdrant agent skills",
+   "judgedDescription": "Agent skills for Qdrant vector search: scaling, performance optimization, search quality, monitoring, deployment, model ",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "alekspetrov/navigator": {
+   "repo": "alekspetrov/navigator",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Claude Code context memory",
+   "judgedDescription": "Finish What You Start — Context engineering for Claude Code.         Sessions last 20+ exchanges instead of crashing at ",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "trailofbits/coop": {
+   "repo": "trailofbits/coop",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "VM sandbox for agents",
+   "judgedDescription": "Isolated VM environment for running Claude Code and Codex",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "agynio/platform": {
+   "repo": "agynio/platform",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Kubernetes agent runtime",
+   "judgedDescription": "Agyn is an open-source Kubernetes-native runtime that moves AI agents like Claude Code and Codex from laptops to company",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "hassancs91/SimplerLLM": {
+   "repo": "hassancs91/SimplerLLM",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "LLM app library",
+   "judgedDescription": "Python library for building with LLMs. One interface across 11 providers (OpenAI, Anthropic, Gemini, DeepSeek, Ollama an",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "agenticmail/agenticmail": {
+   "repo": "agenticmail/agenticmail",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Agent email phone tools",
+   "judgedDescription": "Email, SMS & phone-call infrastructure for AI agents — send and receive real email and text messages, and place agent-dr",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "kontext-security/kontext": {
+   "repo": "kontext-security/kontext",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Runtime agent policy",
+   "judgedDescription": "Secure agents in seconds with permissions enforced at runtime.",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "GaaraZhu/gate": {
+   "repo": "GaaraZhu/gate",
+   "in_stack": true,
+   "layer": "security",
+   "why": "PII guard for agent tools",
+   "judgedDescription": "A deterministic privacy boundary between your data and AI.",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "cocoonstack/cocoon": {
+   "repo": "cocoonstack/cocoon",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "MicroVM sandbox engine",
+   "judgedDescription": "Lightweight MicroVM engine built on Cloud Hypervisor. Features include OCI and cloud image support, instant snapshot and",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "PromptPasture/llama.ui": {
+   "repo": "PromptPasture/llama.ui",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Local LLM chat client",
+   "judgedDescription": "A minimal interface for AI Companion that runs entirely in your browser.",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "scarletkc/agents": {
+   "repo": "scarletkc/agents",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Reusable coding agent skills",
+   "judgedDescription": "Shared standards and reusable skills for Claude Code, Codex CLI, and other AI coding agents.",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "inngest/inngest-py": {
+   "repo": "inngest/inngest-py",
+   "in_stack": false,
+   "layer": null,
+   "why": "Generic workflow SDK",
+   "judgedDescription": "Python SDK for Inngest: Durable functions and workflows in Python, hosted anywhere",
+   "judgedAt": "2026-09-15T04:00:23.692Z"
+  },
+  "roryeckel/wyoming_openai": {
+   "repo": "roryeckel/wyoming_openai",
+   "in_stack": false,
+   "layer": null,
+   "why": "Home Assistant voice proxy",
+   "judgedDescription": "OpenAI-Compatible Proxy Middleware for the Wyoming Protocol",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "skrun-dev/skrun": {
+   "repo": "skrun-dev/skrun",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "agent skill runtime API",
+   "judgedDescription": "Deploy any Agent Skill as an API via POST /run. The open-source multi-model alternative to Claude Managed Agents, Microsoft Foundry & Mistral/Koyeb — works with any LLM.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "durable-workflow/waterline": {
+   "repo": "durable-workflow/waterline",
+   "in_stack": false,
+   "layer": null,
+   "why": "general workflow operator UI",
+   "judgedDescription": "Operator UI for Durable Workflow runtime health, history, queues, retries, and repair.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "jpicklyk/task-orchestrator": {
+   "repo": "jpicklyk/task-orchestrator",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "MCP workflow enforcement",
+   "judgedDescription": "Server-enforced workflow discipline for AI agents. An MCP server providing persistent work items, dependency graphs, quality gates, and actor attribution. Schemas define what agents must produce — the server blocks the call if they don't. Works with any MCP-compatible client.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "zigflow/zigflow": {
+   "repo": "zigflow/zigflow",
+   "in_stack": false,
+   "layer": null,
+   "why": "general Temporal YAML workflows",
+   "judgedDescription": "Define durable workflows in YAML, powered by Temporal",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "DobermanCore/Doberman-Core": {
+   "repo": "DobermanCore/Doberman-Core",
+   "in_stack": true,
+   "layer": "security",
+   "why": "runtime guardrails for agents",
+   "judgedDescription": "Your AI's guard dog. Doberman sits at runtime, gating every input, output and tool call to stop unsafe or unintended actions before they execute.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "temporalio/sdk-ruby": {
+   "repo": "temporalio/sdk-ruby",
+   "in_stack": false,
+   "layer": null,
+   "why": "general Temporal SDK",
+   "judgedDescription": "Temporal Ruby SDK",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "busabase/busabase": {
+   "repo": "busabase/busabase",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "agent workspace and knowledge",
+   "judgedDescription": "Open-source database & workspace for AI agents — structured data, durable knowledge, reusable skills, runnable apps, and human-reviewed changes. Local-first and self-hostable.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "cynative/cynative": {
+   "repo": "cynative/cynative",
+   "in_stack": false,
+   "layer": null,
+   "why": "vertical security audit app",
+   "judgedDescription": "Open-source security agents for cloud, code and runtime. 45 built-in agents audit AWS, GCP, Azure, Kubernetes, GitHub and GitLab for privilege escalation, public exposure, supply chain and more, or build your own in one markdown file. Live, read-only access to your infrastructure.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "salitronic/eda-agent": {
+   "repo": "salitronic/eda-agent",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "MCP tool for EDA apps",
+   "judgedDescription": "Open-source MCP server that lets an AI drive a live session of Altium Designer, and optionally KiCad or EasyEDA Pro, editing the open design in place while you watch. 300+ tools: schematic, PCB, library and project automation, design review, audits, rendering, auto-placement, panelization, autonomous design-plan executor. Apache-2.0.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "ros-claw/rosclaw": {
+   "repo": "ros-claw/rosclaw",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "embodied agent runtime",
+   "judgedDescription": "Self-evolving runtime infrastructure for Physical AI and embodied agents. Ground AI agents into robot bodies with e-URDF, sandbox safety, capability routing, praxis capture, physical memory, runtime intervention, and skill evolution.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "fkonovalov/rdrr": {
+   "repo": "fkonovalov/rdrr",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "web-to-markdown MCP tool",
+   "judgedDescription": "Convert any URL to clean markdown for AI agents.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "douglasmonsky/codex-usage-tracker": {
+   "repo": "douglasmonsky/codex-usage-tracker",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Codex usage observability",
+   "judgedDescription": "Local-first MCP tools and dashboard for investigating Codex token usage, credits, costs, caching, and thread patterns.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "sbusso/claudeclaw": {
+   "repo": "sbusso/claudeclaw",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "always-on Claude agent plugin",
+   "judgedDescription": "Use Claude to orchestrate agents like OpenClaw",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "nyroway/nyro": {
+   "repo": "nyroway/nyro",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "protocol translating AI gateway",
+   "judgedDescription": "Self-hosted AI Gateway — connect Claude Code, Codex, Gemini CLI and any SDK to any model provider with protocol translation.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "FrkAk/piyaz": {
+   "repo": "FrkAk/piyaz",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "shared project context graph",
+   "judgedDescription": "The agentic workspace where people and  agents work together in the loop.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "AgentSafeLabs/safelabs-eval": {
+   "repo": "AgentSafeLabs/safelabs-eval",
+   "in_stack": true,
+   "layer": "security",
+   "why": "agent red-team evaluation",
+   "judgedDescription": "OWASP ASI-aligned red-teaming and evaluation framework for AI agents",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "Lifecycle-Innovations-Limited/claude-ops": {
+   "repo": "Lifecycle-Innovations-Limited/claude-ops",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Claude Code ops assistant",
+   "judgedDescription": "Business operating system for Claude Code — 57 skills, 21 agents, smart daemon. Unified inbox (WhatsApp/Email/Slack/Telegram), autonomous PR merge, full-AWS monitoring, revenue (Stripe+RevenueCat), e-commerce (Shopify), marketing (Klaviyo/Meta/GA4), voice (Bland/ElevenLabs), APM (Datadog/NewRelic/OTEL), YOLO mode.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "tokencanopy/e2a": {
+   "repo": "tokencanopy/e2a",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "email API and MCP tool",
+   "judgedDescription": "Open-source email API for applications and AI agents. Managed hosting at e2a.dev, or self-host with Docker.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "yuanzui0728/Enclave": {
+   "repo": "yuanzui0728/Enclave",
+   "in_stack": false,
+   "layer": null,
+   "why": "AI companion social app",
+   "judgedDescription": "Your own AI-powered virtual world.     一个属于你的 AI 虚拟世界 。AI companionship.AI陪伴。AI Socializing.AI社交。",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "alibaba/loongsuite-pilot": {
+   "repo": "alibaba/loongsuite-pilot",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "coding-agent telemetry collector",
+   "judgedDescription": "Local-first telemetry collector for AI coding agents — unified OpenTelemetry events for Claude Code, Codex, Cursor and more. Token usage, cost, traces and security audit, exported anywhere.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "Astro-Han/pawwork": {
+   "repo": "Astro-Han/pawwork",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "desktop AI work agent",
+   "judgedDescription": "PawWork — free, open-source desktop AI agent for macOS and Windows, built on DeepSeek Harness (DSH). Free models included, no API key or terminal. Office files, web search, and scheduled automations out of the box. An open alternative to Codex App and Claude Cowork.",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "CursorTouch/MacOS-MCP": {
+   "repo": "CursorTouch/MacOS-MCP",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "macOS computer-use MCP",
+   "judgedDescription": "Lightweight MCP server for computer use in MacOS",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "vmDeshpande/ai-agent-automation": {
+   "repo": "vmDeshpande/ai-agent-automation",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "AI workflow automation platform",
+   "judgedDescription": "Modular AI agent workflow automation platform with schedulers, tools, and observability. https://vmdeshpande.github.io/ai-automation-platform-website/",
+   "judgedAt": "2026-09-15T04:02:18.863Z"
+  },
+  "resend/resend-skills": {
+   "repo": "resend/resend-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Installable email agent skills",
+   "judgedDescription": "Agent Skills for working with Resend to send and receive emails.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "sandbaseai/sandbase-skills": {
+   "repo": "sandbaseai/sandbase-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Installable workflow skills",
+   "judgedDescription": "88 installable open-source Agent Skills for research, social intelligence, marketing, and business workflows—compatible with Codex, Claude Code, Cursor, Gemini CLI, and DeepSeek Harness.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "dbwls99706/ros2-engineering-skills": {
+   "repo": "dbwls99706/ros2-engineering-skills",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "ROS 2 coding agent skill",
+   "judgedDescription": "Agent skill for production-grade ROS 2 development. Progressive-disclosure SKILL.md covering workspace, nodes, executors, QoS, ros2_control, Nav2, MoveIt 2, real-time, and deployment. Works with Claude Code, Codex, Cursor, Gemini CLI.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "K-Dense-AI/scientific-agents": {
+   "repo": "K-Dense-AI/scientific-agents",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "AGENTS.md scientist profiles",
+   "judgedDescription": "Expert-thinking AGENTS.md profiles that teach AI agents to reason like senior scientists and engineers.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "edgehero/pi-dispatch": {
+   "repo": "edgehero/pi-dispatch",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Queue and budget runner for pi",
+   "judgedDescription": "Run the pi coding agent as a service — triggered on demand, on a cron schedule, or by a GitHub or GitLab issue, comment or pull/merge request — in a container you control, with a durable queue, a spend cap, and a live admin panel.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "joseairosa/recall": {
+   "repo": "joseairosa/recall",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Persistent MCP memory service",
+   "judgedDescription": "Persistent cross-session memory for Claude & AI agents. Self-host on Redis/Valkey, or use the managed SaaS at recallmcp.com.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "kandada/fastclaw": {
+   "repo": "kandada/fastclaw",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Opinionated agent runtime",
+   "judgedDescription": "A python-based light but strong lobster. A lightweight but powerful AI Agent framework in Python, with multi-channel support, tool calling, cron scheduling and streaming output",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "OWASP/www-project-agent-memory-guard": {
+   "repo": "OWASP/www-project-agent-memory-guard",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Runtime memory poisoning guard",
+   "judgedDescription": "OWASP Foundation web repository",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "yantrikos/yantrikdb-server": {
+   "repo": "yantrikos/yantrikdb-server",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Cognitive memory engine",
+   "judgedDescription": "Cognitive memory database for AI agents — consolidates duplicates, detects contradictions, fades stale memories via temporal decay. Rust, Apache-2.0, ships as library / MCP server / HTTP cluster.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "tanaikech/ggsrun": {
+   "repo": "tanaikech/ggsrun",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Google Drive MCP tool server",
+   "judgedDescription": "High-performance Google Drive CLI and Model Context Protocol (MCP) Server for LLM/AI agents. Natively execute Google Apps Script (GAS) under a secure whitelisted runtime sandbox, automate transfers, and manage Drive infrastructure.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "edward-playground/aidefense-framework": {
+   "repo": "edward-playground/aidefense-framework",
+   "in_stack": false,
+   "layer": null,
+   "why": "Security knowledge base",
+   "judgedDescription": "An open-source knowledge base of defensive countermeasures to protect AI/ML systems. Features interactive views and maps defenses to known threats from frameworks like MITRE ATLAS, MAESTRO, and OWASP.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "pedrofariasx/qwenproxy": {
+   "repo": "pedrofariasx/qwenproxy",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "OpenAI-compatible model proxy",
+   "judgedDescription": "Proxy API OpenAI-compatible que usa automação com Playwright para rotear requisições para modelos do Qwen com suporte a múltiplas contas, tools e sessões persistentes.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "1337hero/faster-chat": {
+   "repo": "1337hero/faster-chat",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Self-hosted LLM chat UI",
+   "judgedDescription": "A blazingly fast, privacy first & OPEN AI Chat Interface",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "mirkobozzetto/flowflow": {
+   "repo": "mirkobozzetto/flowflow",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical voice notes app",
+   "judgedDescription": "Agentic Voice Notes for iPhone and macOS - Rust, Dioxus, LanceDB + RIG + SQLite",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "sandbaseai/cli": {
+   "repo": "sandbaseai/cli",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "MCP bridge to model APIs",
+   "judgedDescription": "Open-source AI CLI and local MCP server connecting 25 clients—Claude Code, Cursor, Codex, ChatGPT, Hermes, and OpenClaw—to 2,000+ models/APIs, with OAuth and rollback.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "ihuzaifashoukat/x-use": {
+   "repo": "ihuzaifashoukat/x-use",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical X automation app",
+   "judgedDescription": "Browser-native AI agents for X (Twitter): multi-account, MCP-ready, no X API key required.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "Anbeeld/AGENTS.md": {
+   "repo": "Anbeeld/AGENTS.md",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Reusable coding agent instructions",
+   "judgedDescription": "Global instructions for coding agents: evidence, parallelization, validation, all in one AGENTS.md / CLAUDE.md",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "PrimeFoldTools/andon": {
+   "repo": "PrimeFoldTools/andon",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Agent work quality kit",
+   "judgedDescription": "A Lean quality system for AI-assisted work — every defect becomes a permanent countermeasure. Built by a manufacturing operator.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "harmont-dev/hyper": {
+   "repo": "harmont-dev/hyper",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "Firecracker VM sandbox orchestrator",
+   "judgedDescription": "Distributed Firecracker VM Orchestrator written in Elixir",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "markus-global/markus": {
+   "repo": "markus-global/markus",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "AI workforce agent runtime",
+   "judgedDescription": "The best AI workforce platform, to build AI teams that actually deliver.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "Patdolitse/piia-engram": {
+   "repo": "Patdolitse/piia-engram",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Portable local identity memory",
+   "judgedDescription": "Local-first AI memory you can see, edit, and override — portable across Claude Code, Codex, Cursor, Windsurf, and other MCP coding tools.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "brycewang-stanford/Auto-Research-Skills": {
+   "repo": "brycewang-stanford/Auto-Research-Skills",
+   "in_stack": false,
+   "layer": null,
+   "why": "Curated awesome-style hub",
+   "judgedDescription": "A curated hub of autonomous-research skills & agents — from idea to paper, on autopilot. | 自主科研技能与智能体精选库 —— 从灵感到论文全文，全程自动完成。",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "jigjoy-ai/mozaik": {
+   "repo": "jigjoy-ai/mozaik",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "TypeScript multi-agent runtime",
+   "judgedDescription": "Mozaik is a TypeScript runtime for concurrent AI agents.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "Foxtailsss-Andy/Anna-Agent": {
+   "repo": "Foxtailsss-Andy/Anna-Agent",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Local-first desktop agent",
+   "judgedDescription": "A governed, local-first AI agent for enterprise Chat, Workflows, Associate, and MCP-connected business systems.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "Text2SqlAgent/text2sql-framework": {
+   "repo": "Text2SqlAgent/text2sql-framework",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "SQL data access agent tool",
+   "judgedDescription": "Agentic text-to-SQL SDK: hand the LLM one execute_sql tool and let it explore the schema, test queries, and self-correct — no RAG, no semantic layer. 20/20 on an 80-table Spider run. Built-in tracing and scenario support.",
+   "judgedAt": "2026-09-15T04:04:00.651Z"
+  },
+  "GuyMannDude/mnemo-cortex": {
+   "repo": "GuyMannDude/mnemo-cortex",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "MCP persistent agent memory",
+   "judgedDescription": "Open-source cognitive coprocessor with active memory for AI agents — persistent recall, semantic search, overnight dreaming, verified facts, encrypted USB sync. MCP server; works with Claude, ChatGPT, and any local LLM. Built by one maker and his agents.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "IogaMaster/dotfiles": {
+   "repo": "IogaMaster/dotfiles",
+   "in_stack": false,
+   "layer": null,
+   "why": "Personal NixOS dotfiles",
+   "judgedDescription": "My entire infrastructure and computing environment.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "JayleeBot/ForgeFlow": {
+   "repo": "JayleeBot/ForgeFlow",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical procurement email app",
+   "judgedDescription": "AI-powered email agent for procurement quote management",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "affromero/flight-finder": {
+   "repo": "affromero/flight-finder",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical travel price tracker",
+   "judgedDescription": "Self-hosted flight, hotel, and car rental price tracking with alerts, price history, and web and CLI interfaces.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "FaqFirebase/pi-desktop": {
+   "repo": "FaqFirebase/pi-desktop",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Desktop client for coding agents",
+   "judgedDescription": "A free, open source Electron GUI for the Pi and oh-my-pi coding agents. Chat, edit files, run a terminal, and review diffs in one window. Linux, macOS, and Windows.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "GetBusbar/busbar": {
+   "repo": "GetBusbar/busbar",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Agent execution gateway",
+   "judgedDescription": "The execution control plane for AI agents. Govern every model request, MCP tool call, A2A delegation, and downstream action—while keeping your native protocols intact: six native LLM protocols in, six native LLM protocols out.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "langgenius/mosoo": {
+   "repo": "langgenius/mosoo",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Managed agent runtime",
+   "judgedDescription": "The open-source Agent Gallery and Gateway for Codex, Claude Agent SDK, and OpenCode. Developers publish an Agent once behind one HTTP API; users run it in an isolated cloud sandbox—no local harness setup, compute, or runtime infrastructure.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "yuhp/opencode-models-discovery": {
+   "repo": "yuhp/opencode-models-discovery",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "OpenCode model provider plugin",
+   "judgedDescription": "A universal OpenCode plugin for dynamic model discovery with flexible configuration for OpenAI-compatible providers.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "coddy-project/coddy-agent": {
+   "repo": "coddy-project/coddy-agent",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "General-purpose agent harness",
+   "judgedDescription": "General-purpose agent in one static Go binary: console TUI, ACP server for editors, OpenAI-compatible API with embedded web UI, Telegram gateway, cron scheduler, swarm relay, remote mode. Rules, skills, subagents, hooks, MCP, background tasks, long-term memory, context compaction. Any OpenAI-compatible provider, distroless-ready.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "mohammadtavakoli78/BEAM": {
+   "repo": "mohammadtavakoli78/BEAM",
+   "in_stack": false,
+   "layer": null,
+   "why": "Paper benchmark repo",
+   "judgedDescription": "[ICLR 2026] Beyond a Million Tokens: Benchmarking and Enhancing Long-Term Memory in LLMs",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "drewnekota/cetus": {
+   "repo": "drewnekota/cetus",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Desktop client for agent runtimes",
+   "judgedDescription": "One macOS app for Claude Code, Codex, and every agent runtime you use — scheduled runs, global hotkey launcher, per-run git worktrees, one review board.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "Zedong-Liu/SparseReading": {
+   "repo": "Zedong-Liu/SparseReading",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Reading tool layer for agents",
+   "judgedDescription": "SparseRead: token-efficient reading for AI agents. 读得更少，token 更省，证据不变。 Paper arXiv:2608.22237",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "yalun753/moe-l2": {
+   "repo": "yalun753/moe-l2",
+   "in_stack": false,
+   "layer": null,
+   "why": "General LLM inference optimization",
+   "judgedDescription": "MoE expert offload for low-VRAM GPUs — run 100B+ MoE models (DeepSeek, Qwen, Mixtral) on 8 GB cards. Expert cache with LRU hot experts, OpenAI-compatible proxy, GGUF multi-shard.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "prime-radiant-inc/evener": {
+   "repo": "prime-radiant-inc/evener",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Coding agent with hub UI",
+   "judgedDescription": "A coding agent: give it a prompt and it reads, writes, runs commands, and searches code in a loop until the work is done, using native tool-calling across OpenAI, Anthropic, and Google models.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "doiito/gliding_horse": {
+   "repo": "doiito/gliding_horse",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Multi-agent orchestration framework",
+   "judgedDescription": "Gliding Horse is a multi-agent orchestration framework built in Rust that supports PDCA scheduling and knowledge graph-based agents, with comprehensive Chinese documentation, and is suitable for building enterprise-level AI agent systems.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "mydisha/keirouter": {
+   "repo": "mydisha/keirouter",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Self-hosted AI gateway",
+   "judgedDescription": "Your friendly, blazing-fast, self-hostable AI gateway",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "r-uby-dev/llm": {
+   "repo": "r-uby-dev/llm",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Ruby agent framework",
+   "judgedDescription": "Ruby's capable AI runtime",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "holon-run/holon": {
+   "repo": "holon-run/holon",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Continuous agent workbench",
+   "judgedDescription": "A local workbench for agents doing continuous work across sessions, commands, human input, and external events.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "olsenbrands/fable-foreman": {
+   "repo": "olsenbrands/fable-foreman",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Coding agent orchestrator prompts",
+   "judgedDescription": "Turn Fable or Opus into your agent orchestrator: plan coding work, assign capable Claude, Codex, or Grok agents, and personally verify the result.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "notoriouslab/vault-curate": {
+   "repo": "notoriouslab/vault-curate",
+   "in_stack": false,
+   "layer": null,
+   "why": "Obsidian notes application",
+   "judgedDescription": "Find, connect, rediscover your notes — a local-first second brain for Obsidian. Semantic search with strong Chinese/CJK, relation graphs and semantic paths for connections you never drew, Hot/Cold rediscovery of forgotten notes. Desktop builds the index; phones and tablets search it. No API keys.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "jkudish/librarium": {
+   "repo": "jkudish/librarium",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Deep research CLI for agents",
+   "judgedDescription": "Multi-provider deep research CLI — fans out queries to multiple search/AI APIs in parallel",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "superhero-tech/super-brain": {
+   "repo": "superhero-tech/super-brain",
+   "in_stack": false,
+   "layer": null,
+   "why": "Second-brain template vault",
+   "judgedDescription": "Product Builder Second Brain - AI Product Heroes Edition 3",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "mkreyman/mcp-memory-keeper": {
+   "repo": "mkreyman/mcp-memory-keeper",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "MCP persistent context memory",
+   "judgedDescription": "MCP server for persistent context management in AI coding assistants",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "nkapila6/mcp-local-rag": {
+   "repo": "nkapila6/mcp-local-rag",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Local RAG MCP tool",
+   "judgedDescription": "\"primitive\" RAG-like web search model context protocol (MCP) server that runs locally. ✨ no APIs ✨",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "LettuceAI/app": {
+   "repo": "LettuceAI/app",
+   "in_stack": false,
+   "layer": null,
+   "why": "Vertical roleplay chat app",
+   "judgedDescription": " Privacy-first AI roleplay & BYOK (Bring Your Own Key) & roleplaying, companion and storytelling app with long-term memory, custom characters, and 20+ providers. Android, Windows, macOS, Linux. Supports 20+ LLM Providers.",
+   "judgedAt": "2026-09-15T04:05:18.111Z"
+  },
+  "taishan666/MaxKB4j": {
+   "repo": "taishan666/MaxKB4j",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Java RAG and LLM workflow platform",
+   "judgedDescription": "MaxKB4j is an open-source LLMOps platform for LLM workflow applications and RAG developed based on the Java language. The project mainly draws on MaxKB, Dify and FastGPT, and combines the advantages of the two into one project. It is redesigned and developed using the high-performance, high-stability and secure reliable JAVA language. ",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "naveedharri/baalda": {
+   "repo": "naveedharri/baalda",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "shared markdown context for agents",
+   "judgedDescription": "The team second brain. Plain Markdown files on your disk, edited together in real time, and read and written by your AI like a teammate.",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "ai-forever/gpt2giga": {
+   "repo": "ai-forever/gpt2giga",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "OpenAI/Anthropic/Gemini to GigaChat proxy",
+   "judgedDescription": "FastAPI proxy for OpenAI, Anthropic and Gemini compatible clients backed by the GigaChat API",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "Cloudgeni-ai/opengeni": {
+   "repo": "Cloudgeni-ai/opengeni",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "durable replayable agent runtime",
+   "judgedDescription": "Open, self-hostable agentic runtime for organizations — durable, replayable agent sessions, human approvals, governed credentials and memory, running in managed sandboxes or on your own hardware. Apache-2.0.",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "Ryder-MHumble/Meldwork": {
+   "repo": "Ryder-MHumble/Meldwork",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "desktop workspace for coding agents",
+   "judgedDescription": "Local-first AI agent workspace for multi-agent collaboration, agent orchestration, scoped permissions, evidence-aware runs, and human-in-the-loop decisions.",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "edgee-ai/edgee": {
+   "repo": "edgee-ai/edgee",
+   "in_stack": false,
+   "layer": null,
+   "why": "hosted gateway CLI only",
+   "judgedDescription": "Official Edgee CLI to interract with Edgee's Agent Gateway. Route Claude Code, Codex, Cursor, VS Code + Copilot, and more through Edgee's hosted gateway to cut token spend.",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "alivecontext/alive": {
+   "repo": "alivecontext/alive",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Claude Code personal context manager",
+   "judgedDescription": "Personal Context Manager for Claude Code. Your life in walnuts.",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "vstorm-co/pydantic-ai-backend": {
+   "repo": "vstorm-co/pydantic-ai-backend",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "sandboxed file and code backends",
+   "judgedDescription": "File Storage & Sandbox Backends for Pydantic AI: console tools for file operations, Docker-isolated sandboxes for safe execution, and permission system with presets for access control. Enables secure multi-user handling and testing in agents via in-memory, local, or containerized storage.",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "JingHao-Leon/dsh-alpha-desk": {
+   "repo": "JingHao-Leon/dsh-alpha-desk",
+   "in_stack": false,
+   "layer": null,
+   "why": "vertical investment skill pack",
+   "judgedDescription": "Alpha Desk — a deepseek-harness (dsh) skill pack that turns an agent session into a compliance-first AI investment desk: multi-strategy fund backtesting via ai-hedge-fund, a tools/pre-execute risk gate, cron monitoring and thesis memory. 把 dsh 会话变成合规、可复现、可追责的 AI 投研工作台。",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "taxueseek/argo": {
+   "repo": "taxueseek/argo",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "agent-oriented search MCP tool",
+   "judgedDescription": "专门为 agent 打造的开源 agent 搜索工具，具备 200+的搜索源及多语言搜索能力，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "st3w4r/openai-partial-stream": {
+   "repo": "st3w4r/openai-partial-stream",
+   "in_stack": false,
+   "layer": null,
+   "why": "streaming UI helper library",
+   "judgedDescription": "Turn a stream of token into a parsable JSON object as soon as possible. Enable Streaming UI for AI app based on LLM.",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "woniu9524/open-web-bridge": {
+   "repo": "woniu9524/open-web-bridge",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "lets agents drive real Chrome",
+   "judgedDescription": "Drive your real Chrome from any AI agent — logged-in sessions, real fingerprint, live tabs. CLI-based, works with OpenCode, Pi, or any Harness.",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "OrlojHQ/orloj": {
+   "repo": "OrlojHQ/orloj",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "declarative multi-agent runtime",
+   "judgedDescription": "An orchestration runtime for multi-agent AI systems. Declare agents, tools, and policies as YAML; Orloj schedules, executes, routes, and governs them for production-grade operation.",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "restatedev/sdk-typescript": {
+   "repo": "restatedev/sdk-typescript",
+   "in_stack": false,
+   "layer": null,
+   "why": "general durable execution SDK",
+   "judgedDescription": "Restate SDK for JavaScript/Typescript",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "VkRainB/ccMesh": {
+   "repo": "VkRainB/ccMesh",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "local protocol-converting AI gateway",
+   "judgedDescription": "Claude Code / Codex local AI proxy gateway desktop app (Tauri). Anthropic Messages <-> OpenAI-compatible protocol transform, model mapping, endpoint rotation/failover. 本地桌面代理网关：协议转换、模型映射、多端点轮换/熔断，对接官方 API 或中转站，不改客户端。Windows/macOS/Linux.",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "nambok/mentedb": {
+   "repo": "nambok/mentedb",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "agent memory database engine",
+   "judgedDescription": "A cognition aware database engine for AI agent memory. Purpose built in Rust with WAL, HNSW, knowledge graphs, and speculative context pre assembly. Not a wrapper, a ground up storage engine that thinks.",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "galaxy-io/tempo": {
+   "repo": "galaxy-io/tempo",
+   "in_stack": false,
+   "layer": null,
+   "why": "general Temporal TUI",
+   "judgedDescription": "Keyboard-driven terminal client for inspecting and controlling Temporal workflows",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "PerryLink/dsh-permission-rules": {
+   "repo": "PerryLink/dsh-permission-rules",
+   "in_stack": true,
+   "layer": "security",
+   "why": "declarative agent tool permissions",
+   "judgedDescription": "Claude Code-style declarative permission rules for DeepSeek Harness: ordered allow/deny/ask rules with tool-name, argument (glob/regex), and workspace-path matching on the tools/pre-execute waterfall, session-log audit, and HMR reload.",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "temporalio/samples-dotnet": {
+   "repo": "temporalio/samples-dotnet",
+   "in_stack": false,
+   "layer": null,
+   "why": "SDK sample repository",
+   "judgedDescription": "Samples for working with the Temporal .NET SDK ",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "kieker-monitoring/kieker": {
+   "repo": "kieker-monitoring/kieker",
+   "in_stack": false,
+   "layer": null,
+   "why": "general APM observability framework",
+   "judgedDescription": "Kieker is an observability framework, that consists of an monitoring and tracing agent, and compatible analysis tools",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "redf0x1/camofox-mcp": {
+   "repo": "redf0x1/camofox-mcp",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "browser automation MCP server",
+   "judgedDescription": "Anti-detection browser MCP server for AI agents — navigate, interact, and automate the web without getting blocked",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "mdowis/anansi": {
+   "repo": "mdowis/anansi",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "LLM-drivable scraping tool",
+   "judgedDescription": "A self-healing scraper for hostile sites: broken selectors repair themselves, browser rendering kicks in when needed, and a coherent identity layer (Chrome TLS fingerprints, matched personas, vendor-aware Cloudflare/Akamai/DataDome handling) works to slip past bot detection. Ships with an MCP server so any LLM can drive a full crawl by conversation.",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "Ratnesh-181998/AI-Engineer": {
+   "repo": "Ratnesh-181998/AI-Engineer",
+   "in_stack": false,
+   "layer": null,
+   "why": "educational notes and links",
+   "judgedDescription": "AI Engineering Specially Topics- Agentic AI & GenAI  Explanation ",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "kubeswift-io/kubeswift": {
+   "repo": "kubeswift-io/kubeswift",
+   "in_stack": false,
+   "layer": null,
+   "why": "general VM orchestration",
+   "judgedDescription": "Kubernetes-native VM orchestration on Cloud Hypervisor ",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "WANGLEVY9/VidForge": {
+   "repo": "WANGLEVY9/VidForge",
+   "in_stack": false,
+   "layer": null,
+   "why": "vertical video generation app",
+   "judgedDescription": "Open-source AI pipeline for short-form commerce videos: multimodal analysis, RAG scripts, multi-agent orchestration, FFmpeg composition, and cost tracing.",
+   "judgedAt": "2026-09-15T04:06:49.013Z"
+  },
+  "Leeroo-AI/kapso": {
+   "repo": "Leeroo-AI/kapso",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "self-improving research agent",
+   "judgedDescription": "Kapso by Leeroo: A self-improving AI software factory (for measurable objectives). #1 open-source on MLE-Bench; ALE-Bench; RelBench",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "Necmttn/ax": {
+   "repo": "Necmttn/ax",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "agent session memory graph",
+   "judgedDescription": "the agent experience layer · observability + memory for AI coding agents (Claude Code + Codex) · local-first, typed, yours",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "izaart95-jpg/GLM-Free-API": {
+   "repo": "izaart95-jpg/GLM-Free-API",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "OpenAI-compatible model proxy",
+   "judgedDescription": "An OpenAI-compatible API proxy for chat.z.ai. Drop it in front of any OpenAI-compatible tool and start using Z.AI's GLM models for free",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "Nayjest/ai-microcore": {
+   "repo": "Nayjest/ai-microcore",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "LLM app adapter library",
+   "judgedDescription": "A handy lib for smooth interaction with large language models (LLMs) and crafting AI apps.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "AgentToolkit/altk-evolve": {
+   "repo": "AgentToolkit/altk-evolve",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "trajectory memory for agents",
+   "judgedDescription": "Self improving agents through iterations",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "achetronic/magec": {
+   "repo": "achetronic/magec",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "multi-agent workflow platform",
+   "judgedDescription": "Multi-agent AI platform with voice and text control. Visual workflows, web interface, and chat integrations (Telegram, Discord, Slack). Long-term memory, any LLM backend, extensible via MCP tools.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "gviiisen/repo-context-ledger": {
+   "repo": "gviiisen/repo-context-ledger",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "coding-agent context skill",
+   "judgedDescription": "面向 AI 上下文管理的 Agent Skill：为 Codex 上下文管理、Cursor 上下文切换和 Claude 上下文管理提供跨窗口续接，用 Git 保存可验证的功能说明与变更记录。AI coding context management and agent handoffs.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "conductor-oss/python-sdk": {
+   "repo": "conductor-oss/python-sdk",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "durable agent workflow SDK",
+   "judgedDescription": "Conductor OSS SDK for Python programming language",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "Aiyawoc/CodexSessionManager": {
+   "repo": "Aiyawoc/CodexSessionManager",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Codex context management tool",
+   "judgedDescription": "Safety-first GUI and CLI for auditing, backing up, importing, cleaning, and trimming Codex conversations without editing internal storage.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "alexvilelabah/bah-browser": {
+   "repo": "alexvilelabah/bah-browser",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "autonomous browser agent",
+   "judgedDescription": "Open-source AI browser agent — type plain-language commands and Bah operates the web for you. Works with cloud AI (DeepSeek, Mistral, NVIDIA) or local Ollama models.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "Netis/heron": {
+   "repo": "Netis/heron",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "passive agent observability",
+   "judgedDescription": "Agent and LLM API performance monitoring via network packet probe. Measures performance of OpenClaw, Claude, Codex, DeepAgents and more — deployed on the provider side, no SDK changes required.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "Consensys/c0": {
+   "repo": "Consensys/c0",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Cloudflare agent harness",
+   "judgedDescription": "c0 is an open-source AI platform built for organizational work, tools, and context. A single deployment to Cloudflare to get started.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "ominiverdi/opencode-chat-bridge": {
+   "repo": "ominiverdi/opencode-chat-bridge",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "chat clients for agents",
+   "judgedDescription": "Bridge OpenCode, Ferrum, and other ACP-compatible agents to Matrix, Slack, Mattermost, WhatsApp, Discord, Telegram, and Web—with permission-based security.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "aspenkit/aspens": {
+   "repo": "aspenkit/aspens",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "generates scoped agent skills",
+   "judgedDescription": "Your CLAUDE.md stopped working at 200 lines. Generate scoped skill files from your import graph, auto-sync on every commit. Claude Code, Codex and OpenCode.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "bigint/rag.computer": {
+   "repo": "bigint/rag.computer",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "self-hosted RAG service",
+   "judgedDescription": "Self-hostable RAG platform - document ingestion, embedding, and vector search behind a simple REST API",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "modusensus/dsh-mneme": {
+   "repo": "modusensus/dsh-mneme",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "DSH cross-session memory",
+   "judgedDescription": "🧠 The memory that dreams — cross-session memory for DeepSeek Harness. Offline & private, auto-consolidates in its sleep (autoDream), visualized in a memory panel.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "titanwings/dsh-automation": {
+   "repo": "titanwings/dsh-automation",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "scheduled agent sessions",
+   "judgedDescription": "DSH 自动化插件：让 Coding 任务按计划在全新 Agent Session 中运行，并由用户或 Agent 创建和管理定时任务。 / Run coding tasks in fresh Agent sessions and manage schedules from DSH Web or an Agent.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "diegosouzapw/OmniCopilot": {
+   "repo": "diegosouzapw/OmniCopilot",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Copilot Chat model client",
+   "judgedDescription": "1200+ AI models in your GitHub Copilot Chat — free & forever free. VS Code extension powered by OmniRoute: 340+ providers (90+ free) — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, Qwen — with agent mode, tool calling, vision and quota-aware auto-fallback. MIT.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "Tyan66666/billion-context-dsh": {
+   "repo": "Tyan66666/billion-context-dsh",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "DSH context compaction",
+   "judgedDescription": "Model-driven context management (Active Context Pruning / ACP) for the DeepSeek Harness — the model decides when and what to compress. Ported from billion-context-pi (ranxianglei); acp-kernel reused verbatim. CompactionEngine backend with compress/decompress/search_context/acp_status tools.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "wiseria-ai-labs/pie-ai-agent": {
+   "repo": "wiseria-ai-labs/pie-ai-agent",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "Chrome browser agent",
+   "judgedDescription": "Pie – free, open-source AI browser agent for Chrome. Reads pages & PDFs, fills forms, extracts data, automates tabs, hands off to Claude Code. BYOK or subscribe.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "Rescenix/Yosuri": {
+   "repo": "Rescenix/Yosuri",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "agent workbench application",
+   "judgedDescription": "Yosuri — LESS CHAT, MORE AUTOMATIC. A 24H self-evolving AI agent that aggregates free models into one OpenAI & Anthropic-compatible API, picks its own tasks, writes real code, and verifies results. Local-first, free forever. AGPL-3.0.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "harumiWeb/xlflow": {
+   "repo": "harumiWeb/xlflow",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Excel CLI for coding agents",
+   "judgedDescription": "AI-Agent-ready CLI framework for editing, testing, running, tracing, and diffing Excel VBA projects.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "willdady/platypus": {
+   "repo": "willdady/platypus",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "self-hosted team agents",
+   "judgedDescription": "Self-hosted AI Agents for your whole team — on your infrastructure, your models, around the clock.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "escoffier-labs/brigade": {
+   "repo": "escoffier-labs/brigade",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "coordinates coding-agent work",
+   "judgedDescription": "Track work, verify results, carry memory, and sync tools across coding agents. Local files, no daemon.",
+   "judgedAt": "2026-09-15T04:08:30.116Z"
+  },
+  "rojim666/SztuCode": {
+   "repo": "rojim666/SztuCode",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "Local coding and office agent runtime",
+   "judgedDescription": "A local-first AI coding agent with TUI and desktop clients, tool permissions, memory, Skills, Subagents, and MCP support.。",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "tenequm/pond": {
+   "repo": "tenequm/pond",
+   "in_stack": true,
+   "layer": "memory",
+   "why": "Searchable cross-agent session memory",
+   "judgedDescription": "Lossless storage and search for AI agent sessions, across every agentic client.",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "brig-sh/brig": {
+   "repo": "brig-sh/brig",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "MicroVM sandbox for coding agents",
+   "judgedDescription": "Brig: run coding agents in a microVM sandbox — the Go cli (brig) and session daemon (brigd)",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "TGYD-helige/pi": {
+   "repo": "TGYD-helige/pi",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Composable MCP tool packages for agents",
+   "judgedDescription": "Pluggable extension packages for the Pi AI-agent runtime. Each package exposes LLM-callable tools via MCP — covering IM workspace integrations (Lark, DingTalk, WeCom), browser & computer automation, persistent memory, telemetry, task scheduling, image generation, web access, security policies, and more.",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "fastagent-sh/fastagent": {
+   "repo": "fastagent-sh/fastagent",
+   "in_stack": false,
+   "layer": null,
+   "why": "Own repository excluded",
+   "judgedDescription": "Vibe first. Then FastAgent — turn a local agent directory into a live service: in your app, on GitHub, in Telegram, or any channel.",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "Mrbaeksang/deepcloak": {
+   "repo": "Mrbaeksang/deepcloak",
+   "in_stack": true,
+   "layer": "research-agents",
+   "why": "Local research agent with MCP interface",
+   "judgedDescription": "Local-first research tool with explicit fetch decisions, source evidence, and cited reports. CLI and MCP interfaces. Python, MIT.",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "QWED-AI/qwed-verification": {
+   "repo": "QWED-AI/qwed-verification",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Deterministic guardrail before execution",
+   "judgedDescription": "Open-source AI verification infrastructure for deterministic verification of LLM outputs, tool calls, code, schemas, and agent state before production execution.",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "objectstack-ai/objectstack": {
+   "repo": "objectstack-ai/objectstack",
+   "in_stack": false,
+   "layer": null,
+   "why": "Business app platform, not agent stack",
+   "judgedDescription": "Apps small enough for AI to hold whole. ObjectStack turns the whole app — data model, UI, workflows, permissions — into typed metadata: a complete CRM in under 150k tokens, one context window. Agents read it whole, reason it whole, refactor it whole.",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "alifurkangokce/driftlint": {
+   "repo": "alifurkangokce/driftlint",
+   "in_stack": true,
+   "layer": "skills",
+   "why": "Lints AGENTS files and skills drift",
+   "judgedDescription": "Finds the claims in your CLAUDE.md / AGENTS.md / skills that your code no longer supports. Zero-config, no API key.",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "CherryHQ/stella": {
+   "repo": "CherryHQ/stella",
+   "in_stack": true,
+   "layer": "assistant-agents",
+   "why": "Shared self-hosted AI coworkers",
+   "judgedDescription": "AI partners for every person: multi-user, multi-agent memory, trusted tools, schedules, sandboxed workspaces, and chat.",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "cocoonstack/sandbox": {
+   "repo": "cocoonstack/sandbox",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "MicroVM sandbox SDK and MCP server",
+   "judgedDescription": "Fast cold-boot MicroVM sandboxes for AI agents on cocoon",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "ahwurm/localharness": {
+   "repo": "ahwurm/localharness",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Model-agnostic local agent harness",
+   "judgedDescription": "An open-source, model-agnostic agent harness for local LLMs. Define agents in YAML (tools, memory, deny-first permissions) and run them against any OpenAI-compatible endpoint: vLLM, Ollama, LM Studio, or llama.cpp.",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "FANATFANATA/DanyAPI": {
+   "repo": "FANATFANATA/DanyAPI",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "OpenAI-compatible model proxy API",
+   "judgedDescription": "OpenAI compatible API on top of the free web clients",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "nocoo/raven": {
+   "repo": "nocoo/raven",
+   "in_stack": true,
+   "layer": "gateways",
+   "why": "Copilot to OpenAI/Anthropic proxy",
+   "judgedDescription": "🐦‍⬛ GitHub Copilot proxy that translates requests to Anthropic/OpenAI-compatible APIs with a usage dashboard",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "Ultimate-Multisite/superdav-ai-agent": {
+   "repo": "Ultimate-Multisite/superdav-ai-agent",
+   "in_stack": false,
+   "layer": null,
+   "why": "WordPress vertical application",
+   "judgedDescription": "AI Agent for WordPress — agentic AI loop with tool-calling via the Abilities API",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "LeeYudok/agents-scaffold": {
+   "repo": "LeeYudok/agents-scaffold",
+   "in_stack": false,
+   "layer": null,
+   "why": "Fork-and-fill scaffold template",
+   "judgedDescription": "Fork-and-fill bootstrap for AI coding agents (Claude Code first, Codex/Gemini via AGENTS.md) — agents, skills, hooks, tiered rules (P0/P1/P2) and stack presets composed into one enforced pre-commit gate. 한국어/English",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "ikaruscareer/SafeAI": {
+   "repo": "ikaruscareer/SafeAI",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Static scanner for agent risks",
+   "judgedDescription": "Static analysis and attack-surface scanner for AI agents — SAST for prompts, tools, MCP servers, and agent workflows. Detects capabilities, prompt risks, tool permissions, and governance gaps before deployment.",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "norviq-dev/norviq": {
+   "repo": "norviq-dev/norviq",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Runtime policy gate for tool calls",
+   "judgedDescription": "Runtime security platform for LLM agent tool calls on Kubernetes",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "SynapseKit/SynapseKit": {
+   "repo": "SynapseKit/SynapseKit",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Python framework for LLM apps and agents",
+   "judgedDescription": "Minimal, async-first Python framework for production LLM apps- 2 hard deps, no magic, no SaaS. ",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "nnennandukwe/governed-agent-autonomy-patterns": {
+   "repo": "nnennandukwe/governed-agent-autonomy-patterns",
+   "in_stack": true,
+   "layer": "security",
+   "why": "Governance gates for agent autonomy",
+   "judgedDescription": "This repo is a public, docs-first reference for teams that want agentic coding without chaos. It focuses on the patterns that protect code integrity while still preserving speed: plan, permission, verification, and tool trust.",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "lizhiyao/oh-my-knowledge": {
+   "repo": "lizhiyao/oh-my-knowledge",
+   "in_stack": true,
+   "layer": "evaluation",
+   "why": "Evaluates prompts, RAG, skills and agents",
+   "judgedDescription": "OMK — Evidence-backed evaluation and observability for prompts, RAG, skills, agents, and workflows. Native Codex, Claude Code, and DeepSeek Harness support.",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "agentjido/jido_harness": {
+   "repo": "agentjido/jido_harness",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "Harness for CLI coding agents",
+   "judgedDescription": "Normalized Elixir protocol for CLI AI coding agents",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "clouisle/Clouisle": {
+   "repo": "clouisle/Clouisle",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "Multi-agent workflow orchestration platform",
+   "judgedDescription": "Next-Generation Multi-Agent Collaboration Platform and Workflow Engine. Build and orchestrate production-ready AI agent teams with sandboxed execution, hybrid RAG, and enterprise-grade security.",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "beadhive/beadhive": {
+   "repo": "beadhive/beadhive",
+   "in_stack": true,
+   "layer": "capability-tools",
+   "why": "Issue workflow tool for coding agents",
+   "judgedDescription": "An agentic software factory that closes the loop",
+   "judgedAt": "2026-09-15T04:10:12.362Z"
+  },
+  "bigduu/Bamboo-agent": {
+   "repo": "bigduu/Bamboo-agent",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "local agent harness and runtime",
+   "judgedDescription": "Bamboo — a local-first Rust agent harness and runtime with sessions, tools, skills, MCP, sub-agents, workflows, schedules, and context assembly over HTTP, SSE, and WebSocket.",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "digitaldrywood/detent": {
+   "repo": "digitaldrywood/detent",
+   "in_stack": true,
+   "layer": "orchestration",
+   "why": "GitHub-board agent orchestration",
+   "judgedDescription": "Detent is board-driven agentic work orchestration, shipped as a single Go binary — it watches a GitHub Projects board and runs each ready issue through an isolated Git worktree, a coding agent, your validation gate, and a serialized merge train, live on web and terminal dashboards.",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "juanmanueldaza/n3rv": {
+   "repo": "juanmanueldaza/n3rv",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "opencode harness infrastructure",
+   "judgedDescription": "Engineering infrastructure for opencode AI agents: memory, skills, subagent dispatch.",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "ThomasPritchard/NeuralNote": {
+   "repo": "ThomasPritchard/NeuralNote",
+   "in_stack": false,
+   "layer": null,
+   "why": "end-user second brain app",
+   "judgedDescription": "An AI-powered second brain ",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "CodeNeow/MyLlama": {
+   "repo": "CodeNeow/MyLlama",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "local LLM client and endpoint",
+   "judgedDescription": "基于 llama.cpp 的跨平台本地大模型客户端：一键调优 GGUF 模型，多模型共享一个 OpenAI 兼容端点，内置模型下载、本地聊天与实时监控。Windows / Linux / Android。| A friendly cross-platform local-LLM client powered by llama.cpp — one-click GGUF auto-tuning, all your models behind one OpenAI-compatible endpoint, with built-in downloads, local chat and live monitoring. Windows / Linux / Android.",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "hydraterm/hydra-local": {
+   "repo": "hydraterm/hydra-local",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "terminal UI for agent sessions",
+   "judgedDescription": "Open-source agentic terminal. Finds the agent sessions already on your machine, keeps them alive after you close the app, and lets you reach them from a browser. Native Rust rendering, PTY daemon, no inbound port.",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "asya-ai/asya-chat-ui": {
+   "repo": "asya-ai/asya-chat-ui",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "multi-provider LLM chat UI",
+   "judgedDescription": "Better, open-source, LLM wrapper (user management, text processing, file processing, image generation, web search, local models)",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "dsj1984/mandrel": {
+   "repo": "dsj1984/mandrel",
+   "in_stack": true,
+   "layer": "harness",
+   "why": "coding assistant harness",
+   "judgedDescription": "Mandrel is an orchestration and harness for agentic AI coding. It ships a system prompt, personas, a two-tier skill library, baseline rules, slash-command workflows, and a GitHub-backed orchestration engine — distributed as a Git submodule into your project's .agents/ directory.",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "Ryanaldo34/tacklr": {
+   "repo": "Ryanaldo34/tacklr",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Go SDK for agent harnesses",
+   "judgedDescription": "The opinionated framework for building enterprise agent operating systems. Deterministic execution runtime, tool gating & security controls, knowledge building & retrieval, secure code execution, observability, and efficient context engineering all in one",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "Dark-Roast-Cyber/telltale": {
+   "repo": "Dark-Roast-Cyber/telltale",
+   "in_stack": true,
+   "layer": "security",
+   "why": "ADR detection layer for agents",
+   "judgedDescription": "",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "Aquaticat/Monochromatic": {
+   "repo": "Aquaticat/Monochromatic",
+   "in_stack": false,
+   "layer": null,
+   "why": "personal mixed tooling monorepo",
+   "judgedDescription": "TypeScript and Rust monorepo: Claude Code and Pi coding-agent plugins, a minimal MCP stdio server framework, custom oxlint plugins and a pluggable Rust linter, policy-aware git tooling, core TS libraries, Wayland desktop apps (GTK4 file manager, Slint terminal, true-peak music player), OpenTofu infra automation, and a personal site.",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "openonion/oo-chat": {
+   "repo": "openonion/oo-chat",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "web chat client for agents",
+   "judgedDescription": "Open-source chat client for AI agents. Connect to ConnectOnion agents or use LLM APIs directly.",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "The-40-Thieves/codecalc": {
+   "repo": "The-40-Thieves/codecalc",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "sandboxed MCP code runner",
+   "judgedDescription": "Universal code & logic calculator for AI models: 49 MCP tools across 31 languages. Rust-sandboxed execution with verdicts, sessions, artifacts, exact arithmetic, and verified translation/optimization. No LLM, no gateway, no telemetry: the caller is the model. Apache-2.0.",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "pokekarten/igentic-iphone": {
+   "repo": "pokekarten/igentic-iphone",
+   "in_stack": false,
+   "layer": null,
+   "why": "experimental personal runtime prototype",
+   "judgedDescription": "Privacy-first iPhone AI Runtime Layer for local agents, secure App Intents, and controlled delegation.",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "JoshPattman/jpf": {
+   "repo": "JoshPattman/jpf",
+   "in_stack": true,
+   "layer": "frameworks",
+   "why": "Go LLM agent framework",
+   "judgedDescription": " A Batteries-Included Framework to Build Scalable AI Apps",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "chartmann1590/ollama-android-client": {
+   "repo": "chartmann1590/ollama-android-client",
+   "in_stack": true,
+   "layer": "clients",
+   "why": "Android local LLM chat client",
+   "judgedDescription": "Chat with Ollama or run LLMs fully on-device (Gemma, Qwen, DeepSeek, Phi) on Android. Private, open-source, no server required.",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "Nebutra/carina": {
+   "repo": "Nebutra/carina",
+   "in_stack": true,
+   "layer": "sandboxes",
+   "why": "policy runtime for coding agents",
+   "judgedDescription": "Nebutra Carina — a secure agent runtime, written in Go, Rust & Zig. The secure keel your agents run on.",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "mattbutlerengineering/mattbutlerengineering": {
+   "repo": "mattbutlerengineering/mattbutlerengineering",
+   "in_stack": false,
+   "layer": null,
+   "why": "hospitality app monorepo",
+   "judgedDescription": "Monorepo for mattbutlerengineering.com — design system, React apps, Fastify services, Pulumi IaC. Built largely by AI agents (Claude Code).",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "LuisArteaga/agentic-developer-core": {
+   "repo": "LuisArteaga/agentic-developer-core",
+   "in_stack": true,
+   "layer": "coding-agents",
+   "why": "autonomous coding agent",
+   "judgedDescription": "An autonomous software engineer agent using LangGraph and LangChain for stateful development loops, precise code modifications, and automated verification.",
+   "judgedAt": "2026-09-15T04:11:30.084Z"
+  },
+  "atagon-GmbH/kogiqa-mcp": {
+   "repo": "atagon-GmbH/kogiqa-mcp",
+   "in_stack": true,
+   "layer": "browser-agents",
+   "why": "MCP browser control for agents",
+   "judgedDescription": "This web browser has been designed to help your agent debug and develop complex web applications. (MCP Server)",
+   "judgedAt": "2026-09-15T04:13:48.032Z"
   }
  }
 }

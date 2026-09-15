@@ -1,5 +1,6 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
+import { resolve } from "node:path";
 
 const API = "https://api.github.com";
 
@@ -27,10 +28,53 @@ export type Repo = {
   created_at: string;
 };
 
+/**
+ * The primary rate limit is 5,000 requests an hour, and the index passed it: 1,319 projects at four
+ * calls each is 5,276, so the last layer measured zero and was silently dropped from the page. Waiting
+ * for the window to reset is slow but correct; skipping a layer is neither.
+ */
+let resumeAt = 0;
+
+async function respectRateLimit(response: Response) {
+  const remaining = Number(response.headers.get("x-ratelimit-remaining") ?? "1");
+  const reset = Number(response.headers.get("x-ratelimit-reset") ?? "0") * 1000;
+  if (remaining > 20 || !reset) return false;
+  const wait = Math.min(Math.max(reset - Date.now(), 0) + 2000, 65 * 60_000);
+  resumeAt = Math.max(resumeAt, Date.now() + wait);
+  console.error(`  rate limit reached; waiting ${Math.round(wait / 1000)}s for the window to reset`);
+  return true;
+}
+
+/**
+ * Conditional requests. GitHub does not charge the rate limit for a 304, and most repositories do not
+ * change between daily runs, so carrying ETags is the difference between 5,300 calls (over the hourly
+ * limit, which cost a whole layer) and a few hundred.
+ */
+const etagPath = () => resolve(process.env.AI_AGENT_STACK_CACHE ?? ".", "data/.etag-cache.json");
+let etags: Record<string, { etag: string; body: unknown }> | undefined;
+
+async function loadEtags(): Promise<Record<string, { etag: string; body: unknown }>> {
+  if (!etags) etags = existsSync(etagPath()) ? JSON.parse(await readFile(etagPath(), "utf8")) : {};
+  return etags ?? {};
+}
+
+/** Only small bodies are worth carrying: caching every 100-issue array overflowed V8's string limit. */
+const CACHEABLE_BYTES = 40_000;
+const MAX_ENTRIES = 20_000;
+
+export async function saveEtags() {
+  if (!etags) return;
+  const entries = Object.entries(etags).slice(-MAX_ENTRIES);
+  await writeFile(etagPath(), JSON.stringify(Object.fromEntries(entries)));
+}
+
 export async function api<T = any>(path: string, attempts = 3): Promise<T> {
+  const cache = await loadEtags();
   const headers: Record<string, string> = { "user-agent": "ai-agent-stack", accept: "application/vnd.github+json" };
   if (process.env.GITHUB_TOKEN) headers.authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
+  if (cache[path]) headers["if-none-match"] = cache[path].etag;
   for (let attempt = 0; ; attempt++) {
+    if (resumeAt > Date.now()) await new Promise((done) => setTimeout(done, resumeAt - Date.now()));
     let response: Response;
     try {
       response = await fetch(`${API}${path}`, { headers, signal: AbortSignal.timeout(30_000) });
@@ -40,7 +84,19 @@ export async function api<T = any>(path: string, attempts = 3): Promise<T> {
       await new Promise((done) => setTimeout(done, 2000 * (attempt + 1)));
       continue;
     }
-    if (response.ok) return (await response.json()) as T;
+    if (response.status === 304 && cache[path]) {
+      await respectRateLimit(response);
+      return cache[path].body as T;
+    }
+    if (response.ok) {
+      await respectRateLimit(response);
+      const body = (await response.json()) as T;
+      const etag = response.headers.get("etag");
+      if (etag && JSON.stringify(body).length <= CACHEABLE_BYTES) cache[path] = { etag, body };
+      return body;
+    }
+    // 403 here is the rate limit, not a permission problem: the body says so and the headers prove it.
+    if ((response.status === 403 || response.status === 429) && (await respectRateLimit(response))) continue;
     if (response.status >= 500 || response.status === 429) {
       if (attempt >= attempts - 1) throw new HttpError(response.status, `GET ${path}: ${response.status}`);
       await new Promise((done) => setTimeout(done, 3000 * (attempt + 1)));

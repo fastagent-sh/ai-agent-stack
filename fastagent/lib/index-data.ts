@@ -1,4 +1,4 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, rename, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 import { ASSET_LAYERS as ASSET_IDS } from "./layers.ts";
@@ -97,6 +97,10 @@ export async function saveVerdicts(workspace: string, verdicts: Verdict[]) {
     ? (JSON.parse(await readFile(path, "utf8")) as { verdicts: Record<string, Verdict> })
     : { verdicts: {} };
   for (const verdict of verdicts) store.verdicts[verdict.repo] = verdict;
-  await writeFile(path, `${JSON.stringify(store, null, 1)}\n`);
+  // Temp file then rename: a plain write truncates in place, and a reader landing in that window sees
+  // a missing or half-written store. Rename is atomic, so a reader gets the old file or the new one.
+  const temp = `${path}.${process.pid}.tmp`;
+  await writeFile(temp, `${JSON.stringify(store, null, 1)}\n`);
+  await rename(temp, path);
   return { stored: verdicts.length, total: Object.keys(store.verdicts).length };
 }

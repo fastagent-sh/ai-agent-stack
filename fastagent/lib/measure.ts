@@ -37,7 +37,7 @@ export type Metrics = {
 const NOTE_CHARS = 80;
 const OUTSIDE = new Set(["NONE", "CONTRIBUTOR", "FIRST_TIME_CONTRIBUTOR", "FIRST_TIMER", "MANNEQUIN"]);
 
-export async function measureRepo(entry: string | { repo: string; package?: string }, workspace: string): Promise<Metrics | undefined> {
+export async function measureRepo(entry: string | { repo: string; package?: string }, workspace: string, needCommits = true): Promise<Metrics | undefined> {
   const repo = typeof entry === "string" ? entry : entry.repo;
   const declared = typeof entry === "string" ? undefined : entry.package;
   try {
@@ -45,7 +45,8 @@ export async function measureRepo(entry: string | { repo: string; package?: stri
     const [releases, issues, commits] = await Promise.all([
       api<Release[]>(`/repos/${repo}/releases?per_page=30`).catch(() => []),
       api<Issue[]>(`/repos/${repo}/issues?state=all&sort=created&direction=desc&per_page=100`).catch(() => []),
-      api<unknown[]>(`/repos/${repo}/commits?since=${new Date(Date.now() - 90 * 86_400_000).toISOString()}&per_page=100`).catch(() => []),
+      // Only the asset layers score on commits; for everyone else this was a quarter of the API budget.
+      needCommits ? api<unknown[]>(`/repos/${repo}/commits?since=${new Date(Date.now() - 90 * 86_400_000).toISOString()}&per_page=100`).catch(() => []) : Promise.resolve([]),
     ]);
     const withNotes = releases.filter((release) => (release.body ?? "").replace(/[#*`\s]/g, "").length >= NOTE_CHARS);
     const userIssues = issues.filter(

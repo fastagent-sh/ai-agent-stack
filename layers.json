@@ -19,7 +19,10 @@
       "queries": [
         "topic:coding-agent",
         "\"coding agent\" in:name,description",
-        "topic:ai-coding-assistant"
+        "topic:ai-coding-assistant",
+        "terminal coding agent in:description",
+        "autonomous software engineer in:description",
+        "topic:swe-agent"
       ],
       "keywords": "coding agent|code agent|pair program|cli agent|ide|editor|swe|vibe coding|codebase"
     },
@@ -29,7 +32,10 @@
       "queries": [
         "deep research agent in:name,description",
         "research agent in:name,description",
-        "document analysis agent in:description"
+        "document analysis agent in:description",
+        "topic:deep-research",
+        "report generation agent in:description",
+        "literature review ai in:description"
       ],
       "keywords": "research|deep.?research|report|literature|analys[ei]s|knowledge base|summari"
     },
@@ -39,7 +45,10 @@
       "queries": [
         "browser agent in:name,description",
         "computer use agent in:description",
-        "gui agent in:name,description"
+        "gui agent in:name,description",
+        "topic:browser-automation llm",
+        "web agent in:name,description",
+        "topic:computer-use"
       ],
       "keywords": "browser|computer.use|gui agent|web automation|click|screenshot|desktop automation"
     },
@@ -49,7 +58,10 @@
       "queries": [
         "personal ai assistant in:name,description",
         "self-hosted assistant in:description",
-        "desktop ai agent in:description"
+        "desktop ai agent in:description",
+        "topic:ai-assistant stars:>200",
+        "second brain ai in:description",
+        "email agent in:name,description"
       ],
       "keywords": "personal|assistant|self.hosted|desktop|inbox|calendar|workspace|companion"
     },
@@ -59,7 +71,10 @@
       "queries": [
         "ai chat ui in:name,description",
         "llm client in:name,description",
-        "agent ui in:name,description"
+        "agent ui in:name,description",
+        "topic:llm-ui",
+        "chat client llm in:name,description",
+        "topic:chatbot-ui"
       ],
       "keywords": "\\bui\\b|client|chat(bot)? (app|interface|ui)|frontend|desktop app|tui|web ui"
     },
@@ -69,7 +84,10 @@
       "queries": [
         "agent harness in:name,description",
         "agent runtime in:name,description",
-        "agent loop in:description"
+        "agent loop in:description",
+        "topic:agent-runtime",
+        "tool calling loop in:description",
+        "agent executor in:name,description"
       ],
       "keywords": "harness|agent loop|runtime|toolkit|agent os|execution engine"
     },
@@ -79,7 +97,10 @@
       "queries": [
         "topic:agent-framework",
         "topic:ai-agents",
-        "agent sdk in:name,description"
+        "agent sdk in:name,description",
+        "topic:llm-framework",
+        "topic:multi-agent",
+        "agent orchestration library in:description"
       ],
       "keywords": "framework|sdk|library|multi.?agent|graph|orchestrat|workflow.*(build|defin)"
     },
@@ -89,7 +110,11 @@
       "queries": [
         "topic:claude-code",
         "agent skills in:name,description",
-        "topic:prompt-engineering stars:>3000"
+        "topic:prompt-engineering stars:>3000",
+        "topic:agent-skills",
+        "topic:claude-skills",
+        "system prompt collection in:description",
+        "topic:agents-md"
       ],
       "keywords": "skill|prompt|instruction|agents\\.md|claude\\.md|playbook|persona|rules"
     },
@@ -99,7 +124,10 @@
       "queries": [
         "durable execution in:description",
         "workflow engine in:description stars:>2000",
-        "agent platform in:description"
+        "agent platform in:description",
+        "topic:workflow-automation ai",
+        "agent scheduler in:description",
+        "topic:durable-execution"
       ],
       "keywords": "durable|queue|retry|state machine|serving|deploy|platform|scheduler"
     },
@@ -109,7 +137,10 @@
       "queries": [
         "agent memory in:name,description",
         "topic:memory stars:>2000",
-        "context engineering in:description"
+        "context engineering in:description",
+        "topic:vector-database agent",
+        "long term memory llm in:description",
+        "topic:context-management"
       ],
       "keywords": "memory|context|recall|knowledge graph|retriev|rag\\b"
     },
@@ -120,7 +151,10 @@
         "llm gateway in:name,description",
         "llm proxy in:name,description",
         "model router in:description",
-        "api key switcher in:description"
+        "api key switcher in:description",
+        "topic:llm-gateway",
+        "openai compatible proxy in:description",
+        "topic:model-routing"
       ],
       "keywords": "gateway|proxy|router|switch(er)?|load balanc|fallback|multi.?provider|rate limit|token.*(cost|budget)|api key"
     },
@@ -128,10 +162,13 @@
       "title": "MCP, protocols and registries",
       "blurb": "The standards agents speak, the SDKs that implement them, and the registries tools are published to.",
       "queries": [
-        "topic:mcp stars:>2000",
+        "topic:mcp",
         "topic:model-context-protocol",
         "agent2agent OR a2a protocol in:name,description",
-        "mcp registry in:name,description"
+        "mcp registry in:name,description",
+        "topic:mcp-server",
+        "mcp client in:name,description",
+        "topic:agent-protocol"
       ],
       "keywords": "\\bmcp\\b|model context protocol|protocol|registry|a2a|interop|spec\\b|standard"
     },
@@ -141,7 +178,10 @@
       "queries": [
         "web scraping ai in:description",
         "agent tools in:name,description",
-        "llm search api in:description"
+        "llm search api in:description",
+        "topic:web-scraping llm",
+        "topic:rag search api",
+        "pdf extraction llm in:description"
       ],
       "keywords": "scrap|crawl|search|document|spreadsheet|extract|data access|api wrapper"
     },
@@ -151,7 +191,10 @@
       "queries": [
         "code interpreter sandbox in:description",
         "topic:sandbox stars:>2000",
-        "agent sandbox in:description"
+        "agent sandbox in:description",
+        "topic:code-execution llm",
+        "secure agent runtime in:description",
+        "topic:microvm"
       ],
       "keywords": "sandbox|isolat|container|microvm|execution environment|code interpreter"
     },
@@ -161,7 +204,10 @@
       "queries": [
         "topic:llm-evaluation",
         "llm observability in:name,description",
-        "agent evaluation in:name,description"
+        "agent evaluation in:name,description",
+        "topic:llm-observability",
+        "agent tracing in:name,description",
+        "topic:prompt-testing"
       ],
       "keywords": "eval|observab|tracing|monitor|benchmark|telemetry|experiment"
     },
@@ -171,7 +217,10 @@
       "queries": [
         "prompt injection in:name,description",
         "llm guardrails in:name,description",
-        "agent security in:description"
+        "agent security in:description",
+        "topic:llm-security",
+        "agent permissions in:description",
+        "topic:ai-safety tooling"
       ],
       "keywords": "injection|guardrail|security|permission|red team|scanner|governance|policy"
     }

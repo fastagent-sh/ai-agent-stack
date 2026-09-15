@@ -26,10 +26,30 @@ export const SOURCE_LISTS = [
   "steven2358/awesome-generative-ai",
 ];
 /** Ecosystem-wide sweeps that belong to no single layer. */
-export const ECOSYSTEM_QUERIES = ["topic:llmops", "topic:agentic-ai", "topic:autonomous-agents", "topic:ai-agent stars:>300"];
+export const ECOSYSTEM_QUERIES = [
+  "topic:llmops",
+  "topic:agentic-ai",
+  "topic:autonomous-agents",
+  "topic:ai-agent stars:>300",
+  "topic:ai-agents",
+  "topic:llm-apps",
+  "topic:generative-ai tools",
+  "topic:openai stars:>500",
+];
 /** New repositories: the only path by which something published this week can be seen at all. */
-export const FRESH_QUERIES = ["agent in:name,description", "llm in:name,description", "mcp in:name,description", "ai agent in:readme"];
-const NEW_PER_RUN = 250;
+export const FRESH_QUERIES = [
+  "agent in:name,description",
+  "llm in:name,description",
+  "mcp in:name,description",
+  "ai agent in:readme",
+  "agentic in:name,description",
+  "claude in:name,description",
+  "codex OR cursor in:name,description",
+  "ai tool in:description",
+];
+/** Per list, not shared. A single budget was consumed in order, so awesome-mcp-servers and four others
+ *  contributed exactly zero while the first two lists spent all of it. */
+const NEW_PER_LIST = 80;
 
 /** A list, a course or a demo is not a project you put in production. */
 const EXCLUDE = /awesome|tutorial|course|roadmap|handbook|cookbook|examples?$|demo|starter|template|boilerplate|papers?$|interview|study|learn/i;
@@ -92,10 +112,13 @@ export async function mentionSources(): Promise<Map<string, string>> {
   const linked = (text: string | null | undefined) => text?.match(/github\.com\/([A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+)/)?.[1];
 
   const month = Math.floor(Date.now() / 1000) - 30 * 86_400;
-  for (const query of ["agent", "llm", "mcp", "ai coding"]) {
+  // Ten keywords at a lower floor: a project posted to HN at 6 points is still earlier evidence than
+  // anything GitHub ranking will show, and 16 hits from four keywords was leaving the source unused.
+  const hnQueries = ["agent", "llm", "mcp", "ai coding", "agentic", "coding agent", "llm tool", "ai memory", "prompt", "show hn ai"];
+  for (const query of hnQueries) {
     try {
       const result = await json<{ hits: { url?: string; title: string; points: number }[] }>(
-        `https://hn.algolia.com/api/v1/search?tags=story&query=${encodeURIComponent(query)}&numericFilters=points>10,created_at_i>${month}&hitsPerPage=40`,
+        `https://hn.algolia.com/api/v1/search?tags=story&query=${encodeURIComponent(query)}&numericFilters=points>5,created_at_i>${month}&hitsPerPage=50`,
       );
       for (const hit of result.hits) {
         const repo = linked(hit.url);
@@ -108,26 +131,19 @@ export async function mentionSources(): Promise<Map<string, string>> {
 
   try {
     // GitHub publishes no trending API, so this reads the page. Fragile by nature, hence wrapped.
-    const response = await fetch("https://github.com/trending?since=daily", {
-      headers: { "user-agent": "Mozilla/5.0 (ai-agent-stack)" },
-      signal: AbortSignal.timeout(20_000),
-    });
-    if (response.ok) {
-      for (const [, repo] of (await response.text()).matchAll(/href="\/([\w.-]+\/[\w.-]+)\/stargazers"/g)) add(repo, "trending");
+    for (const since of ["daily", "weekly"]) {
+      const response = await fetch(`https://github.com/trending?since=${since}`, {
+        headers: { "user-agent": "Mozilla/5.0 (ai-agent-stack)" },
+        signal: AbortSignal.timeout(20_000),
+      });
+      if (!response.ok) continue;
+      for (const [, repo] of (await response.text()).matchAll(/href="\/([\w.-]+\/[\w.-]+)\/stargazers"/g)) add(repo, `trending-${since}`);
     }
   } catch {
     // ignore
   }
 
-  try {
-    const stories = await json<{ url: string; title: string }[]>("https://lobste.rs/t/ai.json");
-    for (const story of stories) {
-      const repo = linked(story.url);
-      if (repo) add(repo, "lobsters");
-    }
-  } catch {
-    // ignore
-  }
+  // Lobsters was tried and removed: its AI tag produced zero repository links across a full sweep.
   return found;
 }
 
@@ -159,12 +175,14 @@ export async function collectPool(workspace: string, freshDays: number): Promise
 
   for (const [repo, source] of await mentionSources()) add(repo, source);
 
-  let budget = NEW_PER_RUN;
   for (const source of SOURCE_LISTS) {
+    let budget = NEW_PER_LIST;
     try {
       const response = await fetch(`https://raw.githubusercontent.com/${source}/HEAD/README.md`, { signal: AbortSignal.timeout(30_000) });
       if (!response.ok) continue;
-      for (const repo of repoMentions(await response.text()).keys()) {
+      // Most-mentioned first: a list that names a project twice is pointing at it.
+      const mentioned = [...repoMentions(await response.text()).entries()].sort((a, b) => b[1] - a[1]);
+      for (const [repo] of mentioned) {
         if (found.has(repo) || budget <= 0) continue;
         add(repo, `list:${source}`);
         budget -= 1;
