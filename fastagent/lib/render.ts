@@ -41,8 +41,12 @@ async function velocities(workspace: string, windowDays: number): Promise<Map<st
   for (const [repo, points] of series) {
     points.sort((a, b) => a.at - b.at);
     const now = points[points.length - 1];
-    // The most recent snapshot at least a window old: a comparison point hours away is rounding noise.
-    const earlier = [...points].reverse().find((point) => now.at - point.at >= windowDays * 86_400_000);
+    // The most recent snapshot at least a window old; a comparison point hours away is rounding noise.
+    // Falling back to the oldest usable point matters more than it looks: the history was three days
+    // deep against a seven-day window, so every project reported no velocity at all.
+    const earlier =
+      [...points].reverse().find((point) => now.at - point.at >= windowDays * 86_400_000) ??
+      points.find((point) => now.at - point.at >= 86_400_000);
     if (earlier) out.set(repo, ((now.stars - earlier.stars) / (now.at - earlier.at)) * 86_400_000);
   }
   return out;
@@ -75,6 +79,9 @@ export async function refresh(workspace: string, full = false) {
       const before = previous.get(typeof entry === "string" ? entry : entry.repo);
       if (!before?.measuredAt) return true;
       const age = (Date.now() - Date.parse(before.measuredAt)) / 86_400_000;
+      // Nothing is read twice in a day. Without this, "pushed recently" matched almost every project
+      // in an index of agent tooling, and the tiering carried forward 159 rows out of 2,750.
+      if (age < 0.8) return false;
       return age >= STALE_DAYS || within(before.pushedDays, ACTIVE_PUSH_DAYS);
     };
     const plan = ranked.map((entry, index) => ({ entry, measure: due(entry, index) }));
