@@ -43,6 +43,17 @@ loop you build on. When a project ships both, place it where its users think of 
 If neither question has a clear answer after reading, mark it not in stack and say why. A wrong
 inclusion is visible and correctable; a vague one rots.
 
+### Working a backlog
+
+After a full sweep the queue is thousands deep, and `judge-backlog` fires every twelve minutes to work
+it down one batch at a time. Judge exactly one batch per turn and stop: a turn that tries to empty the
+queue in one pass runs out of context, and a failed turn then loses everything it had judged.
+
+Two failures look alike and are not. A model usage limit means stop — the next slot will retry when the
+window has moved, and calling again immediately only burns turns, which is exactly what an earlier
+shell loop did for 262 rounds. A tool error means read the error: the queue file may be missing or the
+sweep may not have run.
+
 ## 3. Re-read what changed, on the evidence
 
 `review-queue` lists projects whose verdict may no longer hold and why: archived, renamed, description

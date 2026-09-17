@@ -7,9 +7,20 @@ import { pooled, saveEtags, within } from "./github.ts";
 
 /** The front page ranks; a layer page lists. A navigation site needs both. */
 const TOP_PER_LAYER = 12;
+/**
+ * Not everything is re-read every day. At 9,000 projects a full pass is 27,000 API calls — over five
+ * hours of waiting on a 5,000/hour limit, and past the six-hour ceiling on a GitHub Actions job.
+ *
+ * So measurement is tiered by how much the number would move: what the page ranks highly, what is
+ * actively being worked on, and what has simply not been read for a while. Everything else is carried
+ * forward from the last run with its age printed, which is honest and free.
+ */
+const ALWAYS_MEASURE_TOP = 20;
+const STALE_DAYS = 7;
+const ACTIVE_PUSH_DAYS = 14;
 const SNAPSHOTS = "data/snapshots.csv";
 
-export type Row = Metrics & Scores & { category: string; starsPerDay?: number; starsPerDayMonth?: number };
+export type Row = Metrics & Scores & { category: string; starsPerDay?: number; starsPerDayMonth?: number; measuredDaysAgo?: number };
 
 type Seeds = { categories: { id: string; title: string; blurb: string; repos: (string | { repo: string; package?: string })[] }[] };
 
@@ -37,17 +48,43 @@ async function velocities(workspace: string, windowDays: number): Promise<Map<st
   return out;
 }
 
-export async function refresh(workspace: string) {
+/** Rows from the last run, so a skipped project keeps its numbers instead of vanishing from the page. */
+async function previousRows(workspace: string): Promise<Map<string, Row & { measuredAt?: string }>> {
+  const path = resolve(workspace, "data/latest.json");
+  if (!existsSync(path)) return new Map();
+  const previous = JSON.parse(await readFile(path, "utf8")) as { measuredAt: string; categories: { rows: Row[] }[] };
+  return new Map(previous.categories.flatMap((category) => category.rows.map((row) => [row.repo, { ...row, measuredAt: previous.measuredAt }])));
+}
+
+export async function refresh(workspace: string, full = false) {
   const seeds = JSON.parse(await readFile(resolve(workspace, "seeds.json"), "utf8")) as Seeds;
+  const previous = await previousRows(workspace);
   const [week, month] = [await velocities(workspace, 7), await velocities(workspace, 30)];
   const measuredAt = new Date().toISOString();
   const snapshot: string[] = [];
   const results: { id: string; title: string; blurb: string; rows: Row[] }[] = [];
 
+  let reused = 0;
   for (const category of seeds.categories) {
-    const measured = await pooled(category.repos, 6, (entry) => measureRepo(entry, workspace, ASSET_LAYERS.has(category.id)));
+    const ranked = [...category.repos].sort((a, b) => {
+      const key = (entry: string | { repo: string }) => (typeof entry === "string" ? entry : entry.repo);
+      return (previous.get(key(b))?.score ?? 0) - (previous.get(key(a))?.score ?? 0);
+    });
+    const due = (entry: string | { repo: string }, index: number) => {
+      if (full || index < ALWAYS_MEASURE_TOP) return true;
+      const before = previous.get(typeof entry === "string" ? entry : entry.repo);
+      if (!before?.measuredAt) return true;
+      const age = (Date.now() - Date.parse(before.measuredAt)) / 86_400_000;
+      return age >= STALE_DAYS || within(before.pushedDays, ACTIVE_PUSH_DAYS);
+    };
+    const plan = ranked.map((entry, index) => ({ entry, measure: due(entry, index) }));
+    const measured = await pooled(plan, 6, async ({ entry, measure }) => ({
+      fresh: measure,
+      metrics: measure ? await measureRepo(entry, workspace, ASSET_LAYERS.has(category.id)) : previous.get(typeof entry === "string" ? entry : entry.repo),
+    }));
+    reused += plan.filter((item) => !item.measure).length;
     const rows: Row[] = [];
-    for (const metrics of measured) {
+    for (const { fresh, metrics } of measured) {
       if (!metrics) continue;
       // A week is the shortest span that is not noise; the month is kept for the changes page.
       const starsPerDay = week.get(metrics.repo) ?? month.get(metrics.repo);
@@ -57,8 +94,11 @@ export async function refresh(workspace: string) {
         category: category.id,
         starsPerDay,
         starsPerDayMonth: month.get(metrics.repo),
+        measuredDaysAgo: fresh ? 0 : Math.round((Date.now() - Date.parse((metrics as Row & { measuredAt?: string }).measuredAt ?? measuredAt)) / 86_400_000),
       });
-      snapshot.push([measuredAt, metrics.repo, metrics.stars, metrics.pushedDays ?? "", metrics.userIssues30d].join(","));
+      // Only freshly read projects enter the history: carrying a stale star count forward would
+      // invent a velocity of zero for everything the tiering skipped.
+      if (fresh) snapshot.push([measuredAt, metrics.repo, metrics.stars, metrics.pushedDays ?? "", metrics.userIssues30d].join(","));
     }
     const canonical = new Map<string, Row>();
     for (const row of rows) {
@@ -70,7 +110,7 @@ export async function refresh(workspace: string) {
     rows.length = 0;
     rows.push(...rows2);
     results.push({ id: category.id, title: category.title, blurb: category.blurb, rows });
-    console.log(`-- ${category.title}: ${rows.length} measured`);
+    console.log(`-- ${category.title}: ${rows.length} rows (${plan.filter((item) => item.measure).length} read, ${plan.filter((item) => !item.measure).length} carried forward)`);
   }
 
   const path = resolve(workspace, SNAPSHOTS);
@@ -113,11 +153,11 @@ export async function refresh(workspace: string) {
   await saveEtags();
   await writePages(workspace, results, measuredAt);
   await writeChanges(workspace, results);
-  return { measuredAt, projects: results.reduce((sum, category) => sum + category.rows.length, 0), layers: results.length };
+  return { measuredAt, projects: results.reduce((sum, category) => sum + category.rows.length, 0), layers: results.length, carriedForward: reused };
 }
 
 const cell = (row: Row) =>
-  `| [${row.repo}](https://github.com/${row.repo})${row.archived ? " ⚠️ archived" : ""}<br><sub>${row.description.slice(0, 90)}</sub> | **${row.score}** | ${row.adoption} | ${row.upkeep} | ${row.growth ?? "—"} | ${row.answers ?? "—"} | ${row.stars.toLocaleString()} | ${row.starsPerDay ? `+${row.starsPerDay.toFixed(0)}` : "—"} `;
+  `| [${row.repo}](https://github.com/${row.repo})${row.archived ? " ⚠️ archived" : ""}${row.measuredDaysAgo ? ` <sub title="last read ${row.measuredDaysAgo}d ago">·${row.measuredDaysAgo}d</sub>` : ""}<br><sub>${row.description.slice(0, 90)}</sub> | **${row.score}** | ${row.adoption} | ${row.upkeep} | ${row.growth ?? "—"} | ${row.answers ?? "—"} | ${row.stars.toLocaleString()} | ${row.starsPerDay ? `+${row.starsPerDay.toFixed(0)}` : "—"} `;
 
 function table(rows: Row[], asset: boolean): string {
   const head = asset
@@ -190,6 +230,7 @@ const howToRead = () => [
     "input is printed in the same row. If a score looks wrong, the arithmetic is checkable.",
   "",
   "- **User issues** counts issues opened in the last 30 days by someone who is not a maintainer, via GitHub's `author_association`. It separates a project with users from one with an author. A `+` means the count filled an API page.",
+  `- Not every project is re-read every day: the ${TOP_PER_LAYER * 2} highest scoring in each layer and anything pushed recently are read on every run, the rest at least weekly. A row carried forward shows how many days ago it was read.`,
   "- Every number here is also published as JSON at [`data/index.json`](data/index.json), regenerated with the page.",
   "- **Weekly installs** is npm or PyPI downloads for a package declared in [`overrides.json`](overrides.json). Detecting it from a repository's root manifest was tried and removed: in a monorepo it reads the placeholder package.",
   "",

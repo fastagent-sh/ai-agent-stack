@@ -1,7 +1,7 @@
 import { existsSync } from "node:fs";
 import { readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { HttpError, api, daysSince, json, pooled, searchRepos, serial, type Repo } from "./github.ts";
+import { HttpError, api, daysSince, json, pooled, saveEtags, searchRepos, serial, type Repo } from "./github.ts";
 import { LAYERS } from "./layers.ts";
 
 /**
@@ -36,7 +36,18 @@ export const ECOSYSTEM_QUERIES = [
   "topic:generative-ai tools",
   "topic:openai stars:>500",
 ];
-/** New repositories: the only path by which something published this week can be seen at all. */
+/**
+ * New repositories. One window sorted by stars is one ranking, and a 45-day window ranked by stars is
+ * a list of things that are 40 days old — anything published on Tuesday is crowded out before it can
+ * gather a star. Several windows each get their own ranking, and the `updated` sort catches what has
+ * no stars at all yet.
+ */
+export const FRESH_WINDOWS: { days: number; sort: string }[] = [
+  { days: 7, sort: "stars" },
+  { days: 21, sort: "stars" },
+  { days: 60, sort: "stars" },
+  { days: 7, sort: "updated" },
+];
 export const FRESH_QUERIES = [
   "agent in:name,description",
   "llm in:name,description",
@@ -47,9 +58,15 @@ export const FRESH_QUERIES = [
   "codex OR cursor in:name,description",
   "ai tool in:description",
 ];
-/** Per list, not shared. A single budget was consumed in order, so awesome-mcp-servers and four others
- *  contributed exactly zero while the first two lists spent all of it. */
-const NEW_PER_LIST = 80;
+/**
+ * Per list, not shared: one counter was consumed in order, so awesome-mcp-servers and four others
+ * contributed exactly zero while the first two lists spent it all.
+ *
+ * This is a cost ceiling, not a quality judgement — every name costs one repository read here and one
+ * model judgement later — so it is named as one and set high enough that a list's own curation, not
+ * our budget, decides what gets seen.
+ */
+const NEW_PER_LIST = Number(process.env.STACK_LIST_BUDGET ?? 400);
 
 /** A list, a course or a demo is not a project you put in production. */
 const EXCLUDE = /awesome|tutorial|course|roadmap|handbook|cookbook|examples?$|demo|starter|template|boilerplate|papers?$|interview|study|learn/i;
@@ -147,7 +164,51 @@ export async function mentionSources(): Promise<Map<string, string>> {
   return found;
 }
 
-export async function collectPool(workspace: string, freshDays: number): Promise<Map<string, Set<string>>> {
+/**
+ * A one-time baseline. The daily sweep only sees what was pushed in the last month or created in the
+ * last two, so a project built two years ago, last touched six weeks ago and never listed anywhere is
+ * invisible to it — not rejected, never seen. This enumerates the whole domain instead.
+ *
+ * GitHub returns at most 1,000 results per query however many pages you ask for, so the space is cut
+ * into star bands until each band fits under that ceiling. The floor's own rules are pushed into the
+ * query (at least 100 stars, pushed within 90 days) because filtering in the search costs one call and
+ * filtering afterwards costs one call per repository.
+ */
+const BACKFILL_TERMS = [
+  "(ai agent OR llm OR mcp OR agentic) in:name,description",
+  "(assistant OR chatbot) llm in:name,description",
+  "(prompt OR skills OR context) llm in:name,description",
+  "(rag OR embeddings OR vector) in:name,description",
+  "(openai OR anthropic OR claude OR gemini) in:name,description",
+  "(智能体 OR 大模型 OR 提示词) in:name,description",
+];
+/** Narrow enough that each band stays under the 1,000-result ceiling for the broadest term. */
+const STAR_BANDS = [
+  "100..119", "120..149", "150..189", "190..249", "250..329", "330..449", "450..699",
+  "700..1199", "1200..2499", "2500..4999", "5000..9999", "10000..29999", ">=30000",
+];
+
+export async function backfill(workspace: string, minStars: number): Promise<number> {
+  const pool = await collectPool(workspace);
+  const pushed = new Date(Date.now() - 90 * 86_400_000).toISOString().slice(0, 10);
+  let added = 0;
+  for (const term of BACKFILL_TERMS) {
+    for (const band of STAR_BANDS) {
+      const stars = band.startsWith(">=") ? `stars:${band}` : `stars:${band}`;
+      const repos = await searchRepos(`${term} ${stars} pushed:>${pushed}`, "stars", 100, 10).catch(() => []);
+      for (const repo of repos) {
+        if (!pool.has(repo.full_name)) added++;
+        pool.set(repo.full_name, (pool.get(repo.full_name) ?? new Set()).add("backfill"));
+      }
+      console.log(`  ${band.padEnd(12)} ${repos.length.toString().padStart(4)} results  ${term.slice(0, 42)}`);
+      await new Promise((done) => setTimeout(done, 1000)); // search allows 30 requests a minute
+    }
+  }
+  await measurePool(workspace, pool, minStars);
+  return added;
+}
+
+export async function collectPool(workspace: string): Promise<Map<string, Set<string>>> {
   const found = new Map<string, Set<string>>();
   const add = (repo: string, source: string) => found.set(repo, (found.get(repo) ?? new Set()).add(source));
 
@@ -160,7 +221,6 @@ export async function collectPool(workspace: string, freshDays: number): Promise
   }
 
   const month = new Date(Date.now() - 30 * 86_400_000).toISOString().slice(0, 10);
-  const fresh = new Date(Date.now() - freshDays * 86_400_000).toISOString().slice(0, 10);
 
   await serial(LAYERS.flatMap((layer) => layer.queries.map((query) => ({ layer: layer.id, query }))), 1000, async ({ layer, query }) => {
     for (const repo of await searchRepos(`${query} pushed:>${month}`, "stars", 20, 2).catch(() => [])) add(repo.full_name, layer);
@@ -168,10 +228,14 @@ export async function collectPool(workspace: string, freshDays: number): Promise
   await serial(ECOSYSTEM_QUERIES, 1000, async (query) => {
     for (const repo of await searchRepos(`${query} pushed:>${month}`, "updated", 30).catch(() => [])) add(repo.full_name, "ecosystem");
   });
-  // Sorted by stars *among repositories created inside the window*: new and already noticed.
-  await serial(FRESH_QUERIES, 1000, async (query) => {
-    for (const repo of await searchRepos(`${query} created:>${fresh}`, "stars", 30).catch(() => [])) add(repo.full_name, "new");
-  });
+  for (const window of FRESH_WINDOWS) {
+    const since = new Date(Date.now() - window.days * 86_400_000).toISOString().slice(0, 10);
+    await serial(FRESH_QUERIES, 1000, async (query) => {
+      for (const repo of await searchRepos(`${query} created:>${since}`, window.sort, 30).catch(() => [])) {
+        add(repo.full_name, `new-${window.days}d-${window.sort}`);
+      }
+    });
+  }
 
   for (const [repo, source] of await mentionSources()) add(repo, source);
 
@@ -194,8 +258,11 @@ export async function collectPool(workspace: string, freshDays: number): Promise
   return found;
 }
 
-export async function discover(workspace: string, minStars: number, freshDays = 30) {
-  const pool = await collectPool(workspace, freshDays);
+export async function discover(workspace: string, minStars: number) {
+  return measurePool(workspace, await collectPool(workspace), minStars);
+}
+
+async function measurePool(workspace: string, pool: Map<string, Set<string>>, minStars: number) {
   const listedSet = new Set([...pool].filter(([, sources]) => sources.has("listed")).map(([repo]) => repo));
   const names = [...pool.keys()].filter((repo) => !EXCLUDE.test(repo));
 
@@ -230,5 +297,8 @@ export async function discover(workspace: string, minStars: number, freshDays = 
     candidates,
   };
   await writeFile(resolve(workspace, "data/candidates.json"), `${JSON.stringify(payload, null, 1)}\n`);
+  // Discovery never saved its ETags, so every sweep re-read all 6,500 repositories at full price and
+  // spent the hourly limit several times over. A 304 costs nothing; not storing the tag costs everything.
+  await saveEtags();
   return payload;
 }

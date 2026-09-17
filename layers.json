@@ -22,7 +22,11 @@
         "topic:ai-coding-assistant",
         "terminal coding agent in:description",
         "autonomous software engineer in:description",
-        "topic:swe-agent"
+        "topic:swe-agent",
+        "topic:code-generation agent",
+        "cli coding assistant in:description",
+        "智能体 编程 in:name,description",
+        "topic:developer-tools llm stars:>200"
       ],
       "keywords": "coding agent|code agent|pair program|cli agent|ide|editor|swe|vibe coding|codebase"
     },
@@ -35,7 +39,11 @@
         "document analysis agent in:description",
         "topic:deep-research",
         "report generation agent in:description",
-        "literature review ai in:description"
+        "literature review ai in:description",
+        "topic:research-assistant",
+        "web research agent in:description",
+        "topic:knowledge-management ai",
+        "资料 调研 智能体 in:description"
       ],
       "keywords": "research|deep.?research|report|literature|analys[ei]s|knowledge base|summari"
     },
@@ -48,7 +56,11 @@
         "gui agent in:name,description",
         "topic:browser-automation llm",
         "web agent in:name,description",
-        "topic:computer-use"
+        "topic:computer-use",
+        "topic:playwright ai",
+        "topic:puppeteer llm",
+        "screen agent in:name,description",
+        "浏览器 自动化 大模型 in:description"
       ],
       "keywords": "browser|computer.use|gui agent|web automation|click|screenshot|desktop automation"
     },
@@ -61,7 +73,11 @@
         "desktop ai agent in:description",
         "topic:ai-assistant stars:>200",
         "second brain ai in:description",
-        "email agent in:name,description"
+        "email agent in:name,description",
+        "topic:personal-assistant llm",
+        "topic:home-automation ai",
+        "voice assistant llm in:name,description",
+        "个人 助理 智能体 in:description"
       ],
       "keywords": "personal|assistant|self.hosted|desktop|inbox|calendar|workspace|companion"
     },
@@ -74,7 +90,11 @@
         "agent ui in:name,description",
         "topic:llm-ui",
         "chat client llm in:name,description",
-        "topic:chatbot-ui"
+        "topic:chatbot-ui",
+        "topic:desktop-app llm",
+        "topic:openai-client",
+        "terminal ui llm in:description",
+        "客户端 大模型 in:name,description"
       ],
       "keywords": "\\bui\\b|client|chat(bot)? (app|interface|ui)|frontend|desktop app|tui|web ui"
     },
@@ -87,7 +107,11 @@
         "agent loop in:description",
         "topic:agent-runtime",
         "tool calling loop in:description",
-        "agent executor in:name,description"
+        "agent executor in:name,description",
+        "topic:agent-loop",
+        "topic:tool-use",
+        "react agent implementation in:description",
+        "agent kernel in:name,description"
       ],
       "keywords": "harness|agent loop|runtime|toolkit|agent os|execution engine"
     },
@@ -100,7 +124,11 @@
         "agent sdk in:name,description",
         "topic:llm-framework",
         "topic:multi-agent",
-        "agent orchestration library in:description"
+        "agent orchestration library in:description",
+        "topic:langchain",
+        "topic:agent-sdk",
+        "typescript agent framework in:description",
+        "智能体 框架 in:name,description"
       ],
       "keywords": "framework|sdk|library|multi.?agent|graph|orchestrat|workflow.*(build|defin)"
     },
@@ -114,7 +142,11 @@
         "topic:agent-skills",
         "topic:claude-skills",
         "system prompt collection in:description",
-        "topic:agents-md"
+        "topic:agents-md",
+        "topic:system-prompts",
+        "topic:cursor-rules",
+        "topic:copilot-instructions",
+        "提示词 in:name,description"
       ],
       "keywords": "skill|prompt|instruction|agents\\.md|claude\\.md|playbook|persona|rules"
     },
@@ -127,7 +159,11 @@
         "agent platform in:description",
         "topic:workflow-automation ai",
         "agent scheduler in:description",
-        "topic:durable-execution"
+        "topic:durable-execution",
+        "topic:task-queue ai",
+        "topic:agent-deployment",
+        "serverless agent in:description",
+        "topic:state-machine llm"
       ],
       "keywords": "durable|queue|retry|state machine|serving|deploy|platform|scheduler"
     },
@@ -140,7 +176,11 @@
         "context engineering in:description",
         "topic:vector-database agent",
         "long term memory llm in:description",
-        "topic:context-management"
+        "topic:context-management",
+        "topic:embeddings agent",
+        "topic:knowledge-graph llm",
+        "semantic memory in:name,description",
+        "记忆 智能体 in:description"
       ],
       "keywords": "memory|context|recall|knowledge graph|retriev|rag\\b"
     },
@@ -154,7 +194,11 @@
         "api key switcher in:description",
         "topic:llm-gateway",
         "openai compatible proxy in:description",
-        "topic:model-routing"
+        "topic:model-routing",
+        "topic:openai-proxy",
+        "topic:api-gateway llm",
+        "token usage tracking in:description",
+        "中转 API 大模型 in:description"
       ],
       "keywords": "gateway|proxy|router|switch(er)?|load balanc|fallback|multi.?provider|rate limit|token.*(cost|budget)|api key"
     },
@@ -168,7 +212,11 @@
         "mcp registry in:name,description",
         "topic:mcp-server",
         "mcp client in:name,description",
-        "topic:agent-protocol"
+        "topic:agent-protocol",
+        "topic:mcp-servers",
+        "topic:function-calling",
+        "tool registry llm in:description",
+        "topic:openapi ai agent"
       ],
       "keywords": "\\bmcp\\b|model context protocol|protocol|registry|a2a|interop|spec\\b|standard"
     },
@@ -181,7 +229,11 @@
         "llm search api in:description",
         "topic:web-scraping llm",
         "topic:rag search api",
-        "pdf extraction llm in:description"
+        "pdf extraction llm in:description",
+        "topic:ocr llm",
+        "topic:sql agent",
+        "topic:browser-extension ai",
+        "topic:file-parser llm"
       ],
       "keywords": "scrap|crawl|search|document|spreadsheet|extract|data access|api wrapper"
     },
@@ -194,7 +246,11 @@
         "agent sandbox in:description",
         "topic:code-execution llm",
         "secure agent runtime in:description",
-        "topic:microvm"
+        "topic:microvm",
+        "topic:docker agent",
+        "topic:wasm llm",
+        "topic:e2b",
+        "isolated execution agent in:description"
       ],
       "keywords": "sandbox|isolat|container|microvm|execution environment|code interpreter"
     },
@@ -207,7 +263,11 @@
         "agent evaluation in:name,description",
         "topic:llm-observability",
         "agent tracing in:name,description",
-        "topic:prompt-testing"
+        "topic:prompt-testing",
+        "topic:evals",
+        "topic:red-teaming llm",
+        "agent benchmark in:name,description",
+        "topic:monitoring ai agents"
       ],
       "keywords": "eval|observab|tracing|monitor|benchmark|telemetry|experiment"
     },
@@ -220,7 +280,11 @@
         "agent security in:description",
         "topic:llm-security",
         "agent permissions in:description",
-        "topic:ai-safety tooling"
+        "topic:ai-safety tooling",
+        "topic:prompt-injection",
+        "topic:ai-governance",
+        "topic:pii llm",
+        "agent audit log in:description"
       ],
       "keywords": "injection|guardrail|security|permission|red team|scanner|governance|policy"
     }

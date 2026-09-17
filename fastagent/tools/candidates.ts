@@ -13,11 +13,10 @@ export default defineTool({
   input: z.object({
     refresh: z.boolean().default(false),
     minStars: z.number().int().min(0).max(5000).default(100).describe("floor for unlisted projects; ten user issues in 30 days also passes"),
-    freshDays: z.number().int().min(1).max(180).default(30).describe("how new a repository counts as new"),
     limit: z.number().int().min(1).max(60).default(25),
   }),
-  async execute({ refresh, minStars, freshDays, limit }, ctx) {
-    const swept = refresh ? await discover(ctx.cwd, minStars, freshDays) : undefined;
+  async execute({ refresh, minStars, limit }, ctx) {
+    const swept = refresh ? await discover(ctx.cwd, minStars) : undefined;
     return { swept: swept && { pool: swept.pool, pastFloor: swept.candidates.length }, ...(await unjudged(ctx.cwd, limit)) };
   },
 });

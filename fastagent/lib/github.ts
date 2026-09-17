@@ -39,9 +39,11 @@ async function respectRateLimit(response: Response) {
   const remaining = Number(response.headers.get("x-ratelimit-remaining") ?? "1");
   const reset = Number(response.headers.get("x-ratelimit-reset") ?? "0") * 1000;
   if (remaining > 20 || !reset) return false;
-  const wait = Math.min(Math.max(reset - Date.now(), 0) + 2000, 65 * 60_000);
-  resumeAt = Math.max(resumeAt, Date.now() + wait);
-  console.error(`  rate limit reached; waiting ${Math.round(wait / 1000)}s for the window to reset`);
+  // Sleep in short steps rather than for the whole window: the quota can reset early, or another
+  // process can free it, and a single long sleep kept working for 55 minutes after the limit cleared.
+  const remainingWait = Math.max(reset - Date.now(), 0);
+  resumeAt = Date.now() + Math.min(remainingWait + 1000, 60_000);
+  if (remainingWait > 60_000) console.error(`  rate limit reached; ${Math.round(remainingWait / 1000)}s until reset, re-checking every minute`);
   return true;
 }
 
