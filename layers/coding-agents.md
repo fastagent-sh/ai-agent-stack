@@ -6,27 +6,27 @@ You use it to write and change code. You are its user, not a builder on it.
 
 | Project | Score | Adoption | Upkeep | Growth | Answers | Stars | Stars/day | Weekly installs | Last release | User issues (30d) |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| [cline/cline](https://github.com/cline/cline)<br><sub>Autonomous coding agent as an SDK, IDE extension, or CLI assistant.</sub> | **74** | 39 | 100 | 57 | 100 | 68,459 | +183 | — | 0d ago | 25+ |
-| [alibaba/open-code-review](https://github.com/alibaba/open-code-review)<br><sub>Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: d</sub> | **74** | 36 | 100 | 87 | 72 | 32,664 | +3061 | — | 0d ago | 43+ |
-| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands)<br><sub>🙌 OpenHands: AI-Driven Development</sub> | **73** | 40 | 100 | 53 | 100 | 88,221 | +137 | — | 0d ago | 23+ |
-| [anomalyco/opencode](https://github.com/anomalyco/opencode)<br><sub>The open source coding agent.</sub> | **70** | 43 | 99 | 60 | 78 | 207,972 | +256 | — | 2d ago | 50+ |
-| [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code)<br><sub>An open-source AI coding agent that lives in your terminal.</sub> | **68** | 36 | 100 | 37 | 100 | 27,909 | +30 | — | 0d ago | 10+ |
-| [1jehuang/jcode](https://github.com/1jehuang/jcode)<br><sub>The most RAM efficient harness</sub> | **66** | 34 | 95 | 41 | 94 | 19,792 | +42 | — | 10d ago | 71+ |
-| [kirodotdev/KiroCrew](https://github.com/kirodotdev/KiroCrew)<br><sub>A persistent workspace for development work that self-improves and continues beyond one se</sub> | **66** | 29 | 100 | 35 | 100 | 3,963 | +23 | — | 0d ago | 26+ |
-| [Hmbown/Codewhale](https://github.com/Hmbown/Codewhale)<br><sub>Open-source coding agent for your terminal, built in Rust and on a journey of continuous c</sub> | **65** | 37 | 99 | 25 | 100 | 40,989 | +9 | — | 3d ago | 10+ |
-| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)<br><sub>An open-source AI agent that brings the power of Gemini directly into your terminal.</sub> | **64** | 40 | 100 | 33 | 82 | 107,025 | +19 | — | 0d ago | 39+ |
-| [vastsa/PI-Desktop](https://github.com/vastsa/PI-Desktop)<br><sub>Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness + user-i</sub> | **64** | 29 | 100 | 57 | 70 | 4,050 | +197 | — | 1d ago | 23+ |
-| [openchamber/openchamber](https://github.com/openchamber/openchamber)<br><sub>Agentic Development Environment based on OpenCode AI agent</sub> | **62** | 32 | 100 | 25 | 91 | 9,958 | — | — | 0d ago | 47+ |
-| [olimorris/codecompanion.nvim](https://github.com/olimorris/codecompanion.nvim)<br><sub>✨ AI Coding, Vim Style</sub> | **62** | 31 | 100 | 16 | 100 | 6,863 | — | — | 0d ago | 14 |
-| [ningbainb/deepseek-harness-desktop](https://github.com/ningbainb/deepseek-harness-desktop)<br><sub>Open-source Windows desktop client and GUI for DeepSeek Harness — zero-setup installer wit</sub> | **61** | 22 | 100 | 34 | 88 | 588 | +21 | — | 0d ago | 17 |
-| [modem-dev/hunk](https://github.com/modem-dev/hunk)<br><sub>Review-first terminal diff viewer for agentic coders</sub> | **59** | 32 | 97 | 32 | 75 | 9,310 | +18 | — | 6d ago | 9+ |
-| [open-gsd/gsd-pi](https://github.com/open-gsd/gsd-pi)<br><sub>A powerful meta-prompting, context engineering and spec-driven development system that ena</sub> | **59** | 25 | 98 | 17 | 97 | 1,238 | +4 | — | 4d ago | 33+ |
-| [openai/codex](https://github.com/openai/codex)<br><sub>Lightweight coding agent that runs in your terminal</sub> | **58** | 41 | 69 | 62 | 61 | 124,800 | +301 | — | 6d ago | 57+ |
-| [AntigmaLabs/ante](https://github.com/AntigmaLabs/ante)<br><sub>Ghost in your shell. Ante is a self-contained agent harness with a highly optimized core. </sub> | **58** | 26 | 99 | 16 | 92 | 1,957 | — | — | 2d ago | 13 |
-| [vinhnx/VTCode](https://github.com/vinhnx/VTCode)<br><sub>VT Code is an open-source Rust terminal coding agent.</sub> | **58** | 23 | 100 | 8 | 100 | 846 | +1 | — | 1d ago | 10 |
+| [cline/cline](https://github.com/cline/cline)<br><sub>Autonomous coding agent as an SDK, IDE extension, or CLI assistant.</sub> | **74** | 39 | 100 | 57 | 100 | 68,526 | +192 | — | 0d ago | 26+ |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands)<br><sub>🙌 OpenHands: AI-Driven Development</sub> | **73** | 40 | 100 | 53 | 100 | 88,258 | +136 | — | 0d ago | 25+ |
+| [alibaba/open-code-review](https://github.com/alibaba/open-code-review)<br><sub>Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: d</sub> | **73** | 36 | 100 | 87 | 69 | 33,470 | +3035 | — | 1d ago | 39+ |
+| [anomalyco/opencode](https://github.com/anomalyco/opencode)<br><sub>The open source coding agent.</sub> | **68** | 43 | 99 | 60 | 71 | 208,037 | +252 | — | 2d ago | 58+ |
+| [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code)<br><sub>An open-source AI coding agent that lives in your terminal.</sub> | **66** | 36 | 100 | 37 | 92 | 27,917 | +29 | — | 0d ago | 8+ |
+| [kirodotdev/KiroCrew](https://github.com/kirodotdev/KiroCrew)<br><sub>A persistent workspace for development work that self-improves and continues beyond one se</sub> | **66** | 29 | 100 | 34 | 100 | 3,967 | +23 | — | 0d ago | 31+ |
+| [Hmbown/Codewhale](https://github.com/Hmbown/Codewhale)<br><sub>Open-source coding agent for your terminal, built in Rust and on a journey of continuous c</sub> | **65** | 37 | 99 | 25 | 100 | 40,992 | +9 | — | 3d ago | 11+ |
+| [1jehuang/jcode](https://github.com/1jehuang/jcode)<br><sub>The most RAM efficient harness</sub> | **65** | 34 | 95 | 41 | 91 | 19,801 | +42 | — | 10d ago | 69+ |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)<br><sub>An open-source AI agent that brings the power of Gemini directly into your terminal.</sub> | **64** | 40 | 100 | 33 | 85 | 107,029 | +20 | — | 0d ago | 39+ |
+| [vastsa/PI-Desktop](https://github.com/vastsa/PI-Desktop)<br><sub>Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness + user-i</sub> | **64** | 29 | 100 | 57 | 68 | 4,113 | +197 | — | 0d ago | 25+ |
+| [openchamber/openchamber](https://github.com/openchamber/openchamber)<br><sub>Agentic Development Environment based on OpenCode AI agent</sub> | **63** | 32 | 100 | 25 | 94 | 9,966 | — | — | 0d ago | 48+ |
+| [olimorris/codecompanion.nvim](https://github.com/olimorris/codecompanion.nvim)<br><sub>✨ AI Coding, Vim Style</sub> | **62** | 31 | 100 | 16 | 100 | 6,864 | — | — | 0d ago | 14 |
+| [openai/codex](https://github.com/openai/codex)<br><sub>Lightweight coding agent that runs in your terminal</sub> | **61** | 41 | 69 | 62 | 72 | 124,891 | +301 | — | 6d ago | 87+ |
+| [ningbainb/deepseek-harness-desktop](https://github.com/ningbainb/deepseek-harness-desktop)<br><sub>Open-source Windows desktop client and GUI for DeepSeek Harness — zero-setup installer wit</sub> | **61** | 22 | 100 | 34 | 88 | 593 | +21 | — | 1d ago | 17 |
+| [modem-dev/hunk](https://github.com/modem-dev/hunk)<br><sub>Review-first terminal diff viewer for agentic coders</sub> | **59** | 32 | 97 | 32 | 75 | 9,314 | +17 | — | 6d ago | 9+ |
+| [AntigmaLabs/ante](https://github.com/AntigmaLabs/ante)<br><sub>Ghost in your shell. Ante is a self-contained agent harness with a highly optimized core. </sub> | **59** | 26 | 100 | 16 | 93 | 1,956 | — | — | 0d ago | 14 |
+| [open-gsd/gsd-pi](https://github.com/open-gsd/gsd-pi)<br><sub>A powerful meta-prompting, context engineering and spec-driven development system that ena</sub> | **59** | 25 | 98 | 17 | 97 | 1,239 | +4 | — | 4d ago | 33+ |
 | [nyldn/claude-octopus](https://github.com/nyldn/claude-octopus)<br><sub>Run multiple AI models against the same research, design, or coding task. Surface disagree</sub> | **57** | 29 | 98 | 22 | 81 | 4,078 | — | — | 4d ago | 16+ |
-| [gi-dellav/zerostack](https://github.com/gi-dellav/zerostack)<br><sub>Lightweight coding agent written in Rust, optimized for memory footprint and performance</sub> | **57** | 26 | 96 | 16 | 90 | 1,675 | +4 | — | 9d ago | 10 |
-| [clacky-ai/openclacky](https://github.com/clacky-ai/openclacky)<br><sub>The most Token-efficient open-source AI Agent</sub> | **57** | 25 | 97 | 13 | 92 | 1,191 | — | — | 6d ago | 12 |
+| [gi-dellav/zerostack](https://github.com/gi-dellav/zerostack)<br><sub>Lightweight coding agent written in Rust, optimized for memory footprint and performance</sub> | **57** | 26 | 96 | 16 | 90 | 1,677 | +3 | — | 9d ago | 10 |
+| [clacky-ai/openclacky](https://github.com/clacky-ai/openclacky)<br><sub>The most Token-efficient open-source AI Agent</sub> | **57** | 25 | 100 | 13 | 92 | 1,191 | — | — | 0d ago | 12 |
+| [vinhnx/VTCode](https://github.com/vinhnx/VTCode)<br><sub>VT Code is an open-source Rust terminal coding agent.</sub> | **57** | 23 | 99 | 8 | 100 | 846 | +1 | — | 2d ago | 10 |
 | [marcusquinn/aidevops](https://github.com/marcusquinn/aidevops)<br><sub>Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation fo</sub> | **57** | 21 | 100 | 8 | 100 | 402 | — | — | 0d ago | 11+ |
 | [ggml-org/llama.vscode](https://github.com/ggml-org/llama.vscode)<br><sub>VS Code extension for LLM-assisted code/text completion</sub> | **56** | 25 | 100 | 9 | 88 | 1,509 | — | — | 0d ago | 7 |
 | [gmickel/flow-next](https://github.com/gmickel/flow-next)<br><sub>Repeatable agentic engineering. The workflow layer that turns AI coding agents into a disc</sub> | **56** | 23 | 99 | 9 | 93 | 699 | +1 | — | 2d ago | 15 |

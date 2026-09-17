@@ -2,30 +2,29 @@
 
 Composable libraries for building an agent: handoffs, structured output, graphs.
 
-*196 projects, measured 2026-09-17. [Back to the stack](../README.md).*
+*195 projects, measured 2026-09-17. [Back to the stack](../README.md).*
 
 | Project | Score | Adoption | Upkeep | Growth | Answers | Stars | Stars/day | Weekly installs | Last release | User issues (30d) |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai)<br><sub>How Python does AI. Agents, realtime voice, image generation, embeddings. Every model, eve</sub> | **77** | 95 | 100 | 36 | 77 | 19,993 | +27 | 1,221,652 | 0d ago | 30+ |
-| [langchain-ai/langchain](https://github.com/langchain-ai/langchain)<br><sub>The agent engineering platform.</sub> | **70** | 41 | 100 | 46 | 94 | 146,483 | +68 | — | 0d ago | 36+ |
-| [vercel/eve](https://github.com/vercel/eve)<br><sub>The Open Framework for Building Agents</sub> | **66** | 30 | 100 | 47 | 88 | 5,304 | +72 | — | 0d ago | 17+ |
-| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph)<br><sub>Build resilient agents.</sub> | **63** | 37 | 90 | 46 | 79 | 41,793 | +67 | — | 20d ago | 33+ |
-| [google/adk-python](https://github.com/google/adk-python)<br><sub>An open-source, code-first Python toolkit for building, evaluating, and deploying sophisti</sub> | **63** | 35 | 100 | 27 | 91 | 21,557 | +11 | — | 1d ago | 35+ |
-| [OpenHands/software-agent-sdk](https://github.com/OpenHands/software-agent-sdk)<br><sub>A clean, modular SDK for building AI agents with OpenHands V1.</sub> | **62** | 24 | 100 | 22 | 100 | 1,126 | +7 | — | 0d ago | 12+ |
-| [agentscope-ai/agentscope-java](https://github.com/agentscope-ai/agentscope-java)<br><sub>Build distributed, production-grade, long-running agents.</sub> | **61** | 30 | 80 | 34 | 100 | 5,648 | +21 | — | 9d ago | 31+ |
+| [google/adk-python](https://github.com/google/adk-python)<br><sub>An open-source, code-first Python toolkit for building, evaluating, and deploying sophisti</sub> | **78** | 98 | 100 | 27 | 86 | 21,560 | +11 | 2,364,968 | 1d ago | 37+ |
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain)<br><sub>The agent engineering platform.</sub> | **71** | 41 | 100 | 46 | 97 | 146,512 | +67 | — | 0d ago | 32+ |
+| [vercel/eve](https://github.com/vercel/eve)<br><sub>The Open Framework for Building Agents</sub> | **68** | 30 | 100 | 47 | 95 | 5,327 | +75 | — | 0d ago | 20+ |
+| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI)<br><sub>Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative</sub> | **67** | 96 | 100 | 44 | 30 | 58,689 | +55 | 573,537 | 0d ago | 37+ |
+| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph)<br><sub>Build resilient agents.</sub> | **63** | 37 | 90 | 46 | 79 | 41,810 | +66 | — | 20d ago | 33+ |
+| [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai)<br><sub>How Python does AI. Agents, realtime voice, image generation, embeddings. Every model, eve</sub> | **62** | 34 | 100 | 36 | 79 | 20,004 | +26 | — | 0d ago | 29+ |
+| [OpenHands/software-agent-sdk](https://github.com/OpenHands/software-agent-sdk)<br><sub>A clean, modular SDK for building AI agents with OpenHands V1.</sub> | **62** | 24 | 100 | 22 | 100 | 1,127 | +6 | — | 0d ago | 11+ |
+| [agentscope-ai/agentscope-java](https://github.com/agentscope-ai/agentscope-java)<br><sub>Build distributed, production-grade, long-running agents.</sub> | **61** | 30 | 80 | 33 | 100 | 5,656 | +20 | — | 9d ago | 28+ |
 | [googleapis/python-genai](https://github.com/googleapis/python-genai)<br><sub>Google Gen AI Python SDK provides an interface for developers to integrate Google's genera</sub> | **61** | 29 | 100 | 15 | 100 | 3,979 | — | — | 0d ago | 24+ |
-| [microsoft/agent-framework](https://github.com/microsoft/agent-framework)<br><sub>A framework for building, orchestrating and deploying AI agents and multi-agent workflows </sub> | **59** | 33 | 98 | 31 | 75 | 13,555 | +16 | — | 5d ago | 28+ |
+| [microsoft/agent-framework](https://github.com/microsoft/agent-framework)<br><sub>A framework for building, orchestrating and deploying AI agents and multi-agent workflows </sub> | **60** | 33 | 98 | 31 | 77 | 13,560 | +16 | — | 5d ago | 22+ |
+| [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre)<br><sub>Build your own AI SRE agents. The open source toolkit for the AI era.</sub> | **60** | 32 | 100 | 29 | 81 | 11,097 | — | — | 0d ago | 8+ |
 | [googleapis/js-genai](https://github.com/googleapis/js-genai)<br><sub>TypeScript/JavaScript SDK for Gemini and Vertex AI.</sub> | **59** | 26 | 100 | 10 | 100 | 1,676 | — | — | 0d ago | 10 |
-| [run-llama/llama_index](https://github.com/run-llama/llama_index)<br><sub>LlamaIndex is the document processing platform for AI</sub> | **58** | 96 | 54 | 30 | 52 | 52,195 | +15 | 708,080 | 28d ago | 21+ |
-| [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre)<br><sub>Build your own AI SRE agents. The open source toolkit for the AI era.</sub> | **58** | 32 | 100 | 29 | 69 | 11,095 | — | — | 0d ago | 8+ |
 | [langgraph4j/langgraph4j](https://github.com/langgraph4j/langgraph4j)<br><sub>🚀 LangGraph for Java is a library for Graph Engineering, designed to build sophisticated </sub> | **58** | 26 | 98 | 9 | 100 | 2,006 | — | — | 4d ago | 11 |
-| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI)<br><sub>Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative</sub> | **57** | 38 | 100 | 44 | 45 | 58,673 | +55 | — | 0d ago | 33+ |
-| [google/adk-java](https://github.com/google/adk-java)<br><sub>An open-source, code-first Java toolkit for building, evaluating, and deploying sophistica</sub> | **57** | 26 | 88 | 14 | 100 | 1,730 | +3 | — | 0d ago | 14 |
-| [google/adk-js](https://github.com/google/adk-js)<br><sub>An open-source, code-first Typescript toolkit for building, evaluating, and deploying soph</sub> | **57** | 25 | 100 | 13 | 92 | 1,406 | +2 | — | 1d ago | 8+ |
-| [langflow-ai/langflow](https://github.com/langflow-ai/langflow)<br><sub>Langflow is a powerful tool for building and deploying AI-powered agents and workflows.</sub> | **55** | 42 | 100 | 41 | 38 | 154,906 | +45 | — | 1d ago | 7+ |
-| [neuron-core/neuron-ai](https://github.com/neuron-core/neuron-ai)<br><sub>The Agentic Framework of the PHP ecosystem to build production-ready AI driven application</sub> | **54** | 27 | 99 | 9 | 80 | 2,096 | +1 | — | 2d ago | 5 |
-| [livekit/agents](https://github.com/livekit/agents)<br><sub>A framework for building realtime voice AI agents 🤖🎙️📹</sub> | **53** | 33 | 100 | 20 | 60 | 14,233 | — | — | 1d ago | 15+ |
-| [0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig)<br><sub>⚙️🦀 Build modular and scalable LLM Applications in Rust</sub> | **53** | 31 | 61 | 18 | 100 | 8,650 | — | — | 30d ago | 13+ |
+| [google/adk-java](https://github.com/google/adk-java)<br><sub>An open-source, code-first Java toolkit for building, evaluating, and deploying sophistica</sub> | **57** | 26 | 88 | 15 | 100 | 1,730 | +3 | — | 1d ago | 14 |
+| [google/adk-js](https://github.com/google/adk-js)<br><sub>An open-source, code-first Typescript toolkit for building, evaluating, and deploying soph</sub> | **57** | 25 | 100 | 12 | 92 | 1,407 | +2 | — | 1d ago | 8+ |
+| [langflow-ai/langflow](https://github.com/langflow-ai/langflow)<br><sub>Langflow is a powerful tool for building and deploying AI-powered agents and workflows.</sub> | **54** | 42 | 100 | 41 | 35 | 154,917 | +44 | — | 1d ago | 8+ |
+| [0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig)<br><sub>⚙️🦀 Build modular and scalable LLM Applications in Rust</sub> | **53** | 31 | 61 | 18 | 100 | 8,653 | — | — | 30d ago | 13+ |
+| [neuron-core/neuron-ai](https://github.com/neuron-core/neuron-ai)<br><sub>The Agentic Framework of the PHP ecosystem to build production-ready AI driven application</sub> | **53** | 27 | 99 | 9 | 80 | 2,096 | +1 | — | 3d ago | 5 |
+| [livekit/agents](https://github.com/livekit/agents)<br><sub>A framework for building realtime voice AI agents 🤖🎙️📹</sub> | **52** | 33 | 100 | 20 | 54 | 14,238 | — | — | 1d ago | 13+ |
 | [xerrors/Yuxi](https://github.com/xerrors/Yuxi)<br><sub>可私有部署的多租户知识智能体平台：统一 RAG、知识图谱、多智能体、MCP/Skills、沙盒与权限管理。Self-hosted knowledge agent platform </sub> | **52** | 31 | 65 | 36 | 77 | 7,042 | +27 | — | 15d ago | 26+ |
 | [langchain-ai/langchainjs](https://github.com/langchain-ai/langchainjs)<br><sub>The agent engineering platform</sub> | **51** | 34 | 98 | 19 | 53 | 18,197 | +5 | — | 5d ago | 15+ |
 | [google/adk-go](https://github.com/google/adk-go)<br><sub>An open-source, code-first Go toolkit for building, evaluating, and deploying sophisticate</sub> | **50** | 32 | 99 | 14 | 56 | 8,795 | +3 | — | 2d ago | 25+ |
