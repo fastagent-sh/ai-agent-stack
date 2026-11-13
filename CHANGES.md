@@ -1,4 +1,4 @@
-# Changes — 2026-11-12
+# Changes — 2026-11-13
 
 [Back to the stack](README.md).
 
@@ -6,21 +6,21 @@
 
 | Project | Layer | Stars | Pace | Score |
 |---|---|---:|---:|---:|
-| [mattpocock/skills](https://github.com/mattpocock/skills) | Skills and instruction assets | 322,671 | +1331/day | 68 |
-| [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | Browser and computer-use agents | 22,547 | +1258/day | 62 |
-| [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) | Clients and interfaces | 21,583 | +1183/day | 61 |
-| [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | Harnesses and agent runtimes | 279,611 | +1009/day | 73 |
-| [stablyai/orca](https://github.com/stablyai/orca) | Clients and interfaces | 123,129 | +986/day | 58 |
-| [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) | Capability tools | 101,986 | +955/day | 61 |
-| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Skills and instruction assets | 108,771 | +858/day | 69 |
-| [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | Skills and instruction assets | 189,575 | +682/day | 57 |
-| [affaan-m/ECC](https://github.com/affaan-m/ECC) | Skills and instruction assets | 301,771 | +613/day | 58 |
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Memory and context | 116,442 | +584/day | 70 |
-| [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Capability tools | 83,257 | +563/day | 58 |
-| [obra/superpowers](https://github.com/obra/superpowers) | Skills and instruction assets | 316,606 | +555/day | 52 |
-| [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | Capability tools | 146,534 | +546/day | 77 |
-| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Capability tools | 50,201 | +534/day | 56 |
+| [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) | Clients and interfaces | 22,022 | +1267/day | 59 |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | Skills and instruction assets | 323,504 | +1175/day | 67 |
+| [stablyai/orca](https://github.com/stablyai/orca) | Clients and interfaces | 124,090 | +978/day | 59 |
+| [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | Browser and computer-use agents | 23,092 | +892/day | 60 |
+| [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | Harnesses and agent runtimes | 280,309 | +871/day | 72 |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Skills and instruction assets | 109,337 | +750/day | 66 |
+| [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | Skills and instruction assets | 190,123 | +656/day | 57 |
+| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Capability tools | 50,567 | +646/day | 56 |
+| [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) | Capability tools | 102,401 | +640/day | 59 |
+| [affaan-m/ECC](https://github.com/affaan-m/ECC) | Skills and instruction assets | 302,277 | +592/day | 59 |
+| [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Capability tools | 83,731 | +560/day | 52 |
+| [obra/superpowers](https://github.com/obra/superpowers) | Skills and instruction assets | 317,072 | +543/day | 52 |
+| [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | Capability tools | 147,071 | +536/day | 77 |
 | [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) | Skills and instruction assets | 5,503 | +531/day | 37 |
+| [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) | Skills and instruction assets | 9,764 | +530/day | 52 |
 
 ## New and already scoring
 
@@ -45,13 +45,13 @@ No release with real notes for over two months. Attention is not maintenance.
 
 | Project | Layer | Stars | Pace | Score |
 |---|---|---:|---:|---:|
-| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | Capability tools | 201,165 | +322/day | 26 |
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | Memory and context | 94,087 | +75/day | 36 |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | Capability tools | 201,459 | +331/day | 26 |
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | Memory and context | 94,121 | +71/day | 34 |
 | [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | Capability tools | 90,486 | +48/day | 27 |
 | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | Capability tools | 87,105 | +269/day | 31 |
 | [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) | Memory and context | 84,307 | +131/day | 35 |
-| [zylon-ai/private-gpt](https://github.com/zylon-ai/private-gpt) | Frameworks and SDKs | 57,634 | +0/day | 23 |
-| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Memory and context | 40,673 | +19/day | 33 |
+| [zylon-ai/private-gpt](https://github.com/zylon-ai/private-gpt) | Frameworks and SDKs | 57,635 | +1/day | 23 |
+| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Memory and context | 40,685 | +18/day | 30 |
 | [mindsdb/mindshub](https://github.com/mindsdb/mindshub) | Personal and desktop assistants | 39,778 | +1/day | 15 |
 | [ItzCrazyKns/Vane](https://github.com/ItzCrazyKns/Vane) | Research and knowledge agents | 36,944 | +69/day | 31 |
-| [continuedev/continue](https://github.com/continuedev/continue) | Coding agents | 36,465 | +7/day | 23 |
+| [continuedev/continue](https://github.com/continuedev/continue) | Coding agents | 36,470 | +8/day | 24 |
